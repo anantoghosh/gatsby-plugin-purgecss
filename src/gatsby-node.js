@@ -5,6 +5,8 @@ const PATHS = {
   src: path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}')
 };
 
+const otherLoaders = ['stylus-loader', 'sass-loader']
+
 function findinUse(use, terms) {
   let results = [];
 
@@ -54,10 +56,10 @@ exports.onCreateWebpackConfig = (
   existingRules.filter(singleRule => {
     if (typeof singleRule === 'object') {
       if (singleRule.test) {
-        results = findinUse(singleRule.use, ['stylus-loader']);
+        results = findinUse(singleRule.use, otherLoaders);
       } else if (singleRule.oneOf && Array.isArray(singleRule.oneOf)) {
         singleRule.oneOf.map(e => {
-          results.push(...findinUse(e.use, ['stylus-loader']));
+          results.push(...findinUse(e.use, otherLoaders));
         });
       }
     }

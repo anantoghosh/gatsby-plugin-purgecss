@@ -9,8 +9,10 @@
     "babel-preset-env": "^1.7.0",
     "fs-extra": "^6.0.1",
     "gatsby": "^2.0.0-beta.19",
+    "gatsby-plugin-sass": "^2.0.0-beta.5",
     "gatsby-plugin-stylus": "^2.0.0-beta.4",
     "jest": "^23.3.0",
+    "node-sass": "^4.9.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "symlink-dir": "^1.1.3"

@@ -79,4 +79,24 @@ describe('Check purge status', async () => {
       expect(html).not.toContain('#stylus_module_no');
     });
   });
+
+  describe('Works with sass, (import style from "./file.sass")', () => {
+    test('Kept class selectors', async () => {
+      expect(html).toContain('#sass_ok');
+
+    });
+    test('Removed unused class selectors', async () => {
+      expect(html).not.toContain('#sass_no');
+    });
+  });
+
+  describe('Works with sass modules, (import style from "./file.module.sass")', () => {
+    test('Kept class selectors', async () => {
+      expect(html).toContain('#sass_module_ok');
+
+    });
+    test('Removed unused class selectors', async () => {
+      expect(html).not.toContain('#sass_module_no');
+    });
+  });
 });
