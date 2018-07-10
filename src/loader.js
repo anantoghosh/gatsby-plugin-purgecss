@@ -4,7 +4,6 @@ const PurgeCss = require('purgecss')
 const { getOptions } = require('loader-utils')
 
 module.exports = function loader(source) {
-  console.log("\nPURGE\n")
   const options = getOptions(this)
 
   const css = new PurgeCss({

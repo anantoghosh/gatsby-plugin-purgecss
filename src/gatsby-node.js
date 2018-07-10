@@ -27,7 +27,6 @@ function findinUse(use, terms) {
     });
   }
 
-  // console.log(util.inspect(results, { depth: 7 }));
   return results;
 }
 
@@ -50,7 +49,6 @@ exports.onCreateWebpackConfig = (
   const prevConfig = getConfig();
   const existingRules = prevConfig.module.rules;
 
-  // console.log(util.inspect(existingRules, {depth: 7}));
 
   let results = [];
   existingRules.filter(singleRule => {
@@ -71,8 +69,6 @@ exports.onCreateWebpackConfig = (
       options: userOptions
     });
   });
-
-  console.log(util.inspect(prevConfig, { depth: 7 }));
 
   actions.replaceWebpackConfig(prevConfig)
 
