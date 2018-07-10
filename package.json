@@ -22,8 +22,7 @@
   "dependencies": {
     "glob": "^7.1.2",
     "loader-utils": "^1.1.0",
-    "purgecss": "^1.0.1",
-    "purgecss-webpack-plugin": "^1.2.0"
+    "purgecss": "^1.0.1"
   },
   "scripts": {
     "build": "babel src --out-dir plugins/gatsby-plugin-purgecss --ignore **/test_build",

@@ -7739,13 +7739,6 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-purgecss-webpack-plugin@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/purgecss-webpack-plugin/-/purgecss-webpack-plugin-1.2.0.tgz#6cfba11d8b4150656d5c7ca6c0d32db13ced480f"
-  dependencies:
-    purgecss "^1.0.1"
-    webpack-sources "^1.1.0"
-
 purgecss@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-1.0.1.tgz#652e6b0958b6fd362591f401c406ed33d0cdb958"
