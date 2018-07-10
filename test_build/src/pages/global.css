@@ -1,0 +1,7 @@
+.global-ok {
+  background: url('#global_ok');
+}
+
+.global-no {
+  background: url('#global_no');
+}

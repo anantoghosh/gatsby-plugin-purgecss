@@ -1,14 +1,15 @@
 import React from 'react';
-import Component from '../components/component';
-import './index.css';
-import './stylus.styl'
-import styles from './stylus.module.styl'
+import './global.css';
+import css from './css.css';
+import cssModule from './css.module.css';
+import stylus from './stylus.styl';
+import stylusModule from './stylus.module.styl';
 
 export default () => (
-  <div className="ok1 ok2 ok3">
-    <Component />
-    <section>section</section>
-    <div className="stylusok" />
-    <div className={styles.stylusModuleOk} />
+  <div className="global-ok">
+    <div className={css.cssOk} />
+    <div className={cssModule.cssModuleOk} />
+    <div className={stylus.stylusOk} />
+    <div className={stylusModule.stylusModuleOk} />
   </div>
 );

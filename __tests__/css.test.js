@@ -33,42 +33,34 @@ describe('Check purge status', async () => {
   beforeAll(async () => {
     html = await fs.readFile(dir + '/public/index.html', 'utf-8');
   });
-  describe('Works with css files', () => {
+  describe('Works with direct css imports, (import "./file.css")', () => {
     test('Kept class selectors', async () => {
-      expect(html).toContain('#index_ok1');
-      expect(html).toContain('#index_ok2');
-      expect(html).toContain('#index_ok3');
-    });
-    test('Kept html tag selectors', async () => {
-      expect(html).toContain('#index_ok4');
+      expect(html).toContain('#global_ok');
     });
     test('Removed unused class selectors', async () => {
-      expect(html).not.toContain('#index_no1');
-    });
-    test('Removed unused html tag selectors', async () => {
-      expect(html).not.toContain('#index_no2');
+      expect(html).not.toContain('#global_no');
     });
   });
 
-  describe('Works with css modules', () => {
+  describe('Works with css, (import style from "./file.css")', () => {
     test('Kept class selectors', async () => {
-      expect(html).toContain('#component_ok1');
-      expect(html).toContain('#component_ok2');
-      expect(html).toContain('#component_ok3');
-    });
-    test('Kept html tag selectors', async () => {
-      expect(html).toContain('#component_ok4');
-    });
-    test('Removed unused class selectors', async () => {
-      expect(html).not.toContain('#component_no1');
-      expect(html).not.toContain('#component_no2');
+      expect(html).toContain('#css_ok');
     });
     test('Removed unused html tag selectors', async () => {
-      expect(html).not.toContain('#component_no3');
+      expect(html).not.toContain('#css_no');
     });
   });
 
-  describe('Works with stylus', () => {
+  describe('Works with css modules, (import style from "./file.module.css")', () => {
+    test('Kept class selectors', async () => {
+      expect(html).toContain('#css_module_ok');
+    });
+    test('Removed unused html tag selectors', async () => {
+      expect(html).not.toContain('#css_module_no');
+    });
+  });
+
+  describe('Works with stylus, (import style from "./file.styl")', () => {
     test('Kept class selectors', async () => {
       expect(html).toContain('#stylus_ok');
 
@@ -78,7 +70,7 @@ describe('Check purge status', async () => {
     });
   });
 
-  describe('Works with stylus modules', () => {
+  describe('Works with stylus modules, (import style from "./file.module.styl")', () => {
     test('Kept class selectors', async () => {
       expect(html).toContain('#stylus_module_ok');
 
