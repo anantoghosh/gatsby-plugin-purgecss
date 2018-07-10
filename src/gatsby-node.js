@@ -5,7 +5,7 @@ const PATHS = {
   src: path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}')
 };
 
-const otherLoaders = ['stylus-loader', 'sass-loader']
+const otherLoaders = ['stylus-loader', 'sass-loader', 'less-loader']
 
 function findinUse(use, terms) {
   let results = [];

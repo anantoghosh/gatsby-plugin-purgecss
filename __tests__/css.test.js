@@ -99,4 +99,24 @@ describe('Check purge status', async () => {
       expect(html).not.toContain('#sass_module_no');
     });
   });
+
+  describe('Works with less, (import style from "./file.less")', () => {
+    test('Kept class selectors', async () => {
+      expect(html).toContain('#less_ok');
+
+    });
+    test('Removed unused class selectors', async () => {
+      expect(html).not.toContain('#less_no');
+    });
+  });
+
+  describe('Works with less modules, (import style from "./file.module.less")', () => {
+    test('Kept class selectors', async () => {
+      expect(html).toContain('#less_module_ok');
+
+    });
+    test('Removed unused class selectors', async () => {
+      expect(html).not.toContain('#less_module_no');
+    });
+  });
 });
