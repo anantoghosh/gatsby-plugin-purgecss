@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-plugin-purgecss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "fs-extra": "^6.0.1",
+    "gatsby": "^2.0.0-beta.19",
+    "gatsby-plugin-stylus": "^2.0.0-beta.4",
+    "jest": "^23.3.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "symlink-dir": "^1.1.3"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "loader-utils": "^1.1.0",
+    "purgecss": "^1.0.1",
+    "purgecss-webpack-plugin": "^1.2.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir plugins/gatsby-plugin-purgecss --ignore **/test_build",
+    "build:test": "cd test_build && npm run build",
+    "test": "npm run build && node prepareTests.js && cd test_build && npm run build && cd .. && jest",
+    "jest": "jest"
+  }
+}
