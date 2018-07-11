@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-purgecss",
-  "description": "Gatsby plugin for purgecss. Removes unused css/sass/less/stylus.",
+  "description": "Gatsby plugin for purgecss. Removes unused css/sass/less/stylus from files and modules.",
   "version": "0.2.0",
   "main": "index.js",
   "license": "MIT",
@@ -36,7 +36,9 @@
     "jest": "jest"
   },
   "files": [
-    "index.js", "gatsby-node.js", "loader.js"
+    "index.js",
+    "gatsby-node.js",
+    "loader.js"
   ],
   "repository": {
     "type": "git",
@@ -56,6 +58,8 @@
     "less",
     "optimize",
     "clean",
-    "purgecss"
+    "purgecss",
+    "purify",
+    "purifycss"
   ]
 }

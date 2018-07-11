@@ -1,11 +1,10 @@
 const path = require('path');
-const util = require('util');
 
 const PATHS = {
   src: path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}')
 };
 
-const otherLoaders = ['stylus-loader', 'sass-loader', 'less-loader']
+const otherLoaders = ['stylus-loader', 'sass-loader', 'less-loader'];
 
 function findinUse(use, terms) {
   let results = [];
@@ -49,7 +48,6 @@ exports.onCreateWebpackConfig = (
   const prevConfig = getConfig();
   const existingRules = prevConfig.module.rules;
 
-
   let results = [];
   existingRules.filter(singleRule => {
     if (typeof singleRule === 'object') {
@@ -70,7 +68,7 @@ exports.onCreateWebpackConfig = (
     });
   });
 
-  actions.replaceWebpackConfig(prevConfig)
+  actions.replaceWebpackConfig(prevConfig);
 
   const rule = {
     test: /.css$/,
