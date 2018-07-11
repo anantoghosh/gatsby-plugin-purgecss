@@ -1,6 +1,7 @@
 # Gatsby Plugin Purgecss (beta)
 For Gatsby 2 only
 
+[![Build Status](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss.svg?branch=master)](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss)
 ## What is this plugin about?
 
 This plugin allows Gatsby to remove unused css from css/sass/less/stylus files AND modules using [purgecss](https://github.com/FullHuman/purgecss).
