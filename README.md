@@ -3,9 +3,13 @@ For Gatsby 2 only
 
 [![Build Status](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss.svg?branch=master)](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss)
 [![npm version](https://badge.fury.io/js/gatsby-plugin-purgecss.svg)](https://badge.fury.io/js/gatsby-plugin-purgecss) [![Greenkeeper badge](https://badges.greenkeeper.io/anantoghosh/gatsby-plugin-purgecss.svg)](https://greenkeeper.io/)
+
+[![dependencies](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss.svg)](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss/)
+[![dev dependencies](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss/dev-status.svg)](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss?type=dev)
+[![peer dependencies](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss/peer-status.svg)](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss?type=peer)
 ## What is this plugin about?
 
-This plugin allows Gatsby to remove unused css from css/sass/less/stylus files AND modules using [purgecss](https://github.com/FullHuman/purgecss).
+This plugin allows Gatsby to remove unused css from css/sass/less/stylus files and modules using [purgecss](https://github.com/FullHuman/purgecss).
 
 ## Supported files
 
