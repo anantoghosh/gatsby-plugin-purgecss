@@ -45,7 +45,7 @@ This plugin only runs when building the project (gatsby build).
 To make sure the plugin is working, set `rejected: true` option to print out the removed selectors.
 
 ### Selector matching
-This plugin loads css files (or transformed output from css plugins) and searches for matching selectors in js, jsx,ts, tsx files in `src/`. It does not know which css file belongs to which source file. Therefore, for eg., if there is a class `.module` in some css file, it will not be removed if it used in *any* script file under `src/`.
+This plugin loads css files (or transformed output from css plugins) and searches for matching selectors in js, jsx, ts, tsx files in `src/`. It does not know which css file belongs to which source file. Therefore, for eg., if there is a class `.module` in some css file, it will not be removed if it used in *any* script file under `src/`.
 
 ### Whitelist ['html', 'body']
 Since html and body tags do not appear in `src/` files, it is whitelisted by default to not be removed.  
