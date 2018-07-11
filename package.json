@@ -43,5 +43,17 @@
   "bugs": {
     "url": "https://github.com/anantoghosh/gatsby-plugin-purgecss/issues"
   },
-  "homepage": "https://github.com/anantoghosh/gatsby-plugin-purgecss#readme"
+  "homepage": "https://github.com/anantoghosh/gatsby-plugin-purgecss#readme",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "css",
+    "sass",
+    "scss",
+    "stylus",
+    "less",
+    "optimize",
+    "clean",
+    "purgecss"
+  ]
 }
