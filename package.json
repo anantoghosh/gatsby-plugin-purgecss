@@ -25,6 +25,9 @@
     "loader-utils": "^1.1.0",
     "purgecss": "^1.0.1"
   },
+  "peerDependencies": {
+    "gatsby": ">2.0.0-beta"
+  },
   "scripts": {
     "build": "babel src --out-dir . --ignore **/test_build",
     "build:test": "babel src --out-dir plugins/gatsby-plugin-purgecss --ignore **/test_build",
