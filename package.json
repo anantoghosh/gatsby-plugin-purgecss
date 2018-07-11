@@ -9,6 +9,7 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "dotenv": "^6.0.0",
     "fs-extra": "^6.0.1",
     "gatsby": "^2.0.0-beta.19",
     "gatsby-plugin-less": "^2.0.0-beta.4",
@@ -33,7 +34,8 @@
     "build:test": "babel src --out-dir plugins/gatsby-plugin-purgecss --ignore **/test_build",
     "build:test_build": "cd test_build && npm run build && cd ..",
     "test": "npm run build:test && node prepareTests.js && npm run build:test_build && jest",
-    "jest": "jest"
+    "jest": "jest",
+    "release": "node -r dotenv/config release-it"
   },
   "files": [
     "index.js",
