@@ -33,8 +33,7 @@
     "build:test": "babel src --out-dir plugins/gatsby-plugin-purgecss --ignore **/test_build",
     "build:test_build": "cd test_build && npm run build && cd ..",
     "test": "npm run build:test && node prepareTests.js && npm run build:test_build && jest",
-    "jest": "jest",
-    "publish": "npm run build"
+    "jest": "jest"
   },
   "files": [
     "index.js", "gatsby-node.js", "loader.js"
