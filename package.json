@@ -35,7 +35,7 @@
     "build:test_build": "cd test_build && npm run build && cd ..",
     "test": "npm run build:test && node prepareTests.js && npm run build:test_build && jest",
     "jest": "jest",
-    "release": "node -r dotenv/config release-it"
+    "release": "node -r dotenv/config release.js"
   },
   "files": [
     "index.js",
