@@ -4,5 +4,6 @@
   "buildCommand": "yarn build",
   "github": {
     "release": true,
+    "tokenRef": "RLID"
   }
 }
