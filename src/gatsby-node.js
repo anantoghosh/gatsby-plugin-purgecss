@@ -1,38 +1,16 @@
-const path = require('path');
+import path from 'path';
+import { findLoader, insertLoader } from './utils';
 
 const PATHS = {
   src: path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}')
 };
 
-const otherLoaders = ['stylus-loader', 'sass-loader', 'less-loader'];
+const loadersRegex = /stylus-loader|sass-loader|less-loader/;
 
-function findinUse(use, terms) {
-  let results = [];
-
-  if (typeof use === 'string') {
-    return [];
-  } else if (Array.isArray(use)) {
-    use.map((singleLoader, index) => {
-      let loaderString;
-      if (typeof singleLoader === 'string') {
-        loaderString = singleLoader;
-      } else if (typeof singleLoader === 'object') {
-        loaderString = singleLoader.loader;
-      }
-
-      terms.map(term => {
-        if (loaderString.includes(term)) results.push({ use, index });
-      });
-    });
-  }
-
-  return results;
-}
-
-exports.onCreateWebpackConfig = (
-  { actions, stage, rules, loaders, getConfig },
-  { plugins, postCssPlugins, ...userOptions }
-) => {
+export function onCreateWebpackConfig(
+  { actions, stage, getConfig },
+  { plugins, ...userOptions }
+) {
   if (stage !== 'build-javascript') {
     return;
   }
@@ -45,44 +23,35 @@ exports.onCreateWebpackConfig = (
     ...userOptions
   };
 
-  const prevConfig = getConfig();
-  const existingRules = prevConfig.module.rules;
+  const config = getConfig();
+  const existingRules = config.module.rules;
 
-  let results = [];
-  existingRules.filter(singleRule => {
-    if (typeof singleRule === 'object') {
-      if (singleRule.test) {
-        results = findinUse(singleRule.use, otherLoaders);
-      } else if (singleRule.oneOf && Array.isArray(singleRule.oneOf)) {
-        singleRule.oneOf.map(e => {
-          results.push(...findinUse(e.use, otherLoaders));
-        });
-      }
+  const purgecssloader = {
+    loader: path.join(__dirname, 'loader.js'),
+    options: userOptions
+  };
+
+  existingRules.forEach(rule => {
+    if (Array.isArray(rule.oneOf)) {
+      rule.oneOf.forEach(rule => {
+        if (Array.isArray(rule.use)) {
+          const index = findLoader(rule.use, loadersRegex);
+          insertLoader(rule.use, index, purgecssloader);
+        }
+      });
     }
   });
 
-  results.map(rule => {
-    rule.use.splice(rule.index, 0, {
-      loader: path.join(__dirname, 'loader.js'),
-      options: userOptions
-    });
-  });
+  actions.replaceWebpackConfig(config);
 
-  actions.replaceWebpackConfig(prevConfig);
-
-  const rule = {
+  const purgecssRule = {
     test: /.css$/,
-    use: [
-      {
-        loader: path.join(__dirname, 'loader.js'),
-        options: userOptions
-      }
-    ]
+    use: [purgecssloader]
   };
 
   setWebpackConfig({
     module: {
-      rules: [rule]
+      rules: [purgecssRule]
     }
   });
-};
+}
