@@ -64,3 +64,4 @@ yarn-error.log
 plugins
 gatsby-node.js
 loader.js
+utils.js

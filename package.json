@@ -31,17 +31,19 @@
     "gatsby": ">2.0.0-beta"
   },
   "scripts": {
-    "build": "babel src --out-dir . --ignore **/test_build",
-    "build:test": "babel src --out-dir plugins/gatsby-plugin-purgecss --ignore **/test_build",
+    "build": "babel src --out-dir .",
+    "build:test": "babel src --out-dir plugins/gatsby-plugin-purgecss",
     "build:test_build": "cd test_build && npm run build && cd ..",
-    "test": "npm run build:test && node prepareTests.js && npm run build:test_build && jest",
+    "test": "npm run test:unit && npm run build:test && node prepareTests.js && npm run build:test_build && jest",
+    "test:unit": "jest --testPathIgnorePatterns build_e2e.test.js .cache/",
     "jest": "jest",
     "release": "node -r dotenv/config node_modules/release-it/bin/release-it.js"
   },
   "files": [
     "index.js",
     "gatsby-node.js",
-    "loader.js"
+    "loader.js",
+    "utils.js"
   ],
   "repository": {
     "type": "git",
