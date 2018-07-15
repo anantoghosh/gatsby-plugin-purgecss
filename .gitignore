@@ -65,3 +65,4 @@ plugins
 /gatsby-node.js
 /loader.js
 /utils.js
+/paths.js
