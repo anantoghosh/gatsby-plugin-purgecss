@@ -38,7 +38,8 @@ const useConfig2 = [
   },
   {
     loader: 'postcss-loader'
-  }
+  },
+  {}
 ];
 
 const useConfig3 = [
