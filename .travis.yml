@@ -8,14 +8,15 @@ before_install:
   - export PATH=$HOME/.yarn/bin:$PATH
   - yarn global add greenkeeper-lockfile
 
-jobs:
-  include:
-    - stage: test
-      script: yarn test && yarn build
-      script: yarn test:unit --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+
+script:
+  - yarn test
+  - yarn build
 
 before_script: greenkeeper-lockfile-update
-after_script: greenkeeper-lockfile-upload
+after_script:
+  - greenkeeper-lockfile-upload
+  - yarn test:unit --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
 
 cache:
   yarn: true
