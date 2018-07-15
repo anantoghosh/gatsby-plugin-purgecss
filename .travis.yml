@@ -11,9 +11,7 @@ before_install:
 jobs:
   include:
     - stage: test
-      script:
-        - yarn test
-        - yarn build
+      script: yarn test && yarn build
       script: yarn test:unit --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
 
 before_script: greenkeeper-lockfile-update
