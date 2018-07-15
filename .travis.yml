@@ -10,13 +10,13 @@ before_install:
 
 
 script:
-  - yarn test
+  - yarn test:ci
   - yarn build
 
 before_script: greenkeeper-lockfile-update
 after_script:
   - greenkeeper-lockfile-upload
-  - yarn test:unit --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
 
 cache:
   yarn: true

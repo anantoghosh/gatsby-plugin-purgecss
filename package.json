@@ -36,8 +36,9 @@
     "build": "babel src --out-dir .",
     "build:test": "babel src --out-dir plugins/gatsby-plugin-purgecss",
     "build:test_build": "cd test_build && npm run build && cd ..",
-    "test": "npm run test:unit && npm run build:test && node prepareTests.js && npm run build:test_build && jest",
+    "test": "npm run test:unit && npm run build:test && node prepareTests.js && npm run build:test_build && jest build_e2e.test.js",
     "test:unit": "jest --testPathIgnorePatterns build_e2e.test.js .cache/",
+    "test:ci": "npm run build:test && node prepareTests.js && npm run build:test_build && jest --coverage",
     "jest": "jest",
     "release": "node -r dotenv/config node_modules/release-it/bin/release-it.js"
   },
@@ -45,7 +46,8 @@
     "index.js",
     "gatsby-node.js",
     "loader.js",
-    "utils.js"
+    "utils.js",
+    "paths.js"
   ],
   "repository": {
     "type": "git",
