@@ -1,4 +1,4 @@
-# Gatsby Plugin Purgecss (beta)
+# Gatsby Plugin Purgecss
 For Gatsby 2 only
 
 [![Build Status](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss.svg?branch=master)](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss)
@@ -102,7 +102,7 @@ This plugins supports most purgecss options as is (except `css`).
 ## Versioning
 
 Gatsy-plugin-purgecss use [SemVer](http://semver.org/) for versioning.  
-It will try to match official gatsby plugin's major version when released.
+It will try to match official gatsby plugin's major version.
 
 ## Acknowledgment
 
