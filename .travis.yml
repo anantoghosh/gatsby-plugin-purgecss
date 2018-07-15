@@ -14,7 +14,7 @@ jobs:
       script:
         - yarn test
         - yarn build
-      script: yarn jest:unit --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+      script: yarn test:unit --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
 
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
