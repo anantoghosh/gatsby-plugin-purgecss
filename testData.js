@@ -12,14 +12,14 @@ let config = {
               sourceType: 'unambiguous',
               presets: [[], [], []],
               plugins: [
-                'gatsby-plugin-purgecss\\node_modules\\babel-plugin-remove-graphql-queries\\index.js',
+                'gatsby-plugin-purgecss/node_modules/babel-plugin-remove-graphql-queries/index.js',
                 [],
                 [],
                 []
               ]
             },
             loader:
-              'gatsby-plugin-purgecss\\node_modules\\babel-loader\\lib\\index.js'
+              'gatsby-plugin-purgecss/node_modules/babel-loader/lib/index.js'
           }
         ]
       },
@@ -29,12 +29,12 @@ let config = {
           {
             options: {},
             loader:
-              'gatsby-plugin-purgecss\\node_modules\\json-loader\\index.js'
+              'gatsby-plugin-purgecss/node_modules/json-loader/index.js'
           },
           {
             options: {},
             loader:
-              'gatsby-plugin-purgecss\\node_modules\\yaml-loader\\index.js'
+              'gatsby-plugin-purgecss/node_modules/yaml-loader/index.js'
           }
         ]
       },
@@ -42,7 +42,7 @@ let config = {
         use: [
           {
             loader:
-              'gatsby-plugin-purgecss\\node_modules\\url-loader\\dist\\cjs.js',
+              'gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js',
             options: { limit: 10000, name: 'static/[name]-[hash].[ext]' }
           }
         ],
@@ -52,7 +52,7 @@ let config = {
         use: [
           {
             loader:
-              'gatsby-plugin-purgecss\\node_modules\\url-loader\\dist\\cjs.js',
+              'gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js',
             options: { limit: 10000, name: 'static/[name]-[hash].[ext]' }
           }
         ],
@@ -62,7 +62,7 @@ let config = {
         use: [
           {
             loader:
-              'gatsby-plugin-purgecss\\node_modules\\url-loader\\dist\\cjs.js',
+              'gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js',
             options: { name: 'static/[name]-[hash].[ext]' }
           }
         ],
@@ -75,16 +75,16 @@ let config = {
               {
                 options: {},
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  'gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js'
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\css-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/css-loader/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\postcss-loader\\lib\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js',
                 options: [Object]
               }
             ],
@@ -95,16 +95,16 @@ let config = {
               {
                 options: {},
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  'gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js'
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\css-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/css-loader/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\postcss-loader\\lib\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js',
                 options: [Object]
               }
             ],
@@ -125,21 +125,21 @@ let config = {
               {
                 options: {},
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  'gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js'
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\css-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/css-loader/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\postcss-loader\\lib\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\stylus-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/stylus-loader/index.js',
                 options: [Object]
               }
             ]
@@ -151,21 +151,21 @@ let config = {
               {
                 options: {},
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  'gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js'
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\css-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/css-loader/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\postcss-loader\\lib\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\stylus-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/stylus-loader/index.js',
                 options: [Object]
               }
             ]
@@ -180,21 +180,21 @@ let config = {
               {
                 options: {},
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  'gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js'
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\css-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/css-loader/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\postcss-loader\\lib\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\sass-loader\\lib\\loader.js',
+                  'gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js',
                 options: [Object]
               }
             ]
@@ -205,21 +205,21 @@ let config = {
               {
                 options: {},
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  'gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js'
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\css-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/css-loader/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\postcss-loader\\lib\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\sass-loader\\lib\\loader.js',
+                  'gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js',
                 options: [Object]
               }
             ]
@@ -234,21 +234,21 @@ let config = {
               {
                 options: {},
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  'gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js'
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\css-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/css-loader/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\postcss-loader\\lib\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\less-loader\\dist\\cjs.js',
+                  'gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js',
                 options: [Object]
               }
             ]
@@ -259,21 +259,21 @@ let config = {
               {
                 options: {},
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
+                  'gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js'
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\css-loader\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/css-loader/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\postcss-loader\\lib\\index.js',
+                  'gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js',
                 options: [Object]
               },
               {
                 loader:
-                  'gatsby-plugin-purgecss\\node_modules\\less-loader\\dist\\cjs.js',
+                  'gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js',
                 options: [Object]
               }
             ]

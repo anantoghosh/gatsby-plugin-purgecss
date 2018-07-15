@@ -4,12 +4,8 @@
  * @typedef {import('webpack').RuleSetLoader} RuleSetLoader
  */
 
-import path from 'path';
 import { findLoader, insertLoader } from './utils';
-
-const PATHS = {
-  src: path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}')
-};
+import path from './paths';
 
 const loadersRegex = /stylus-loader|sass-loader|less-loader/;
 
@@ -24,7 +20,7 @@ export function onCreateWebpackConfig(
   const { setWebpackConfig } = actions;
 
   userOptions = {
-    content: [PATHS.src],
+    content: [path.src],
     whitelist: ['html', 'body'],
     ...userOptions
   };
@@ -39,7 +35,7 @@ export function onCreateWebpackConfig(
    * @type {RuleSetLoader}
    */
   const purgecssloader = {
-    loader: path.join(__dirname, 'loader.js'),
+    loader: path.loader,
     options: userOptions
   };
 

@@ -16,12 +16,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
               "test": /\\\\\\.jsx\\?\\$/,
               "use": Array [
                 Object {
-                  "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js",
+                  "loader": "gatsby-plugin-purgecss/node_modules/babel-loader/lib/index.js",
                   "options": Object {
                     "babelrc": false,
                     "cacheDirectory": true,
                     "plugins": Array [
-                      "gatsby-plugin-purgecss\\\\node_modules\\\\babel-plugin-remove-graphql-queries\\\\index.js",
+                      "gatsby-plugin-purgecss/node_modules/babel-plugin-remove-graphql-queries/index.js",
                       Array [],
                       Array [],
                       Array [],
@@ -40,11 +40,11 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
               "test": /\\\\\\.ya\\?ml/,
               "use": Array [
                 Object {
-                  "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\json-loader\\\\index.js",
+                  "loader": "gatsby-plugin-purgecss/node_modules/json-loader/index.js",
                   "options": Object {},
                 },
                 Object {
-                  "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\yaml-loader\\\\index.js",
+                  "loader": "gatsby-plugin-purgecss/node_modules/yaml-loader/index.js",
                   "options": Object {},
                 },
               ],
@@ -53,7 +53,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
               "test": /\\\\\\.\\(eot\\|otf\\|ttf\\|woff\\(2\\)\\?\\)\\(\\\\\\?\\.\\*\\)\\?\\$/,
               "use": Array [
                 Object {
-                  "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\url-loader\\\\dist\\\\cjs.js",
+                  "loader": "gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js",
                   "options": Object {
                     "limit": 10000,
                     "name": "static/[name]-[hash].[ext]",
@@ -65,7 +65,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
               "test": /\\\\\\.\\(ico\\|svg\\|jpg\\|jpeg\\|png\\|gif\\|webp\\)\\(\\\\\\?\\.\\*\\)\\?\\$/,
               "use": Array [
                 Object {
-                  "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\url-loader\\\\dist\\\\cjs.js",
+                  "loader": "gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js",
                   "options": Object {
                     "limit": 10000,
                     "name": "static/[name]-[hash].[ext]",
@@ -77,7 +77,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
               "test": /\\\\\\.\\(mp4\\|webm\\|wav\\|mp3\\|m4a\\|aac\\|oga\\|flac\\)\\$/,
               "use": Array [
                 Object {
-                  "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\url-loader\\\\dist\\\\cjs.js",
+                  "loader": "gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js",
                   "options": Object {
                     "name": "static/[name]-[hash].[ext]",
                   },
@@ -90,17 +90,17 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                   "test": /\\\\\\.module\\\\\\.css\\$/,
                   "use": Array [
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\mini-css-extract-plugin\\\\dist\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
                       "options": Object {},
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\css-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\postcss-loader\\\\lib\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
                       "options": Array [
                         [Function],
                       ],
@@ -111,17 +111,17 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                   "test": /\\\\\\.css\\$/,
                   "use": Array [
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\mini-css-extract-plugin\\\\dist\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
                       "options": Object {},
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\css-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\postcss-loader\\\\lib\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
                       "options": Array [
                         [Function],
                       ],
@@ -156,26 +156,26 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                   "test": /\\\\\\.module\\\\\\.styl\\$/,
                   "use": Array [
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\mini-css-extract-plugin\\\\dist\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
                       "options": Object {},
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\css-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\postcss-loader\\\\lib\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\loader.js",
+                      "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
-                          "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\**\\\\!(*.d).{ts,js,jsx,tsx}",
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "whitelist": Array [
                           "html",
@@ -184,7 +184,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                       },
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\stylus-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
@@ -196,26 +196,26 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                   "test": /\\\\\\.styl\\$/,
                   "use": Array [
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\mini-css-extract-plugin\\\\dist\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
                       "options": Object {},
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\css-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\postcss-loader\\\\lib\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\loader.js",
+                      "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
-                          "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\**\\\\!(*.d).{ts,js,jsx,tsx}",
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "whitelist": Array [
                           "html",
@@ -224,7 +224,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                       },
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\stylus-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
@@ -239,26 +239,26 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                   "test": /\\\\\\.module\\\\\\.s\\(a\\|c\\)ss\\$/,
                   "use": Array [
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\mini-css-extract-plugin\\\\dist\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
                       "options": Object {},
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\css-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\postcss-loader\\\\lib\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\loader.js",
+                      "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
-                          "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\**\\\\!(*.d).{ts,js,jsx,tsx}",
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "whitelist": Array [
                           "html",
@@ -267,7 +267,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                       },
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\sass-loader\\\\lib\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
                       "options": Array [
                         [Function],
                       ],
@@ -278,26 +278,26 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                   "test": /\\\\\\.s\\(a\\|c\\)ss\\$/,
                   "use": Array [
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\mini-css-extract-plugin\\\\dist\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
                       "options": Object {},
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\css-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\postcss-loader\\\\lib\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\loader.js",
+                      "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
-                          "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\**\\\\!(*.d).{ts,js,jsx,tsx}",
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "whitelist": Array [
                           "html",
@@ -306,7 +306,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                       },
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\sass-loader\\\\lib\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
                       "options": Array [
                         [Function],
                       ],
@@ -321,26 +321,26 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                   "test": /\\\\\\.module\\\\\\.less\\$/,
                   "use": Array [
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\mini-css-extract-plugin\\\\dist\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
                       "options": Object {},
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\css-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\postcss-loader\\\\lib\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\loader.js",
+                      "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
-                          "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\**\\\\!(*.d).{ts,js,jsx,tsx}",
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "whitelist": Array [
                           "html",
@@ -349,7 +349,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                       },
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\less-loader\\\\dist\\\\cjs.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
                       "options": Array [
                         [Function],
                       ],
@@ -360,26 +360,26 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                   "test": /\\\\\\.less\\$/,
                   "use": Array [
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\mini-css-extract-plugin\\\\dist\\\\loader.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
                       "options": Object {},
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\css-loader\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\postcss-loader\\\\lib\\\\index.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
                       "options": Array [
                         [Function],
                       ],
                     },
                     Object {
-                      "loader": "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\loader.js",
+                      "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
-                          "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\**\\\\!(*.d).{ts,js,jsx,tsx}",
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "whitelist": Array [
                           "html",
@@ -388,7 +388,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                       },
                     },
                     Object {
-                      "loader": "gatsby-plugin-purgecss\\\\node_modules\\\\less-loader\\\\dist\\\\cjs.js",
+                      "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
                       "options": Array [
                         [Function],
                       ],
@@ -434,10 +434,10 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2`] = `
               "test": /\\.css\\$/,
               "use": Array [
                 Object {
-                  "loader": "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\loader.js",
+                  "loader": "path/loader.js",
                   "options": Object {
                     "content": Array [
-                      "D:\\\\Develop\\\\gatsby-plugin-purgecss\\\\src\\\\**\\\\!(*.d).{ts,js,jsx,tsx}",
+                      "src/**/!(*.d).{ts,js,jsx,tsx}",
                     ],
                     "whitelist": Array [
                       "html",
