@@ -1,3 +1,9 @@
+/**
+ * @typedef {import('webpack').Configuration} WebpackConfig
+ * @typedef {import('webpack').RuleSetRule} RuleSetRule
+ * @typedef {import('webpack').RuleSetLoader} RuleSetLoader
+ */
+
 import path from 'path';
 import { findLoader, insertLoader } from './utils';
 
@@ -23,9 +29,15 @@ export function onCreateWebpackConfig(
     ...userOptions
   };
 
+  /**
+   * @type {WebpackConfig}
+   */
   const config = getConfig();
   const existingRules = config.module.rules;
 
+  /**
+   * @type {RuleSetLoader}
+   */
   const purgecssloader = {
     loader: path.join(__dirname, 'loader.js'),
     options: userOptions
@@ -44,6 +56,9 @@ export function onCreateWebpackConfig(
 
   actions.replaceWebpackConfig(config);
 
+  /**
+   * @type {RuleSetRule}
+   */
   const purgecssRule = {
     test: /.css$/,
     use: [purgecssloader]

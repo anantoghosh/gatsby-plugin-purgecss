@@ -1,27 +1,33 @@
 // modified from https://github.com/americanexpress/purgecss-loader
 
-const PurgeCss = require('purgecss')
-const { getOptions } = require('loader-utils')
+/**
+ * @typedef {import('loader-utils').OptionObject} OptionObject
+ */
 
-module.exports = function loader(source) {
-  const options = getOptions(this)
+import PurgeCss from 'purgecss';
+import { getOptions } from 'loader-utils';
+
+export default function loader(source) {
+  // prettier-ignore
+  const options =
+  /** @type {OptionObject & {content:string[], rejected?:boolean}} */
+  (getOptions(this));
 
   const css = new PurgeCss({
-    css: [{ raw: source }],
-    ...options,
-  }).purge()
+    css: [{ raw: source, extension: 'css' }],
+    ...options
+  }).purge();
 
   if (options.rejected) {
-    const rejected = css[0].rejected
+    const rejected = css[0].rejected;
 
-    if (rejected && rejected.length) {
-      const filtered = rejected.map((val) => {
-        return val.replace('\n', '')
-      })
-      console.log('\nRemoved Selectors: ', filtered)
-
+    if (Array.isArray(rejected)) {
+      const filtered = rejected.map(val => {
+        return val.replace('\n', '');
+      });
+      console.log('\nRemoved Selectors: ', filtered);
     }
   }
 
-  return css[0].css
+  return css[0].css;
 }
