@@ -12,6 +12,7 @@ script:
   - yarn test
   - yarn build
 
+before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
 
 cache:
