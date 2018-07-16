@@ -8,11 +8,6 @@ describe('Verify Build', () => {
     expect(exists).toBeTruthy();
   });
 
-  test('plugin exists', async () => {
-    const exists = await fs.pathExists(dir + '/plugins/gatsby-plugin-purgecss');
-    expect(exists).toBeTruthy();
-  });
-
   test('project has a build', async () => {
     const exists = await fs.pathExists(dir + '/public');
     expect(exists).toBeTruthy();
