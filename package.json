@@ -40,7 +40,7 @@
     "test:build": "jest build",
     "jest": "jest",
     "release": "node -r dotenv/config node_modules/release-it/bin/release-it.js",
-    "runjs": "node node_modules/runjs/bin/run.js"
+    "runjs": "run"
   },
   "files": [
     "index.js",
