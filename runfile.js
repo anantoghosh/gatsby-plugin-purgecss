@@ -6,7 +6,7 @@ const c = {
   build: 'babel src --out-dir .',
   buildTest: 'babel src --out-dir plugins/gatsby-plugin-purgecss',
   pack: 'npm pack',
-  installBuild: 'cd test_build && yarn',
+  installBuild: 'cd test_build && yarn cd ..',
   buildTestBuild: 'cd test_build && npm run build && cd ..',
   jestCoverage: 'jest --coverage',
   jestUnit: 'jest unit',
