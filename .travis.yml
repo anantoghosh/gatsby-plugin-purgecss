@@ -10,8 +10,7 @@ before_install:
 
 
 script:
-  - yarn test:ci
-  - yarn build
+  - yarn runjs test_ci
 
 before_script: greenkeeper-lockfile-update
 after_script:

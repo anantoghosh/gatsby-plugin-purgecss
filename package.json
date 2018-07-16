@@ -23,6 +23,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "release-it": "^7.4.7",
+    "runjs": "^4.3.2",
     "symlink-dir": "^1.1.3"
   },
   "dependencies": {
@@ -34,13 +35,12 @@
   },
   "scripts": {
     "build": "babel src --out-dir .",
-    "build:test": "babel src --out-dir plugins/gatsby-plugin-purgecss",
-    "build:test_build": "cd test_build && npm run build && cd ..",
-    "test": "npm run test:unit && npm run build:test && node prepareTests.js && npm run build:test_build && jest build_e2e.test.js",
-    "test:unit": "jest --testPathIgnorePatterns build_e2e.test.js .cache/",
-    "test:ci": "npm run build:test && node prepareTests.js && npm run build:test_build && jest --coverage",
+    "test": "run test",
+    "test:unit": "jest unit",
+    "test:build": "jest build",
     "jest": "jest",
-    "release": "node -r dotenv/config node_modules/release-it/bin/release-it.js"
+    "release": "node -r dotenv/config node_modules/release-it/bin/release-it.js",
+    "runjs": "node node_modules/runjs/bin/run.js"
   },
   "files": [
     "index.js",
