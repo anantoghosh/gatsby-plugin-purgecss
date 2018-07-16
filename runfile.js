@@ -12,7 +12,7 @@ const c = {
   jestUnit: 'jest unit',
   jestE2E: 'jest build',
   install(filename) {
-    return `cd test_build && yarn add -D file:/../${filename}`;
+    return `cd test_build && yarn add -D file:../${filename} && cd ..`;
   }
 };
 
