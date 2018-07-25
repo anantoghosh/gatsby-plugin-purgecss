@@ -9,6 +9,8 @@ before_install:
   - rm yarn.lock
   - yarn global add greenkeeper-lockfile
 
+install:
+  - yarn
 
 script:
   - yarn runjs test_ci
