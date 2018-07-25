@@ -18,7 +18,7 @@
     "gatsby-plugin-stylus": "^2.0.0-beta.4",
     "greenkeeper-lockfile": "^1.15.1",
     "jest": "^23.3.0",
-    "less": "^3.6.0",
+    "less": "^3.8.0",
     "node-sass": "^4.9.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
