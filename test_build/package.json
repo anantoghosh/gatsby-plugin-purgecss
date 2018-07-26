@@ -10,6 +10,11 @@
   "dependencies": {
     "gatsby": "next",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "gatsby-plugin-less": "next",
+    "gatsby-plugin-sass": "next",
+    "gatsby-plugin-stylus": "next",
+    "less": "latest",
+    "node-sass": "latest"
   }
 }
