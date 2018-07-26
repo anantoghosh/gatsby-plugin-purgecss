@@ -2,17 +2,21 @@ const { run } = require('runjs');
 const fs = require('fs-extra');
 const symlinkDir = require('symlink-dir');
 
+const pkgManager = process.env.CIRCLECI ? 'npm' : 'yarn';
+
 const c = {
   build: 'babel src --out-dir .',
   buildTest: 'babel src --out-dir plugins/gatsby-plugin-purgecss',
   pack: 'npm pack',
-  installBuild: 'cd test_build && yarn && cd ..',
-  listBuild: 'cd test_build && yarn list --depth=0 gatsby less node-sass gatsby-plugin-sass gatsby-plugin-less gatsby-plugin-stylus && cd ..',
+  installBuild: `cd test_build && ${pkgManager} install && cd ..`,
+  listBuild: `cd test_build && ${pkgManager} list --depth=0 gatsby less node-sass gatsby-plugin-sass gatsby-plugin-less gatsby-plugin-stylus && cd ..`,
   buildTestBuild: 'cd test_build && npm run build && cd ..',
   jestCoverage: 'jest --coverage',
   jestUnit: 'jest unit',
   jestE2E: 'jest build',
   install(filename) {
+    if (pkgManager === 'npm')
+      return `cd test_build && npm install ../${filename} && cd ..`;
     return `cd test_build && yarn add -D file:../${filename} && cd ..`;
   }
 };
