@@ -7,6 +7,7 @@ const c = {
   buildTest: 'babel src --out-dir plugins/gatsby-plugin-purgecss',
   pack: 'npm pack',
   installBuild: 'cd test_build && yarn && cd ..',
+  listBuild: 'cd test_build && npm ls --depth=0 && cd ..',
   buildTestBuild: 'cd test_build && npm run build && cd ..',
   jestCoverage: 'jest --coverage',
   jestUnit: 'jest unit',
@@ -25,6 +26,7 @@ function test_ci() {
 
   console.log('\nInstalling test_build packages');
   run(c.installBuild);
+  run(c.listBuild);
 
   console.log('\nInstalling gatsby-plugin-purgecss package');
   let files = fs.readdirSync('.', 'utf8');
