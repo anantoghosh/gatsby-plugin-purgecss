@@ -9,6 +9,7 @@ before_install:
   - yarn global add greenkeeper-lockfile
 
 script:
+  - npm ls --depth=0
   - yarn runjs test_ci
 
 before_script: greenkeeper-lockfile-update
