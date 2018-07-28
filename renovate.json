@@ -6,5 +6,6 @@
   "devDependencies": {
     "automerge": true
   },
-  "prCreation": "not-pending"
+  "prCreation": "not-pending",
+  "unpublishSafe": true
 }
