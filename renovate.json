@@ -7,7 +7,7 @@
     "automerge": true
   },
   "prCreation": "not-pending",
-  "unpublishSafe": true
+  "unpublishSafe": true,
   "packageRules": [
     {
       "packagePatterns": ["^gatsby"],
