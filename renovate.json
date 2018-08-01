@@ -8,4 +8,10 @@
   },
   "prCreation": "not-pending",
   "unpublishSafe": true
+  "packageRules": [
+    {
+      "packagePatterns": ["^gatsby"],
+      "unpublishSafe": false
+    }
+  ]
 }
