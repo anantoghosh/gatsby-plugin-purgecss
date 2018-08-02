@@ -4736,9 +4736,9 @@ gatsby-plugin-sass@2.0.0-beta.6:
     "@babel/runtime" "7.0.0-beta.52"
     sass-loader "^7.0.1"
 
-gatsby-plugin-stylus@2.0.0-beta.5:
-  version "2.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-stylus/-/gatsby-plugin-stylus-2.0.0-beta.5.tgz#3723c394bc6bd9a26f2e553073a06ca695831c31"
+gatsby-plugin-stylus@2.0.0-beta.6:
+  version "2.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-stylus/-/gatsby-plugin-stylus-2.0.0-beta.6.tgz#bb657bf5ae7857be81368cd447efd2eaadfdd18a"
   dependencies:
     "@babel/runtime" "7.0.0-beta.52"
     stylus "^0.54.5"
@@ -4752,9 +4752,9 @@ gatsby-react-router-scroll@^2.0.0-beta.3:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.0-beta.65:
-  version "2.0.0-beta.65"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.65.tgz#4f27815e51526c760fd1b53b96220de84ff7afb3"
+gatsby@2.0.0-beta.66:
+  version "2.0.0-beta.66"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.66.tgz#107dda9ddbf122bb5d5fbc5c1e1d1e6ca3a2b111"
   dependencies:
     "@babel/code-frame" "7.0.0-beta.52"
     "@babel/core" "7.0.0-beta.52"
