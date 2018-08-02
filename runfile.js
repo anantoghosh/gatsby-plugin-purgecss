@@ -11,7 +11,7 @@ const c = {
   installBuild: `cd test_build && ${pkgManager} install && cd ..`,
   listBuild: `cd test_build && ${pkgManager} list --depth=0 gatsby less node-sass gatsby-plugin-sass gatsby-plugin-less gatsby-plugin-stylus && cd ..`,
   buildTestBuild: 'cd test_build && npm run build && cd ..',
-  jestCoverage: 'jest --coverage',
+  jestCoverage: 'jest --ci --coverage',
   jestUnit: 'jest unit',
   jestE2E: 'jest build',
   install(filename) {
