@@ -4693,9 +4693,9 @@ gatsby-cli@^2.0.0-beta.12:
     yargs "^11.1.0"
     yurnalist "^0.2.1"
 
-gatsby-link@^2.0.0-beta.19:
-  version "2.0.0-beta.19"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.0-beta.19.tgz#be7fac160fb68082abedea768dfd72672d1a3a5f"
+gatsby-link@^2.0.0-beta.20:
+  version "2.0.0-beta.20"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.0-beta.20.tgz#0966b7c2f920df7b879506512e114344b353984b"
   dependencies:
     "@babel/runtime" "7.0.0-beta.52"
     "@reach/router" "^1.1.1"
@@ -4745,9 +4745,9 @@ gatsby-react-router-scroll@^2.0.0-beta.8:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.0-beta.93:
-  version "2.0.0-beta.93"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.93.tgz#12ed33e3cb0652b2dbc158a199fb26b7319740af"
+gatsby@2.0.0-beta.96:
+  version "2.0.0-beta.96"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.96.tgz#d79aff78531901f16aea740bcf96755dc0676332"
   dependencies:
     "@babel/code-frame" "7.0.0-beta.52"
     "@babel/core" "7.0.0-beta.52"
@@ -4805,7 +4805,7 @@ gatsby@2.0.0-beta.93:
     front-matter "^2.1.0"
     fs-extra "^5.0.0"
     gatsby-cli "^2.0.0-beta.12"
-    gatsby-link "^2.0.0-beta.19"
+    gatsby-link "^2.0.0-beta.20"
     gatsby-plugin-page-creator "^2.0.0-beta.5"
     gatsby-react-router-scroll "^2.0.0-beta.8"
     glob "^7.1.1"
