@@ -95,6 +95,26 @@ describe('Check purge status', async () => {
     });
   });
 
+  describe('Works with scss, (import style from "./file.scss")', () => {
+    test('Kept class selectors', async () => {
+      expect(html).toContain('#scss_ok');
+    });
+
+    test('Removed unused class selectors', async () => {
+      expect(html).not.toContain('#scss_no');
+    });
+  });
+
+  describe('Works with scss modules, (import style from "./file.module.scss")', () => {
+    test('Kept class selectors', async () => {
+      expect(html).toContain('#scss_module_ok');
+    });
+
+    test('Removed unused class selectors', async () => {
+      expect(html).not.toContain('#scss_module_no');
+    });
+  });
+
   describe('Works with less, (import style from "./file.less")', () => {
     test('Kept class selectors', async () => {
       expect(html).toContain('#less_ok');
