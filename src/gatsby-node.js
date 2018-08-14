@@ -4,9 +4,9 @@
  * @typedef {import('webpack').RuleSetLoader} RuleSetLoader
  */
 
-import { findLoader, insertLoader } from './utils';
+import { findLoader, insertLoader, color } from './utils';
 import path from './paths';
-import Logger from './shared';
+import { stats } from './shared';
 
 const loadersRegex = /stylus-loader|sass-loader|less-loader/;
 
@@ -14,7 +14,6 @@ export function onCreateWebpackConfig(
   { actions, stage, getConfig },
   { plugins, ...userOptions }
 ) {
-
   userOptions = {
     content: [path.src],
     rejected: true,
@@ -24,10 +23,14 @@ export function onCreateWebpackConfig(
   };
 
   if (userOptions.rejected && stage === 'build-html') {
+    console.log(color.FgGreen, `\ngatsby-plugin-purgecss:`);
+    console.log(color.FgCyan, `Previous CSS Size: ${stats.oldSize} KB`);
     console.log(
-      '\x1b[33m%s\x1b[0m',
-      `gatsby-plugin-purgecss removed ${Logger.removedQuantity} selectors`
+      color.FgCyan,
+      `New CSS Size: ${stats.newSize} KB (-${stats.percentChange}%)`
     );
+    console.log(color.FgYellow, `Removed ~${stats.sizeDifference} KB of CSS`);
+    console.log(color.Reset);
   }
 
   if (stage !== 'build-javascript') {

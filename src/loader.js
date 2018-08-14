@@ -6,7 +6,7 @@
 
 import PurgeCss from 'purgecss';
 import { getOptions } from 'loader-utils';
-import Logger from './shared';
+import { stats } from './shared';
 
 export default function loader(source) {
   // prettier-ignore
@@ -22,7 +22,9 @@ export default function loader(source) {
   if (options.rejected) {
     const rejected = css[0].rejected;
 
-    Logger.add(rejected.length);
+    stats.add(rejected.length);
+    stats.addSize(source);
+    stats.addRemovedSize(css[0].css);
 
     if (options.printRejected && Array.isArray(rejected)) {
       const filtered = rejected.map(val => {
