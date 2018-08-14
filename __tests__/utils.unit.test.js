@@ -71,10 +71,12 @@ describe('Utils Tests', () => {
       const index = findLoader(useConfig1, otherLoadersRegex);
       expect(index).toBe(3);
     });
+
     it('Should not find any loaders', () => {
       const index = findLoader(useConfig2, otherLoadersRegex);
       expect(index).toBe(null);
     });
+
     it('Should find sass loader in path', () => {
       const index = findLoader(useConfig3, otherLoadersRegex);
       expect(index).toBe(2);
@@ -86,10 +88,12 @@ describe('Utils Tests', () => {
       insertLoader(useConfig1, 3, { loader: 'added' });
       expect(useConfig1).toMatchObject(useConfig1Matcher);
     });
+
     it('Should insert loader at correct index', () => {
       insertLoader(useConfig3, 2, { loader: 'added' });
       expect(useConfig3).toMatchObject(useConfig3Matcher);
     });
+
     it('Should not do anything if index null', () => {
       insertLoader(useConfig2, null, { loader: 'added' });
       expect(useConfig2).toMatchObject(useConfig2);
