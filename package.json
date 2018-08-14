@@ -46,7 +46,8 @@
     "gatsby-node.js",
     "loader.js",
     "utils.js",
-    "paths.js"
+    "paths.js",
+    "shared.js"
   ],
   "repository": {
     "type": "git",

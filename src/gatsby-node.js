@@ -6,6 +6,7 @@
 
 import { findLoader, insertLoader } from './utils';
 import path from './paths';
+import Logger from './shared';
 
 const loadersRegex = /stylus-loader|sass-loader|less-loader/;
 
@@ -13,17 +14,27 @@ export function onCreateWebpackConfig(
   { actions, stage, getConfig },
   { plugins, ...userOptions }
 ) {
+
+  userOptions = {
+    content: [path.src],
+    rejected: true,
+    printRejected: false,
+    whitelist: ['html', 'body'],
+    ...userOptions
+  };
+
+  if (userOptions.rejected && stage === 'build-html') {
+    console.log(
+      '\x1b[33m%s\x1b[0m',
+      `gatsby-plugin-purgecss removed ${Logger.removedQuantity} selectors`
+    );
+  }
+
   if (stage !== 'build-javascript') {
     return;
   }
 
   const { setWebpackConfig } = actions;
-
-  userOptions = {
-    content: [path.src],
-    whitelist: ['html', 'body'],
-    ...userOptions
-  };
 
   /**
    * @type {WebpackConfig}
