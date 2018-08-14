@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "moduleResolution": "node",
+    "lib": ["es2016"]
+  },
+  "files": [
+    "src/**/*"
+  ]
+}
