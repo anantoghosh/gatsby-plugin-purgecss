@@ -6,9 +6,7 @@
 
 import PurgeCss from 'purgecss';
 import { getOptions } from 'loader-utils';
-import { stats } from './shared';
-import util from 'util';
-import fs from 'fs-extra';
+import { stats, Debug } from './shared';
 
 export default function loader(source) {
   // prettier-ignore
@@ -16,7 +14,7 @@ export default function loader(source) {
   /** @type {OptionObject & {content:string[], rejected?:boolean}} */
   (getOptions(this));
 
-  let css = '';
+  let css;
   try {
     css = new PurgeCss({
       css: [{ raw: source, extension: 'css' }],
@@ -28,14 +26,7 @@ export default function loader(source) {
     );
 
     if (options.debug) {
-      console.debug(
-        'gatsby-plugin-purgecss: Writing errors to gatsby-plugin-purgecss-debug.js'
-      );
-      fs.appendFileSync(
-        'gatsby-plugin-purgecss-debug.js',
-        util.inspect(error),
-        'utf8'
-      );
+      Debug.writeAppendError(error);
     } else {
       console.log('Use debug option to investigate further.');
     }

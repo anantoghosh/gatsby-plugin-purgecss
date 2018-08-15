@@ -4,11 +4,9 @@
  * @typedef {import('webpack').RuleSetLoader} RuleSetLoader
  */
 
-import { findLoader, insertLoader, color } from './utils';
+import { findLoader, insertLoader } from './utils';
 import path from './paths';
-import { stats } from './shared';
-import util from 'util';
-import fs from 'fs-extra';
+import { stats, Debug } from './shared';
 
 const loadersRegex = /stylus-loader|sass-loader|less-loader/;
 
@@ -26,14 +24,7 @@ export function onCreateWebpackConfig(
   };
 
   if (userOptions.rejected && stage === 'build-html') {
-    console.log(color.FgGreen, `\ngatsby-plugin-purgecss:`);
-    console.log(color.FgCyan, `Previous CSS Size: ${stats.oldSize} KB`);
-    console.log(
-      color.FgCyan,
-      `New CSS Size: ${stats.newSize} KB (-${stats.percentChange}%)`
-    );
-    console.log(color.FgYellow, `Removed ~${stats.sizeDifference} KB of CSS`);
-    console.log(color.Reset);
+    stats.printStats();
   }
 
   if (stage !== 'build-javascript') {
@@ -84,13 +75,6 @@ export function onCreateWebpackConfig(
   });
 
   if (userOptions.debug) {
-    console.debug(
-      '\ngatsby-plugin-purgecss: Writing config to gatsby-plugin-purgecss-debug-config.js'
-    );
-    fs.writeFileSync(
-      'gatsby-plugin-purgecss-debug-config.js',
-      util.inspect(getConfig(), { depth: 15 }),
-      'utf8'
-    );
+    Debug.writeConfig(getConfig());
   }
 }
