@@ -70,7 +70,7 @@ export function onCreateWebpackConfig(
    * @type {RuleSetRule}
    */
   const purgecssRule = {
-    test: /.css$/,
+    test: /\.css$/,
     use: [purgecssloader]
   };
 
