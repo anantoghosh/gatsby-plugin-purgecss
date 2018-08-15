@@ -14,9 +14,9 @@ For Gatsby 2 only
 
 ## What is this plugin about?
 
-**This plugin allows Gatsby to remove unused css from css/sass/less/stylus files and modules using [purgecss](https://github.com/FullHuman/purgecss).**  
+**Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎇**  
 
-> **Please read [Help! Purgecss breaks my site 😯](#) to make sure gatsby-plugin-purgecss does not cause you issues**
+> **Please read [Help! Purgecss breaks my site 😯](#help-purgecss-breaks-my-site-) to make sure gatsby-plugin-purgecss does not cause you issues**
 
 ### Demo
 When used in [gatsby-starter-bootstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap)
@@ -79,7 +79,7 @@ import style from './style.css';
 ```
 Here `.my-selector` **will get removed** since purgecss by default cannot match it with `mySelector`.
 
-**Read how to solve this issue in the ["Whitelist Solutions"](#) section.**
+**Read how to solve this issue in the ["Whitelist Solutions"](#whitelist-solutions) section.**
 
 *Note: Directly importing and using the selector name as is will work as intended*
 ```jsx
@@ -88,7 +88,12 @@ import './style.css';
 ```
 #### Issue 3: Styles getting purged even though the script file has selector names
 Make sure that the script file is in the `src` folder.
-If you want to look for selectors in another folder, use the [`content` option.](#)
+If you want to look for selectors in another folder, use the [`content` option.](#options)
+
+#### Issue 4: Getting "Could not parse file, skipping. Your build will not break."
+> If you use postcss syntax based plugins then read [this](#using-with-postcss-syntax-plugins).
+
+Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#options).  Also, feel free to create a github issue.
 
 ### Whitelist Solutions
 You can use any of these techniques to stop purgecss from removing required styles
@@ -110,7 +115,7 @@ This comment can be in any script file inside `src`.
 whitelistPatterns: [/^btn/]
 ```
 For eg, this pattern will whitelist all selectors starting with btn: btn btn-primary btn-secondary etc.
-Look at the [`whitelistPatternsChildren` option](#) in purgecss to also whitelist children of the selectors.
+Look at the [`whitelistPatternsChildren` option](https://www.purgecss.com/configuration) in purgecss to also whitelist children of the selectors.
 ##### 5. Use purgecss ignore comment in css file
 ```css
 /* purgecss ignore */
@@ -154,6 +159,9 @@ Since html and body tags do not appear in `src/` files, it is whitelisted by def
 If there is a need to modify the whitelist, it is recommended to keep these tags and append the required selectors using the option
 `whitelist: ['html', 'body', 'my-selector']`
 
+### Using with postcss syntax plugins
+`gatsby-plugin-purgecss` is executed before postcss loader and can only purge css syntax. If you are using any syntax based postcss plugin, then it may not get purged. In such cases you will see "Could not parse file, skipping. Your build will not break." message. `gatsby-plugin-purgecss` will simply ignore the file and continue without issue.
+It would be better if you use purgecss postcss plugin directly instead.
 ## Options
 
 This plugins supports most purgecss options as is (except `css`).
