@@ -134,4 +134,40 @@ describe('Check purge status', async () => {
       expect(html).not.toContain('#less_module_no');
     });
   });
+
+  describe('Does not remove whitelisted selectors', () => {
+    test('Kept direct class whitelist selector', async () => {
+      expect(html).toContain('#whitelist_ok');
+    });
+
+    test('Kept whitelistPattern selectors', async () => {
+      expect(html).toContain('#whitelist_regex_ok');
+    });
+
+    test('Kept single comment ignore selector', async () => {
+      expect(html).toContain('#whitelist_comment_ok');
+    });
+
+    test('Kept block comment ignore selector', async () => {
+      expect(html).toContain('#whitelist_commentblock_ok');
+    });
+
+    test('Kept block comment ignore selector 2', async () => {
+      expect(html).toContain('#whitelist_commentblock2_ok');
+    });
+  });
+
+  describe('Matches dashed selectors', () => {
+    test('Kept btn-large style.btnLarge', async () => {
+      expect(html).toContain('#dash_name_ok');
+    });
+
+    test(`Kept btn-medium style['btn-medium']`, async () => {
+      expect(html).toContain('#dash_name2_ok');
+    });
+
+    test('Kept btn_small style.btn_small', async () => {
+      expect(html).toContain('#underscore_name_ok');
+    });
+  });
 });
