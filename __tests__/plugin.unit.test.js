@@ -1,5 +1,7 @@
 import { onCreateWebpackConfig } from '../src/gatsby-node';
 import configData from '../testData';
+import fs from 'fs-extra';
+jest.mock('fs-extra');
 
 jest.mock(`../src/paths`, () => ({
   src: 'src/**/!(*.d).{ts,js,jsx,tsx}',
@@ -19,19 +21,35 @@ describe(`gatsby-plugin-pugrecss`, () => {
   });
 
   let stage = ['build-javascript', 'build-html'];
-  const options = {
-    plugins: []
-  };
+  const options = [
+    {
+      plugins: []
+    },
+    {
+      plugins: [],
+      rejected: false
+    },
+    {
+      plugins: [],
+      debug: true
+    },
+    {
+      plugins: [],
+      whitelist: ['.html']
+    }
+  ];
 
-  it(`build-javascript: Should match snapshot`, () => {
-    onCreateWebpackConfig({ actions, stage: stage[0], getConfig }, options);
-    expect(actions.replaceWebpackConfig).toMatchSnapshot();
-    expect(actions.setWebpackConfig).toMatchSnapshot();
-  });
+  options.forEach((options, index) => {
+    it(`build-javascript: Should match snapshot ${index}`, () => {
+      onCreateWebpackConfig({ actions, stage: stage[0], getConfig }, options);
+      expect(actions.replaceWebpackConfig).toMatchSnapshot();
+      expect(actions.setWebpackConfig).toMatchSnapshot();
+    });
 
-  it(`build-html: Should match snapshot`, () => {
-    onCreateWebpackConfig({ actions, stage: stage[1], getConfig }, options);
-    expect(actions.replaceWebpackConfig).toMatchSnapshot();
-    expect(actions.setWebpackConfig).toMatchSnapshot();
+    it(`build-html: Should match snapshot ${index}`, () => {
+      onCreateWebpackConfig({ actions, stage: stage[1], getConfig }, options);
+      expect(actions.replaceWebpackConfig).toMatchSnapshot();
+      expect(actions.setWebpackConfig).toMatchSnapshot();
+    });
   });
 });

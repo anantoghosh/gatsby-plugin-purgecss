@@ -77,7 +77,10 @@ export class Debug {
     } catch (error) {
       console.log('\nCould not write file.');
       console.log(error);
+      return -1;
     }
+
+    return 0;
   }
 
   static writeAppendError(error) {
@@ -94,6 +97,9 @@ export class Debug {
     } catch (error) {
       console.log('\nCould not write file.');
       console.log(error);
+      return -1;
     }
+
+    return 0;
   }
 }
