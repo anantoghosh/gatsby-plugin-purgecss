@@ -16,6 +16,14 @@ For Gatsby 2 only
 
 This plugin allows Gatsby to remove unused css from css/sass/less/stylus files and modules using [purgecss](https://github.com/FullHuman/purgecss).
 
+### Demo
+When used in [gatsby-starter-bootstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap)
+
+![demo](https://anantoghosh.github.io/files/gatsby-starter-bootstrap.png)
+
+When used in [gatsby-starter-bootstrap-cv](https://github.com/mhjadav/gatsby-starter-bootstrap-cv) (installed by default)
+
+![demo](https://anantoghosh.github.io/files/gatsby-starter-bootstrap-cv.png)
 ## Supported files
 
 - `.css` , `.module.css`
@@ -26,7 +34,7 @@ This plugin allows Gatsby to remove unused css from css/sass/less/stylus files a
 ## Installation
 
 ```sh
-npm i --save-dev gatsby-plugin-purgecss
+npm i gatsby-plugin-purgecss
 ```
 
 ### Usage
@@ -51,7 +59,11 @@ module.exports = {
 ### Running
 
 This plugin only runs when building the project (`gatsby build`).  
-It will print "gatsby-plugin-purgecss removed *x* selectors" where `x` is the number of selectors removed.
+It will print the amount of css removed.
+
+### Size reporting
+The size reported by this plugin is the approximate size of the css content *before* any optimizations have been performed.  
+The actual file size should be smaller.
 
 ### Selector matching
 
@@ -74,7 +86,7 @@ This plugins supports most purgecss options as is (except `css`).
   resolve: `gatsby-plugin-purgecss`,
   options: {
     /**
-     * Print the number of removed selectors.
+     * Print the amount of css removed.
      * default: true
      **/
     rejected?: boolean,
@@ -86,7 +98,6 @@ This plugins supports most purgecss options as is (except `css`).
      **/
     printRejected?: boolean,
 
-
     /**
      * Stops from removing these selectors.
      * default: ['html', 'body']
@@ -94,6 +105,12 @@ This plugins supports most purgecss options as is (except `css`).
      **/
     whitelist?: Array<string>,
 
+    /**
+     * Enable debugging
+     * It will write two files to disk. One with your webpack config and another with the errors encountered.
+     * default: false
+     **/
+    debug?: boolean,
 
     /**
      * These options are available but not used by default.
