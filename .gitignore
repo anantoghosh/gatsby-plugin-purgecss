@@ -66,3 +66,4 @@ plugins
 /loader.js
 /utils.js
 /paths.js
+/shared.js
