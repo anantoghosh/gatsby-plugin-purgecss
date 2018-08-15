@@ -7,6 +7,8 @@
 import PurgeCss from 'purgecss';
 import { getOptions } from 'loader-utils';
 import { stats } from './shared';
+import util from 'util';
+import fs from 'fs-extra';
 
 export default function loader(source) {
   // prettier-ignore
@@ -14,10 +16,32 @@ export default function loader(source) {
   /** @type {OptionObject & {content:string[], rejected?:boolean}} */
   (getOptions(this));
 
-  const css = new PurgeCss({
-    css: [{ raw: source, extension: 'css' }],
-    ...options
-  }).purge();
+  let css = '';
+  try {
+    css = new PurgeCss({
+      css: [{ raw: source, extension: 'css' }],
+      ...options
+    }).purge();
+  } catch (error) {
+    console.log(
+      '\ngatsby-plugin-purgecss: Could not parse file, skipping. Your build will not break.'
+    );
+
+    if (options.debug) {
+      console.debug(
+        'gatsby-plugin-purgecss: Writing errors to gatsby-plugin-purgecss-debug.js'
+      );
+      fs.appendFileSync(
+        'gatsby-plugin-purgecss-debug.js',
+        util.inspect(error),
+        'utf8'
+      );
+    } else {
+      console.log('Use debug option to investigate further.');
+    }
+
+    return source;
+  }
 
   if (options.rejected) {
     const rejected = css[0].rejected;

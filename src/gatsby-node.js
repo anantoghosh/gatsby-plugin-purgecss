@@ -7,6 +7,8 @@
 import { findLoader, insertLoader, color } from './utils';
 import path from './paths';
 import { stats } from './shared';
+import util from 'util';
+import fs from 'fs-extra';
 
 const loadersRegex = /stylus-loader|sass-loader|less-loader/;
 
@@ -18,6 +20,7 @@ export function onCreateWebpackConfig(
     content: [path.src],
     rejected: true,
     printRejected: false,
+    debug: false,
     whitelist: ['html', 'body'],
     ...userOptions
   };
@@ -79,4 +82,15 @@ export function onCreateWebpackConfig(
       rules: [purgecssRule]
     }
   });
+
+  if (userOptions.debug) {
+    console.debug(
+      '\ngatsby-plugin-purgecss: Writing config to gatsby-plugin-purgecss-debug-config.js'
+    );
+    fs.writeFileSync(
+      'gatsby-plugin-purgecss-debug-config.js',
+      util.inspect(getConfig(), { depth: 15 }),
+      'utf8'
+    );
+  }
 }

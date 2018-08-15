@@ -177,6 +177,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                         "content": Array [
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
+                        "debug": false,
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
@@ -219,6 +220,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                         "content": Array [
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
+                        "debug": false,
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
@@ -264,6 +266,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                         "content": Array [
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
+                        "debug": false,
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
@@ -305,6 +308,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                         "content": Array [
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
+                        "debug": false,
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
@@ -350,6 +354,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                         "content": Array [
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
+                        "debug": false,
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
@@ -391,6 +396,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1`] = `
                         "content": Array [
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
+                        "debug": false,
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
@@ -443,7 +449,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2`] = `
         "module": Object {
           "rules": Array [
             Object {
-              "test": /\\.css\\$/,
+              "test": /\\\\\\.css\\$/,
               "use": Array [
                 Object {
                   "loader": "path/loader.js",
@@ -451,6 +457,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2`] = `
                     "content": Array [
                       "src/**/!(*.d).{ts,js,jsx,tsx}",
                     ],
+                    "debug": false,
                     "printRejected": false,
                     "rejected": true,
                     "whitelist": Array [
