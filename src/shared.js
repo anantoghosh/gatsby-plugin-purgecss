@@ -34,6 +34,10 @@ class Stats {
   }
 
   get percentChange() {
+    if (this.totalCssSize <= 0) {
+      return '0.00';
+    }
+
     return (
       ((this.totalCssSize - this.purgedCssSize) / this.totalCssSize) *
       100
