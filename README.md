@@ -104,7 +104,7 @@ Eg:
 ```js
 content: [
   path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}'),
-  path.join(process.cwd(), 'node_modules/my-npm-package/!(*.d).{ts,js,jsx,tsx}')
+  path.join(process.cwd(), 'node_modules/my-npm-package/folder-to-match/!(*.d).{ts,js,jsx,tsx}')
 ];
 ```
 You could also try whitelisting the required selectors as described in the next section.
