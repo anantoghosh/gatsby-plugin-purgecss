@@ -99,10 +99,10 @@ Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any i
 You can use any of these techniques to stop purgecss from removing required styles
 ##### 1. Whitelist the selector using the whitelist option in gatsby-config.js
 ```js
-whitelist: ['html', 'body', 'my-selector']
+whitelist: ['my-selector']
 ```
 ##### 2. For selector with dashes in them and using named imports.
-You **could** write it like `className={style['my-selector']}` instead
+You *could* write it like `className={style['my-selector']}` instead.
 ##### 3. Use a JavaScript comment
 ```jsx
 // my-selector
@@ -114,7 +114,7 @@ This comment can be in any script file inside `src`.
 ```js
 whitelistPatterns: [/^btn/]
 ```
-For eg, this pattern will whitelist all selectors starting with btn: btn btn-primary btn-secondary etc.
+For eg, this pattern will whitelist all selectors starting with btn: btn btn-primary btn-secondary etc.  
 Look at the [`whitelistPatternsChildren` option](https://www.purgecss.com/configuration) in purgecss to also whitelist children of the selectors.
 ##### 5. Use purgecss ignore comment in css file
 ```css
