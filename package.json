@@ -38,7 +38,7 @@
     "test:unit": "jest unit",
     "test:build": "jest build",
     "jest": "jest",
-    "release": "node -r dotenv/config node_modules/release-it/bin/release-it.js",
+    "release": "git branch && node -r dotenv/config node_modules/release-it/bin/release-it.js",
     "runjs": "run"
   },
   "files": [
