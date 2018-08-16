@@ -64,6 +64,8 @@ This section documents purgecss behavior in removing unused css. Most of the rul
 #### Issue 1: CSS file not getting purged
 For `gatsby-plugin-purgecss` to work on a css file it **must be imported by a script file inside your src folder**. This plugin depends on webpack to process css. **If webpack does not use the css file then `gatsby-plugin-purgecss` cannot process it.**
 
+Also, make sure that you [included the plugin](#usage) after sass/less/stylus plugins. 
+
 #### Issue 2: Selectors with dashes in name gets removed when used with named imports
 For eg:
 **style.css**
