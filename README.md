@@ -14,7 +14,7 @@ For Gatsby 2 only
 
 ## What is this plugin about?
 
-**Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎇**  
+**Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎉**  
 
 > **Please read [Help! Purgecss breaks my site 😯](#help-purgecss-breaks-my-site-) to make sure gatsby-plugin-purgecss does not cause you issues**
 
