@@ -87,13 +87,13 @@ import './style.css';
 <div className={`my-selector`} /> ✅
 ```
 #### Issue 3: Styles getting purged even though the script file has selector names
-Make sure that the script file is in the `src` folder.
+Make sure that the script file is in the `src` folder.  
 If you want to look for selectors in another folder, use the [`content` option.](#options)
 
 #### Issue 4: Getting "Could not parse file, skipping. Your build will not break."
 > If you use postcss syntax based plugins then read [this](#using-with-postcss-syntax-plugins).
 
-Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#options).  Also, feel free to create a github issue.
+Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#options).  Also, feel free to create a GitHub issue.
 
 ### Whitelist Solutions
 You can use any of these techniques to stop purgecss from removing required styles
@@ -156,8 +156,7 @@ This plugin loads css files (or transformed output from css plugins) and searche
 ### Whitelist ['html', 'body']
 
 Since html and body tags do not appear in `src/` files, it is whitelisted by default to not be removed.  
-If there is a need to modify the whitelist, it is recommended to keep these tags and append the required selectors using the option
-`whitelist: ['html', 'body', 'my-selector']`
+After v2.3.0, manually including 'html', 'body' is no longer required.
 
 ### Using with postcss syntax plugins
 `gatsby-plugin-purgecss` is executed before postcss loader and can only purge css syntax. If you are using any syntax based postcss plugin, then it may not get purged. In such cases you will see "Could not parse file, skipping. Your build will not break." message. `gatsby-plugin-purgecss` will simply ignore the file and continue without issue.
@@ -187,8 +186,8 @@ This plugins supports most purgecss options as is (except `css`).
 
     /**
      * Stops from removing these selectors.
-     * default: ['html', 'body']
-     * If you want to whitelist more selectors, make sure to include 'html', 'body' in the array.
+     * ['html', 'body'] are always whitelisted
+     * since v2.3.0 manually including 'html', 'body' is no longer required
      **/
     whitelist?: Array<string>,
 
