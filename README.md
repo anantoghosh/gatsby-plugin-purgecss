@@ -101,7 +101,7 @@ You can use any of these techniques to stop purgecss from removing required styl
 ```js
 whitelist: ['my-selector']
 ```
-##### 2. For selector with dashes in them and using named imports.
+##### 2. For selector with dashes in them and using named imports
 You *could* write it like `className={style['my-selector']}` instead.
 ##### 3. Use a JavaScript comment
 ```jsx
@@ -156,7 +156,7 @@ This plugin loads css files (or transformed output from css plugins) and searche
 ### Whitelist ['html', 'body']
 
 Since html and body tags do not appear in `src/` files, it is whitelisted by default to not be removed.  
-After v2.3.0, manually including 'html', 'body' is no longer required.
+Since v2.3.0, manually including 'html', 'body' is no longer required.
 
 ### Using with postcss syntax plugins
 `gatsby-plugin-purgecss` is executed before postcss loader and can only purge css syntax. If you are using any syntax based postcss plugin, then it may not get purged. In such cases you will see "Could not parse file, skipping. Your build will not break." message. `gatsby-plugin-purgecss` will simply ignore the file and continue without issue.
