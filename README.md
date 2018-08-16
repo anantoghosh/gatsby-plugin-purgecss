@@ -14,7 +14,9 @@ For Gatsby 2 only
 
 ## What is this plugin about?
 
-This plugin allows Gatsby to remove unused css from css/sass/less/stylus files and modules using [purgecss](https://github.com/FullHuman/purgecss).
+**Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎉**  
+
+> **Please read [Help! Purgecss breaks my site 😯](#help-purgecss-breaks-my-site-) to make sure gatsby-plugin-purgecss does not cause you issues**
 
 ### Demo
 When used in [gatsby-starter-bootstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap)
@@ -53,6 +55,90 @@ module.exports = {
   ]
 };
 ```
+  
+## Help! Purgecss breaks my site 😯
+
+**Make Purgecss behave correctly for your project**  
+This section documents purgecss behavior in removing unused css. Most of the rules apply in any project and is not `gatsby-plugin-purgecss` specific.
+
+#### Issue 1: CSS file not getting purged
+For `gatsby-plugin-purgecss` to work on a css file it **must be imported by a script file inside your src folder**. This plugin depends on webpack to process css. **If webpack does not use the css file then `gatsby-plugin-purgecss` cannot process it.**
+
+Also, make sure that you [included the plugin](#usage) after sass/less/stylus plugins. 
+
+#### Issue 2: Selectors with dashes in name gets removed when used with named imports
+For eg:
+**style.css**
+```css
+.my-selector { color: 'white' }
+```
+**index.js**
+```jsx
+// Named import
+import style from './style.css';
+...
+<div className={style.mySelector} /> ❌
+```
+Here `.my-selector` **will get removed** since purgecss by default cannot match it with `mySelector`.
+
+**Read how to solve this issue in the ["Whitelist Solutions"](#whitelist-solutions) section.**
+
+*Note: Directly importing and using the selector name as is will work as intended*
+```jsx
+import './style.css';
+<div className={`my-selector`} /> ✅
+```
+#### Issue 3: Styles getting purged even though the script file has selector names
+Make sure that the script file is in the `src` folder.  
+If you want to look for selectors in another folder, use the [`content` option.](#options)
+
+#### Issue 4: Getting "Could not parse file, skipping. Your build will not break."
+> If you use postcss syntax based plugins then read [this](#using-with-postcss-syntax-plugins).
+
+Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#options).  Also, feel free to create a GitHub issue.
+
+### Whitelist Solutions
+You can use any of these techniques to stop purgecss from removing required styles
+##### 1. Whitelist the selector using the whitelist option in gatsby-config.js
+```js
+whitelist: ['my-selector']
+```
+##### 2. For selector with dashes in them and using named imports
+You *could* write it like `className={style['my-selector']}` instead.
+##### 3. Use a JavaScript comment
+```jsx
+// my-selector
+<div className={style.mySelector} />
+```
+This comment can be in any script file inside `src`.
+##### 4.  Use Regex pattern to exclude many selectors
+`whitelistPatterns` option is available from purgecss
+```js
+whitelistPatterns: [/^btn/]
+```
+For eg, this pattern will whitelist all selectors starting with btn: btn btn-primary btn-secondary etc.  
+Look at the [`whitelistPatternsChildren` option](https://www.purgecss.com/configuration) in purgecss to also whitelist children of the selectors.
+##### 5. Use purgecss ignore comment in css file
+```css
+/* purgecss ignore */
+.my-selector { color: 'white' }
+```
+This comment will ignore the selector on the next line.
+##### 5. Use purgecss ignore block comments in css file
+```css
+/* purgecss start ignore */
+button { color: 'white' };
+.yo { color: 'blue' };
+/* purgecss end ignore */
+```
+This comment pair will ignore all css selectors between them.
+
+### Improving Purgecss selector detection
+Purgecss relies on extractors to get the list of selector used in a file. The default extractor considers every word of a file as a selector.
+You could use your own extractor (or get one made by other community members) to improve detection and further decrease your css file size.
+[Read more at Purgecss docs.](https://www.purgecss.com/extractors)
+
+If you do find/write a better extractor suited for Gatsby, please help me add it to the docs. 
 
 ## Important Notes
 
@@ -72,9 +158,11 @@ This plugin loads css files (or transformed output from css plugins) and searche
 ### Whitelist ['html', 'body']
 
 Since html and body tags do not appear in `src/` files, it is whitelisted by default to not be removed.  
-If there is a need to modify the whitelist, it is recommended to keep these tags and append the required selectors using the option
-`whitelist: ['html', 'body', '.my-selector']`
+Since v2.3.0, manually including 'html', 'body' is no longer required.
 
+### Using with postcss syntax plugins
+`gatsby-plugin-purgecss` is executed before postcss loader and can only purge css syntax. If you are using any syntax based postcss plugin, then it may not get purged. In such cases you will see "Could not parse file, skipping. Your build will not break." message. `gatsby-plugin-purgecss` will simply ignore the file and continue without issue.
+It would be better if you use purgecss postcss plugin directly instead.
 ## Options
 
 This plugins supports most purgecss options as is (except `css`).
@@ -100,8 +188,8 @@ This plugins supports most purgecss options as is (except `css`).
 
     /**
      * Stops from removing these selectors.
-     * default: ['html', 'body']
-     * If you want to whitelist more selectors, make sure to include 'html', 'body' in the array.
+     * ['html', 'body'] are always whitelisted
+     * since v2.3.0 manually including 'html', 'body' is no longer required
      **/
     whitelist?: Array<string>,
 
@@ -121,7 +209,6 @@ This plugins supports most purgecss options as is (except `css`).
     whitelistPatternsChildren?: Array<RegExp>,
     keyframes?: boolean,
     fontFace?: boolean,
-
 
     /**
      * Files to search for selectors.

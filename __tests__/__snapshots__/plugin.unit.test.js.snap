@@ -1942,6 +1942,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
+                          "html",
+                          "body",
                           ".html",
                         ],
                       },
@@ -2029,6 +2031,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
+                          "html",
+                          "body",
                           ".html",
                         ],
                       },
@@ -2119,6 +2123,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
+                          "html",
+                          "body",
                           ".html",
                         ],
                       },
@@ -2205,6 +2211,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
+                          "html",
+                          "body",
                           ".html",
                         ],
                       },
@@ -2295,6 +2303,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
+                          "html",
+                          "body",
                           ".html",
                         ],
                       },
@@ -2381,6 +2391,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "printRejected": false,
                         "rejected": true,
                         "whitelist": Array [
+                          "html",
+                          "body",
                           ".html",
                         ],
                       },
@@ -2441,6 +2453,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 2`] = 
                     "printRejected": false,
                     "rejected": true,
                     "whitelist": Array [
+                      "html",
+                      "body",
                       ".html",
                     ],
                   },

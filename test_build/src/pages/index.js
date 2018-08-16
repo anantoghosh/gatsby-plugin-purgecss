@@ -10,6 +10,8 @@ import scss from './scss.scss';
 import scssModule from './scss.module.scss';
 import less from './less.less';
 import lessModule from './less.module.less';
+import './whitelisted.css';
+import other from './other.css';
 
 export default () => (
   <div className="global-ok">
@@ -23,5 +25,9 @@ export default () => (
     <div className={scssModule.scssModuleOk} />
     <div className={less.lessOk} />
     <div className={lessModule.lessModuleOk} />
+    //btn-large
+    <div className={other.btnLarge} />
+    <div className={other.btn_small} />
+    <div className={other['btn-medium']} />
   </div>
 );
