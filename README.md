@@ -97,6 +97,18 @@ If you want to look for selectors in another folder, use the [`content` option.]
 
 Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#options).  Also, feel free to create a GitHub issue.
 
+#### Issue 5: Using 3rd party npm packages with components which import css files
+If you import a npm package which imports its own styles locally, then gatsby-plugin-purgecss will incorrectly remove all the css imported by the package. It's because by default the selectors are only matched with the files under 'src' folder.  
+To get around this, use the [`content` option](#options) and add the package's path.
+Eg:
+```js
+content: [
+  path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}'),
+  path.join(process.cwd(), 'node_modules/my-npm-package/!(*.d).{ts,js,jsx,tsx}')
+];
+```
+You could also try whitelisting the required selectors as described in the next section.
+
 ### Whitelist Solutions
 You can use any of these techniques to stop purgecss from removing required styles
 ##### 1. Whitelist the selector using the whitelist option in gatsby-config.js
