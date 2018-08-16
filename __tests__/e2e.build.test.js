@@ -25,6 +25,16 @@ describe('Check purge status', async () => {
     html = await fs.readFile(dir + '/public/index.html', 'utf-8');
   });
 
+  describe('Keeps html and body selectors', () => {
+    test('Kept html selector', async () => {
+      expect(html).toContain('#html_ok');
+    });
+
+    test(`Kept body selector`, async () => {
+      expect(html).toContain('#body_ok');
+    });
+  });
+
   describe('Works with direct css imports, (import "./file.css")', () => {
     test('Kept class selectors', async () => {
       expect(html).toContain('#global_ok');

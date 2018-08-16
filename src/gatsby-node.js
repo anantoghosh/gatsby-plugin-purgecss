@@ -14,12 +14,19 @@ export function onCreateWebpackConfig(
   { actions, stage, getConfig },
   { plugins, ...userOptions }
 ) {
+  const whitelist = ['html', 'body'];
+
+  if (userOptions.whitelist) {
+    userOptions.whitelist = [...whitelist, ...userOptions.whitelist];
+  } else {
+    userOptions.whitelist = whitelist;
+  }
+
   userOptions = {
     content: [path.src],
     rejected: true,
     printRejected: false,
     debug: false,
-    whitelist: ['html', 'body'],
     ...userOptions
   };
 

@@ -6,7 +6,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
-        whitelist: ['html', 'body', 'whitelist'],
+        whitelist: ['whitelist'],
         whitelistPatterns: [/Regex$/]
       }
     }

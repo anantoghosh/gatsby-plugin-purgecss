@@ -5,3 +5,11 @@
 .global-no {
   background: url('#global_no');
 }
+
+html {
+  background: url('#html_ok');
+}
+
+body {
+  background: url('#body_ok');
+}
