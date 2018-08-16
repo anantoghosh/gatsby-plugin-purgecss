@@ -18,6 +18,8 @@ For Gatsby 2 only
 
 > **Please read [Help! Purgecss breaks my site 😯](#help-purgecss-breaks-my-site-) to make sure gatsby-plugin-purgecss does not cause you issues**
 
+[Read the most recent docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/README.md)
+
 ### Demo
 When used in [gatsby-starter-bootstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap)
 
