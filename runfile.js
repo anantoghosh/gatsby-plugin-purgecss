@@ -76,7 +76,19 @@ function test() {
     .catch(err => console.error(err));
 }
 
+function teste2e() {
+  console.log('\nBuilding to plugins folder');
+  run(c.buildTest);
+
+  console.log('\nRunning gatsby build in test_build');
+  run(c.buildTestBuild);
+
+  console.log('\nRunning e2e tests');
+  run(c.jestE2E);
+}
+
 module.exports = {
   test_ci,
+  teste2e,
   test
 };
