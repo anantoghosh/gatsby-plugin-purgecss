@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-purgecss",
   "description": "Gatsby plugin for purgecss. Removes unused css/sass/less/stylus from files and modules.",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "main": "index.js",
   "license": "MIT",
   "author": "Ananto Ghosh",

@@ -1,3 +1,20 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/2.3.0...2.4.0) (2018-08-17)
+
+With this release, diagnosing purging related issues has been made a lot easier.  
+Read the docs for all the information.
+
+### Features
+
+* `printRejected` option now prints the name of the file ([a97a713](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/a97a713))
+* Shows name of file being processed for many other cases (for errors, ignores etc.)
+* Add `printAll` option ([72bc43b](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/72bc43b))
+  > `printRejected` by default print only 100 removed selector per file. `printAll` allows it to print all of the removed selectors.
+* Add `ignore` option ([a97a713](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/a97a713))
+  > Ignore files and folders from being processed by this plugin.
+
+
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/2.2.0...2.3.0) (2018-08-16)
 

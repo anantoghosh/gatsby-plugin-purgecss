@@ -216,7 +216,7 @@ module.exports = {
 ```
 
 ### rejected
-Print the amount of css removed
+Print the amount of css removed  
 **`rejected: boolean`**
 ```js
 rejected: true
@@ -224,7 +224,7 @@ rejected: true
 default: `true`
 
 ### printRejected
-Print the list of removed selectors
+Print the list of removed selectors  
 **`printRejected: boolean`**
 ```js
 printRejected: true
@@ -245,7 +245,7 @@ Needs [`printRejected`](#printrejected) option to be true.
 default: `false`
 
 ### whitelist - from purgecss
-Stops from removing these selectors.
+Stops from removing these selectors.  
 **`whitelist: Array<string>`**
 ```js
 whitelist: ['my-selector', 'footer']
@@ -256,7 +256,7 @@ Since v2.3.0 manually including 'html', 'body' is no longer required.
 default: `[]`
 
 ### ignore
-Stops from removing these selectors.
+Stops from removing these selectors.  
 **`ignore: Array<string>`**
 ```js
 ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
@@ -265,7 +265,7 @@ ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/fi
 default: `[]`
 
 ### debug
-Enable debugging
+Enable debugging  
 **`debug: boolean`**
 ```js
 debug: true
@@ -276,7 +276,7 @@ It will write two files to disk.
 default: `false`
 
 ### content - from purgecss
-Files to search for selectors.
+Files to search for selectors.  
 **`content: Array<string>`**
 ```js
 content: [
@@ -287,7 +287,7 @@ content: [
 default: `[path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}')]`
 
 ### whitelistPatterns - from purgecss
-Whitelist Selectors with Regular Expression
+Whitelist Selectors with Regular Expression  
 **`whitelistPatterns: Array<RegExp>`**
 ```js
 whitelistPatterns: [/button/, /^fa-/, /main$/]
@@ -296,7 +296,7 @@ This example will whitelist selectors containing "button", starting with "fa-" a
 default: `[]`
 
 ### whitelistPatternsChildren - from purgecss
-Contrary to `whitelistPatterns`, it will also whitelist children of the selectors.
+Contrary to `whitelistPatterns`, it will also whitelist children of the selectors.  
 **`whitelistPatternsChildren: Array<RegExp>`**
 ```js
 whitelistPatternsChildren: [/red$/]
