@@ -12,6 +12,8 @@ import less from './less.less';
 import lessModule from './less.module.less';
 import './whitelisted.css';
 import other from './other.css';
+import './ignored.css';
+import './ignored/ignoredFolder.css';
 
 export default () => (
   <div className="global-ok">

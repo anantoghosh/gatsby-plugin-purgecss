@@ -31,6 +31,7 @@ export function onCreateWebpackConfig(
     rejected: true,
     printRejected: false,
     debug: false,
+    ignore: [],
     ...userOptions
   };
 
