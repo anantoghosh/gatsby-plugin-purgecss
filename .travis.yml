@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "lts/*"
+  - 'lts/*'
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s
@@ -12,6 +12,3 @@ script:
 
 after_script:
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
-
-cache:
-  yarn: true
