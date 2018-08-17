@@ -2,6 +2,8 @@
   "requireCleanWorkingDir": false,
   "increment": "conventional:angular",
   "buildCommand": "yarn build",
+  "beforeChangelogCommand": "conventional-changelog -p angular -i CHANGELOG.md -s",
+  "safeBump": false,
   "github": {
     "release": true,
     "tokenRef": "RLID"
