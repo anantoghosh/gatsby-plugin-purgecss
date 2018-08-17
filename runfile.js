@@ -17,7 +17,7 @@ const c = {
   install(filename) {
     if (pkgManager === 'npm')
       return `cd test_build && npm install ../${filename} && cd ..`;
-    return `cd test_build && yarn add -D --force file:../${filename} && cd ..`;
+    return `cd test_build && yarn cache clean "gatsby-plugin-purgecss" && yarn add -D file:../${filename} && cd ..`;
   }
 };
 
