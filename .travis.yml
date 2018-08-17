@@ -15,5 +15,3 @@ after_script:
 
 cache:
   yarn: true
-  directories:
-    - "node_modules"
