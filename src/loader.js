@@ -9,11 +9,13 @@
  * @property {boolean} OptionObject.debug
  * @property {boolean} OptionObject.printRejected
  * @property {boolean} OptionObject.whitelist
+ * @property {boolean} OptionObject.printAll
  */
 
 import PurgeCss from 'purgecss';
 import { getOptions } from 'loader-utils';
 import { stats, Debug } from './shared';
+import { color } from './utils';
 import path from 'path';
 
 /**
@@ -73,8 +75,12 @@ export default function loader(source) {
       const filtered = rejected.map(val => {
         return val.replace('\n', '');
       });
-      console.log('\nFrom: ', this.resourcePath);
-      console.log('Removed Selectors: ', filtered);
+      console.log(color.FgGreen, '\nFrom: ', this.resourcePath);
+      console.log(
+        color.Reset,
+        'Removed Selectors: ',
+        options.printAll ? JSON.stringify(filtered) : filtered
+      );
     }
   }
 

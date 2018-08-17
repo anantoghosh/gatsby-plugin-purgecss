@@ -230,6 +230,18 @@ Print the list of removed selectors
 printRejected: true
 ```
 Needs [`rejected`](#rejected) option to be true.  
+It will print maximum of 100 removed selector per file to keep the output readable.  
+To view all the removed selector enable the [`printAll` option](#printall).  
+default: `false`
+
+### printAll
+Enables `printRejected` to print all the rejected selectors.  
+(Output can get messy)  
+**`printAll: boolean`**
+```js
+printAll: true
+```
+Needs [`printRejected`](#printrejected) option to be true.  
 default: `false`
 
 ### whitelist - from purgecss
