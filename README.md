@@ -256,7 +256,7 @@ Since v2.3.0 manually including 'html', 'body' is no longer required.
 default: `[]`
 
 ### ignore
-Stops from removing these selectors.  
+Stop these files or folders from getting purged.  
 **`ignore: Array<string>`**
 ```js
 ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
