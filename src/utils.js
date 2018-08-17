@@ -15,7 +15,10 @@ const findLoader = (useArray, loaderNamesRegex) => {
 
     if (typeof loaderObject === 'string') {
       loaderName = loaderObject;
-    } else if ('loader' in loaderObject) {
+    } else if (
+      'loader' in loaderObject &&
+      typeof loaderObject.loader === 'string'
+    ) {
       loaderName = loaderObject.loader;
     }
 

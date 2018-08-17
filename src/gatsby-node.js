@@ -10,6 +10,10 @@ import { stats, Debug } from './shared';
 
 const loadersRegex = /stylus-loader|sass-loader|less-loader/;
 
+/**
+ * @param {object} param0
+ * @param {object} param1
+ */
 export function onCreateWebpackConfig(
   { actions, stage, getConfig },
   { plugins, ...userOptions }
