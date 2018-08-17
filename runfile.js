@@ -87,8 +87,17 @@ function teste2e() {
   run(c.jestE2E);
 }
 
+function buildtest() {
+  console.log('\nBuilding to plugins folder');
+  run(c.buildTest);
+
+  console.log('\nRunning gatsby build in test_build');
+  run(c.buildTestBuild);
+}
+
 module.exports = {
   test_ci,
   teste2e,
+  buildtest,
   test
 };
