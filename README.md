@@ -16,9 +16,9 @@ For Gatsby 2 only
 
 **Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎉**  
 
-> **Please read [Help! Purgecss breaks my site 😯](#help-purgecss-breaks-my-site-) to make sure gatsby-plugin-purgecss does not cause you issues**
+> **Please read [Help! Purgecss breaks my site](#help-purgecss-breaks-my-site) 😯 to make sure gatsby-plugin-purgecss does not cause you issues**
 
-[Read the most recent docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/README.md)
+📘 [Read the latest docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/README.md) • [Changelog](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/CHANGELOG.md) 
 
 ### Demo
 When used in [gatsby-starter-bootstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap)
@@ -57,10 +57,17 @@ module.exports = {
   ]
 };
 ```
-  
-## Help! Purgecss breaks my site 😯
+[Available Options.](#options)
+## Help! Purgecss breaks my site
 
-**Make Purgecss behave correctly for your project**  
+### Diagnosing the issue
+* Use [`printRejected: true` option](#printrejected) which will print the the filenames and the selectors which were removed.
+* Identify which of the required selectors were removed.
+* Whitelist the required selectors or completely ignore files using [Whitelist Solutions](#whitelist-solutions) guide.
+* Look at the [Issues](#issues) section to understand why/how the purge was performed.
+
+### Issues
+
 This section documents purgecss behavior in removing unused css. Most of the rules apply in any project and is not `gatsby-plugin-purgecss` specific.
 
 #### Issue 1: CSS file not getting purged
@@ -92,16 +99,18 @@ import './style.css';
 ```
 #### Issue 3: Styles getting purged even though the script file has selector names
 Make sure that the script file is in the `src` folder.  
-If you want to look for selectors in another folder, use the [`content` option.](#options)
+If you want to look for selectors in another folder, use the [`content` option.](#content---from-purgecss)
 
 #### Issue 4: Getting "Could not parse file, skipping. Your build will not break."
 > If you use postcss syntax based plugins then read [this](#using-with-postcss-syntax-plugins).
 
-Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#options).  Also, feel free to create a GitHub issue.
+Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#debug).  Also, feel free to create a GitHub issue.
 
-#### Issue 5: Using 3rd party npm packages with components which import css files
+#### Issue 5: Using npm packages with components which import css files
 If you import a npm package which imports its own styles locally, then gatsby-plugin-purgecss will incorrectly remove all the css imported by the package. It's because by default the selectors are only matched with the files under 'src' folder.  
-To get around this, use the [`content` option](#options) and add the package's path.
+To get around this, you could:
+1. Ignore the file completely using the [`ignore` option](#ignore)
+2. use the [`content` option](#content---from-purgecss) and add the package's path.
 Eg:
 ```js
 content: [
@@ -109,7 +118,7 @@ content: [
   path.join(process.cwd(), 'node_modules/my-npm-package/folder-to-match/!(*.d).{ts,js,jsx,tsx}')
 ];
 ```
-You could also try whitelisting the required selectors as described in the next section.
+3. Whitelisting the required selectors as described in the next section.
 
 ### Whitelist Solutions
 You can use any of these techniques to stop purgecss from removing required styles
@@ -117,6 +126,7 @@ You can use any of these techniques to stop purgecss from removing required styl
 ```js
 whitelist: ['my-selector']
 ```
+[Read about whitelist option.](#whitelist---from-purgecss)
 ##### 2. For selector with dashes in them and using named imports
 You *could* write it like `className={style['my-selector']}` instead.
 ##### 3. Use a JavaScript comment
@@ -131,7 +141,8 @@ This comment can be in any script file inside `src`.
 whitelistPatterns: [/^btn/]
 ```
 For eg, this pattern will whitelist all selectors starting with btn: btn btn-primary btn-secondary etc.  
-Look at the [`whitelistPatternsChildren` option](https://www.purgecss.com/configuration) in purgecss to also whitelist children of the selectors.
+[Read about whitelistPatterns option.](#whitelistpatterns---from-purgecss)  
+Look at the [`whitelistPatternsChildren` option](#whitelist---from-purgecss) in purgecss to also whitelist children of the selectors.
 ##### 5. Use purgecss ignore comment in css file
 ```css
 /* purgecss ignore */
@@ -146,6 +157,13 @@ button { color: 'white' };
 /* purgecss end ignore */
 ```
 This comment pair will ignore all css selectors between them.
+
+##### 6. Ignore files and folder using the ignore options
+```js
+ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
+```
+**Note:** always use forward slash `/` for folders, even on Windows.  
+[Read about ignore option.](#ignore)
 
 ### Improving Purgecss selector detection
 Purgecss relies on extractors to get the list of selector used in a file. The default extractor considers every word of a file as a selector.
@@ -177,61 +195,108 @@ Since v2.3.0, manually including 'html', 'body' is no longer required.
 ### Using with postcss syntax plugins
 `gatsby-plugin-purgecss` is executed before postcss loader and can only purge css syntax. If you are using any syntax based postcss plugin, then it may not get purged. In such cases you will see "Could not parse file, skipping. Your build will not break." message. `gatsby-plugin-purgecss` will simply ignore the file and continue without issue.
 It would be better if you use purgecss postcss plugin directly instead.
+
 ## Options
 
 This plugins supports most purgecss options as is (except `css`).
-
 > [Read about purgecss options in detail](https://www.purgecss.com/configuration)
 
+Options can be specified in your `gatsby-config.js` file like so:
 ```js
-{
-  resolve: `gatsby-plugin-purgecss`,
-  options: {
-    /**
-     * Print the amount of css removed.
-     * default: true
-     **/
-    rejected?: boolean,
-
-    /**
-     * Print the list of removed selectors.
-     * Needs "rejected" option to be true
-     * default: false
-     **/
-    printRejected?: boolean,
-
-    /**
-     * Stops from removing these selectors.
-     * ['html', 'body'] are always whitelisted
-     * since v2.3.0 manually including 'html', 'body' is no longer required
-     **/
-    whitelist?: Array<string>,
-
-    /**
-     * Enable debugging
-     * It will write two files to disk. One with your webpack config and another with the errors encountered.
-     * default: false
-     **/
-    debug?: boolean,
-
-    /**
-     * These options are available but not used by default.
-     * Read more https://www.purgecss.com/configuration
-     **/
-    extractors?: Array<ExtractorsObj>,
-    whitelistPatterns?: Array<RegExp>,
-    whitelistPatternsChildren?: Array<RegExp>,
-    keyframes?: boolean,
-    fontFace?: boolean,
-
-    /**
-     * Files to search for selectors.
-     **/
-     // default: [path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}')]
-    content: Array<string | RawContent>,
-  }
-}
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        printRejected: true,
+      }
+    }
+  ]
+};
 ```
+
+### rejected
+Print the amount of css removed
+**`rejected: boolean`**
+```js
+rejected: true
+```
+default: `true`
+
+### printRejected
+Print the list of removed selectors
+**`printRejected: boolean`**
+```js
+printRejected: true
+```
+Needs [`rejected`](#rejected) option to be true.  
+default: `false`
+
+### whitelist - from purgecss
+Stops from removing these selectors.
+**`whitelist: Array<string>`**
+```js
+whitelist: ['my-selector', 'footer']
+```
+**Note:** do NOT add `.` or `#` for classes and ids.  
+`'html'`, `'body'` are always whitelisted.  
+Since v2.3.0 manually including 'html', 'body' is no longer required.  
+default: `[]`
+
+### ignore
+Stops from removing these selectors.
+**`ignore: Array<string>`**
+```js
+ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
+```
+**Note:** always use forward slash `/` for folders, even on Windows.  
+default: `[]`
+
+### debug
+Enable debugging
+**`debug: boolean`**
+```js
+debug: true
+```
+It will write two files to disk.  
+`gatsby-plugin-purgecss-debug-config.js` with Gatsby's webpack config.  
+`gatsby-plugin-purgecss-debug.js` with the errors encountered.  
+default: `false`
+
+### content - from purgecss
+Files to search for selectors.
+**`content: Array<string>`**
+```js
+content: [
+  path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}'),
+  path.join(process.cwd(), 'anotherFolder/!(*.d).{ts,js,jsx,tsx}')
+];
+```
+default: `[path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx}')]`
+
+### whitelistPatterns - from purgecss
+Whitelist Selectors with Regular Expression
+**`whitelistPatterns: Array<RegExp>`**
+```js
+whitelistPatterns: [/button/, /^fa-/, /main$/]
+```
+This example will whitelist selectors containing "button", starting with "fa-" and ending with "main".  
+default: `[]`
+
+### whitelistPatternsChildren - from purgecss
+Contrary to `whitelistPatterns`, it will also whitelist children of the selectors.
+**`whitelistPatternsChildren: Array<RegExp>`**
+```js
+whitelistPatternsChildren: [/red$/]
+```
+In the example, selectors such as `red p` or `.bg-red .child-of-bg` will be left in the final CSS.  
+default: `[]`
+
+### Other options from purgecss
+[Read About other purgecss options.](https://www.purgecss.com/configuration)  
+**`extractors?: Array<ExtractorsObj>`**  
+**`keyframes?: boolean`**  
+**`fontFace?: boolean`**  
 
 ## Versioning
 
@@ -247,5 +312,4 @@ This project was made possible due to the incredible work done on the following 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
-for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -180,4 +180,14 @@ describe('Check purge status', async () => {
       expect(html).toContain('#underscore_name_ok');
     });
   });
+
+  describe('Ignored files and folders', () => {
+    test('Kept ignored file', async () => {
+      expect(html).toContain('#ignored_ok');
+    });
+
+    test(`Kept ignored folder`, async () => {
+      expect(html).toContain('#ignored_folder_ok');
+    });
+  });
 });

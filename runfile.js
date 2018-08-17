@@ -17,7 +17,7 @@ const c = {
   install(filename) {
     if (pkgManager === 'npm')
       return `cd test_build && npm install ../${filename} && cd ..`;
-    return `cd test_build && yarn add -D file:../${filename} && cd ..`;
+    return `cd test_build && yarn cache clean "gatsby-plugin-purgecss" && yarn add -D file:../${filename} && cd ..`;
   }
 };
 
@@ -87,8 +87,17 @@ function teste2e() {
   run(c.jestE2E);
 }
 
+function buildtest() {
+  console.log('\nBuilding to plugins folder');
+  run(c.buildTest);
+
+  console.log('\nRunning gatsby build in test_build');
+  run(c.buildTestBuild);
+}
+
 module.exports = {
   test_ci,
   teste2e,
+  buildtest,
   test
 };
