@@ -149,7 +149,7 @@ Look at the [`whitelistPatternsChildren` option](#whitelist---from-purgecss) in 
 .my-selector { color: 'white' }
 ```
 This comment will ignore the selector on the next line.
-##### 5. Use purgecss ignore block comments in css file
+##### 6. Use purgecss ignore block comments in css file
 ```css
 /* purgecss start ignore */
 button { color: 'white' };
@@ -158,7 +158,7 @@ button { color: 'white' };
 ```
 This comment pair will ignore all css selectors between them.
 
-##### 6. Ignore files and folder using the ignore options
+##### 7. Ignore files and folder using the ignore options
 ```js
 ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
 ```
