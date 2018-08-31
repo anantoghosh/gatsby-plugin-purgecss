@@ -4745,9 +4745,9 @@ gatsby-react-router-scroll@^2.0.0-rc.2:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.0-rc.6:
-  version "2.0.0-rc.6"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-rc.6.tgz#2d46f8a655b5010b5dfdd72ab7deb771bf4889f3"
+gatsby@2.0.0-rc.7:
+  version "2.0.0-rc.7"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-rc.7.tgz#64b1efb7c58ce6cc9c0bad6f5c2c8078e2a05344"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4808,7 +4808,7 @@ gatsby@2.0.0-rc.6:
     glob "^7.1.1"
     graphql "^0.13.2"
     graphql-relay "^0.5.5"
-    graphql-skip-limit "^2.0.0-rc.2"
+    graphql-skip-limit "^2.0.0-rc.3"
     graphql-tools "^3.0.4"
     graphql-type-json "^0.2.1"
     hash-mod "^0.0.5"
@@ -5154,9 +5154,9 @@ graphql-request@^1.5.0:
     cross-fetch "2.0.0"
     graphql "^0.13.2"
 
-graphql-skip-limit@^2.0.0-rc.2:
-  version "2.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/graphql-skip-limit/-/graphql-skip-limit-2.0.0-rc.2.tgz#b545aca4df71fc484b5f2defce2de02ed8a7f307"
+graphql-skip-limit@^2.0.0-rc.3:
+  version "2.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/graphql-skip-limit/-/graphql-skip-limit-2.0.0-rc.3.tgz#c9aa371ec7cc498c47579e0f0635943a48dc60d1"
   dependencies:
     "@babel/runtime" "^7.0.0"
 
