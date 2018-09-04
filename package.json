@@ -20,7 +20,7 @@
     "node-sass": "4.9.3",
     "react": "16.4.2",
     "react-dom": "16.4.2",
-    "release-it": "7.6.0",
+    "release-it": "7.6.1",
     "runjs": "4.3.2",
     "symlink-dir": "1.1.3"
   },
