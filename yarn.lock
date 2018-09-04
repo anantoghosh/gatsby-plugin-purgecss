@@ -4722,9 +4722,9 @@ gatsby-plugin-page-creator@^2.0.0-rc.1:
     parse-filepath "^1.0.1"
     slash "^1.0.0"
 
-gatsby-plugin-sass@2.0.0-rc.1:
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.0.0-rc.1.tgz#f649fea22a687b09b5435bcd65e4a1790ca5a549"
+gatsby-plugin-sass@2.0.0-rc.2:
+  version "2.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.0.0-rc.2.tgz#21478847d0060fb676fc707add21eb96948f24b6"
   dependencies:
     "@babel/runtime" "^7.0.0"
     sass-loader "^7.0.1"
@@ -4745,9 +4745,9 @@ gatsby-react-router-scroll@^2.0.0-rc.2:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.0-rc.9:
-  version "2.0.0-rc.9"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-rc.9.tgz#7c1c981839a2e4dedbeb209f1e2c91da9a8edb40"
+gatsby@2.0.0-rc.10:
+  version "2.0.0-rc.10"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-rc.10.tgz#3fd4b2c78ff694c9ef30c628ba2c9dbbe0d827d9"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
