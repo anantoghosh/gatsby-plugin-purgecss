@@ -15,7 +15,7 @@
     "gatsby-plugin-less": "2.0.0-rc.1",
     "gatsby-plugin-sass": "2.0.0-rc.2",
     "gatsby-plugin-stylus": "2.0.0-rc.1",
-    "jest": "23.5.0",
+    "jest": "23.6.0",
     "less": "3.8.1",
     "node-sass": "4.9.3",
     "react": "16.4.2",
