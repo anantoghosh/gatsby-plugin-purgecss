@@ -4692,9 +4692,9 @@ gatsby-cli@^2.0.0-rc.5:
     yargs "^11.1.0"
     yurnalist "^0.2.1"
 
-gatsby-link@^2.0.0-rc.2:
-  version "2.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.0-rc.2.tgz#e6f54bc9ae8f825136fbdb1ad789c2dbbf025d8a"
+gatsby-link@^2.0.0-rc.3:
+  version "2.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.0-rc.3.tgz#e6b3f3c29f1ce7db884e3e820c28cec0e790d95c"
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@reach/router" "^1.1.1"
@@ -4745,9 +4745,9 @@ gatsby-react-router-scroll@^2.0.0-rc.2:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.0-rc.21:
-  version "2.0.0-rc.21"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-rc.21.tgz#a0bb354d8e05f27051a43b2ee2c41471895f62ad"
+gatsby@2.0.0-rc.23:
+  version "2.0.0-rc.23"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-rc.23.tgz#6ceb19e268f7bfcb1245dd00b14f8e0ed82cf3b2"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4802,7 +4802,7 @@ gatsby@2.0.0-rc.21:
     friendly-errors-webpack-plugin "^1.6.1"
     fs-extra "^5.0.0"
     gatsby-cli "^2.0.0-rc.5"
-    gatsby-link "^2.0.0-rc.2"
+    gatsby-link "^2.0.0-rc.3"
     gatsby-plugin-page-creator "^2.0.0-rc.5"
     gatsby-react-router-scroll "^2.0.0-rc.2"
     glob "^7.1.1"
