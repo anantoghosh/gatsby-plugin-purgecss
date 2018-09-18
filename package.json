@@ -11,7 +11,7 @@
     "babel-preset-env": "1.7.0",
     "coveralls": "3.0.2",
     "dotenv": "6.0.0",
-    "gatsby": "2.0.1",
+    "gatsby": "2.0.2",
     "gatsby-plugin-less": "2.0.5",
     "gatsby-plugin-sass": "2.0.1",
     "gatsby-plugin-stylus": "2.0.1",
