@@ -4712,9 +4712,9 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
-gatsby-cli@^2.0.0-rc.6:
-  version "2.0.0-rc.6"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.0.0-rc.6.tgz#91d8a2120aae8bcc7d67f58a803cf28757f390ee"
+gatsby-cli@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.4.1.tgz#3e72a41bd3688db1d39ef491de086f306dc51343"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
@@ -4790,9 +4790,9 @@ gatsby-react-router-scroll@^2.0.0:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.1.tgz#a1c854c1b0bc783f073f23bf19c686354e82262e"
+gatsby@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.2.tgz#d7f19f5ceff3c7bcc009783d6eef29cbbdf4059d"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4845,7 +4845,7 @@ gatsby@2.0.1:
     flat "^4.0.0"
     friendly-errors-webpack-plugin "^1.6.1"
     fs-extra "^5.0.0"
-    gatsby-cli "^2.0.0-rc.6"
+    gatsby-cli "^2.4.1"
     gatsby-link "^2.0.0-rc.4"
     gatsby-plugin-page-creator "^2.0.0"
     gatsby-react-router-scroll "^2.0.0"
