@@ -17,7 +17,7 @@
     "gatsby-plugin-stylus": "2.0.1",
     "jest": "23.6.0",
     "less": "3.8.1",
-    "node-sass": "4.9.3",
+    "node-sass": "4.9.4",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "release-it": "7.6.1",
