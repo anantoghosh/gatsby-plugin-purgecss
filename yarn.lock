@@ -4792,9 +4792,9 @@ gatsby-plugin-less@2.0.7:
     "@babel/runtime" "^7.0.0"
     less-loader "^4.1.0"
 
-gatsby-plugin-page-creator@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.2.tgz#67d18fc4eca10eb12acb5b401e292e092e1df776"
+gatsby-plugin-page-creator@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.3.tgz#391affa4d21c8f115ec1f44b1c541a6b05cb6e13"
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
@@ -4802,6 +4802,7 @@ gatsby-plugin-page-creator@^2.0.2:
     fs-exists-cached "^1.0.0"
     glob "^7.1.1"
     lodash "^4.17.10"
+    micromatch "^3.1.10"
     parse-filepath "^1.0.1"
     slash "^1.0.0"
 
@@ -4828,9 +4829,9 @@ gatsby-react-router-scroll@^2.0.1:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.39:
-  version "2.0.39"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.39.tgz#ef2fd2e9892b31133d3925398b8c1053eb22a7a6"
+gatsby@2.0.40:
+  version "2.0.40"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.40.tgz#9811da340731c9019983f77b64fd898890b859f0"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4882,7 +4883,7 @@ gatsby@2.0.39:
     fs-extra "^5.0.0"
     gatsby-cli "^2.4.4"
     gatsby-link "^2.0.6"
-    gatsby-plugin-page-creator "^2.0.2"
+    gatsby-plugin-page-creator "^2.0.3"
     gatsby-react-router-scroll "^2.0.1"
     glob "^7.1.1"
     graphql "^0.13.2"
