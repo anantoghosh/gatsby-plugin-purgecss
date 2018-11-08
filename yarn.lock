@@ -10114,9 +10114,9 @@ symbol-tree@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
 
-symlink-dir@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-2.0.1.tgz#8123dd5637d3ced94816cfc301e576113490ef86"
+symlink-dir@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-2.0.2.tgz#ca27a0fff155d932b8948ac90bf301738eb77ca4"
   dependencies:
     "@types/mz" "0.0.32"
     "@types/node" "^10.0.8"
