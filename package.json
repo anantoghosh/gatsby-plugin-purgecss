@@ -22,7 +22,7 @@
     "react-dom": "16.6.0",
     "release-it": "7.6.3",
     "runjs": "4.3.2",
-    "symlink-dir": "2.0.1"
+    "symlink-dir": "2.0.2"
   },
   "dependencies": {
     "fs-extra": "^7.0.0",
