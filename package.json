@@ -18,8 +18,8 @@
     "jest": "23.6.0",
     "less": "3.8.1",
     "node-sass": "4.10.0",
-    "react": "16.6.0",
-    "react-dom": "16.6.0",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
     "release-it": "7.6.3",
     "runjs": "4.3.2",
     "symlink-dir": "2.0.2"
