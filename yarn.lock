@@ -4855,9 +4855,9 @@ gatsby-react-router-scroll@^2.0.2:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.61:
-  version "2.0.61"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.61.tgz#bd902d0b0fc5d4e46d31a10369a11a32c51d12e5"
+gatsby@2.0.62:
+  version "2.0.62"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.62.tgz#a4c930663a16311637acff75ef3123812b0d7629"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4952,7 +4952,7 @@ gatsby@2.0.61:
     raw-loader "^0.5.1"
     react-dev-utils "^4.2.1"
     react-error-overlay "^3.0.0"
-    react-hot-loader "^4.1.0"
+    react-hot-loader "^4.5.1"
     redux "^4.0.0"
     relay-compiler "1.5.0"
     request "^2.85.0"
@@ -6860,6 +6860,10 @@ lodash.kebabcase@^4.1.1:
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
+
+lodash.merge@^4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
 
 lodash.mergewith@^4.6.0:
   version "4.6.1"
@@ -8801,16 +8805,19 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
-react-hot-loader@^4.1.0:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.3.4.tgz#4f9bdd55bb20d77a6ae8931fa1c187e5f0ce6279"
+react-hot-loader@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.5.1.tgz#4a9cf136542b1db4f948ac74b31fa16a411ceebb"
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
     hoist-non-react-statics "^2.5.0"
+    loader-utils "^1.1.0"
+    lodash.merge "^4.6.1"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.0.2"
+    source-map "^0.7.3"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -9828,6 +9835,10 @@ source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, sour
 source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+
+source-map@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
 
 spdx-correct@^3.0.0:
   version "3.0.0"
