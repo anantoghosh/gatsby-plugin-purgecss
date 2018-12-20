@@ -989,6 +989,10 @@
     text-table "^0.2.0"
     webpack-log "^1.1.2"
 
+"@webpro/is-subdir@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@webpro/is-subdir/-/is-subdir-1.0.0.tgz#c8be8013248b5932ee16c8a2dce8e03523df8dd6"
+
 JSONStream@^1.0.4:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.3.tgz#27b4b8fbbfeab4e71bcf551e7f27be8d952239bf"
@@ -9122,11 +9126,12 @@ relay-runtime@1.5.0:
     babel-runtime "^6.23.0"
     fbjs "^0.8.14"
 
-release-it@9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-9.1.0.tgz#bfd0e04b5ce3cfc2dd80a0a944d2c2c6d5503766"
+release-it@9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-9.2.0.tgz#9a425f352699e735163b8a7189d63e5f7d9667a7"
   dependencies:
     "@octokit/rest" "16.1.0"
+    "@webpro/is-subdir" "1.0.0"
     async-retry "1.2.3"
     babel-preset-env "1.7.0"
     babel-register "6.26.0"
