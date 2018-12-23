@@ -736,9 +736,9 @@
     node-fetch "^2.3.0"
     universal-user-agent "^2.0.1"
 
-"@octokit/rest@16.1.0":
-  version "16.1.0"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.1.0.tgz#43bee0f58821b6c6a4c9d63e14919a1fb67a71b5"
+"@octokit/rest@16.3.0":
+  version "16.3.0"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.3.0.tgz#98a24a3334312a87fff8a2a54c1dca4d0900d54d"
   dependencies:
     "@octokit/request" "2.2.0"
     before-after-hook "^1.2.0"
@@ -9126,11 +9126,11 @@ relay-runtime@1.5.0:
     babel-runtime "^6.23.0"
     fbjs "^0.8.14"
 
-release-it@9.2.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-9.2.0.tgz#9a425f352699e735163b8a7189d63e5f7d9667a7"
+release-it@9.3.0:
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-9.3.0.tgz#4c60ebef4d5f4f08db081ce7b989170cb28cd711"
   dependencies:
-    "@octokit/rest" "16.1.0"
+    "@octokit/rest" "16.3.0"
     "@webpro/is-subdir" "1.0.0"
     async-retry "1.2.3"
     babel-preset-env "1.7.0"
@@ -9152,7 +9152,7 @@ release-it@9.2.0:
     parse-repo "1.0.4"
     semver "5.6.0"
     shelljs "0.8.3"
-    supports-color "5.5.0"
+    supports-color "6.0.0"
     update-notifier "2.5.0"
     uuid "3.3.2"
     window-size "1.1.1"
@@ -10151,9 +10151,9 @@ stylus@^0.54.5:
     sax "0.5.x"
     source-map "0.1.x"
 
-supports-color@5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
+supports-color@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-6.0.0.tgz#76cfe742cf1f41bb9b1c29ad03068c05b4c0e40a"
   dependencies:
     has-flag "^3.0.0"
 
