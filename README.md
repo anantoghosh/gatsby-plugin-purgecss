@@ -104,13 +104,14 @@ If you want to look for selectors in another folder, use the [`content` option.]
 #### Issue 4: Getting "Could not parse file, skipping. Your build will not break."
 > If you use postcss syntax based plugins then read [this](#using-with-postcss-syntax-plugins).
 
-Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#debug).  Also, feel free to create a GitHub issue.
+Something is wrong. Good news is `gatsby-plugin-purgecss` should not cause any issue in such cases, files which could not be parsed will be skipped. If you want to diagnose the problem then use the [`debug` option](#debug). Also, feel free to create a GitHub issue.
 
 #### Issue 5: Using npm packages with components which import css files
 If you import a npm package which imports its own styles locally, then gatsby-plugin-purgecss will incorrectly remove all the css imported by the package. It's because by default the selectors are only matched with the files under 'src' folder.  
 To get around this, you could:
 1. Ignore the file completely using the [`ignore` option](#ignore)
-2. use the [`content` option](#content---from-purgecss) and add the package's path.
+2. Whitelist the required selectors as described in the next section.
+3. Use the [`content` option](#content---from-purgecss) and add the package's path.
 Eg:
 ```js
 content: [
@@ -118,24 +119,25 @@ content: [
   path.join(process.cwd(), 'node_modules/my-npm-package/folder-to-match/!(*.d).{ts,js,jsx,tsx}')
 ];
 ```
-3. Whitelisting the required selectors as described in the next section.
 
 ### Whitelist Solutions
 You can use any of these techniques to stop purgecss from removing required styles
-##### 1. Whitelist the selector using the whitelist option in gatsby-config.js
+#### 1. Whitelist the selector using the whitelist option in gatsby-config.js
 ```js
 whitelist: ['my-selector']
 ```
 [Read about whitelist option.](#whitelist---from-purgecss)
-##### 2. For selector with dashes in them and using named imports
+
+#### 2. For selector with dashes in them and using named imports
 You *could* write it like `className={style['my-selector']}` instead.
-##### 3. Use a JavaScript comment
+
+#### 3. Use a JavaScript comment
 ```jsx
 // my-selector
 <div className={style.mySelector} />
 ```
 This comment can be in any script file inside `src`.
-##### 4.  Use Regex pattern to exclude many selectors
+#### 4.  Use Regex pattern to exclude many selectors
 `whitelistPatterns` option is available from purgecss
 ```js
 whitelistPatterns: [/^btn/]
@@ -143,13 +145,15 @@ whitelistPatterns: [/^btn/]
 For eg, this pattern will whitelist all selectors starting with btn: btn btn-primary btn-secondary etc.  
 [Read about whitelistPatterns option.](#whitelistpatterns---from-purgecss)  
 Look at the [`whitelistPatternsChildren` option](#whitelist---from-purgecss) in purgecss to also whitelist children of the selectors.
-##### 5. Use purgecss ignore comment in css file
+
+#### 5. Use purgecss ignore comment in css file
 ```css
 /* purgecss ignore */
 .my-selector { color: 'white' }
 ```
 This comment will ignore the selector on the next line.
-##### 6. Use purgecss ignore block comments in css file
+
+#### 6. Use purgecss ignore block comments in css file
 ```css
 /* purgecss start ignore */
 button { color: 'white' };
@@ -158,7 +162,7 @@ button { color: 'white' };
 ```
 This comment pair will ignore all css selectors between them.
 
-##### 7. Ignore files and folder using the ignore options
+#### 7. Ignore files and folder using the ignore options
 ```js
 ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
 ```
