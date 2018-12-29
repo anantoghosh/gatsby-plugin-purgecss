@@ -20,7 +20,7 @@ describe(`gatsby-plugin-pugrecss`, () => {
     actions.setWebpackConfig.mockReset();
   });
 
-  let stage = ['build-javascript', 'build-html'];
+  let stage = ['build-javascript', 'build-html', 'develop-html', 'develop'];
   const options = [
     {
       plugins: []
@@ -52,6 +52,18 @@ describe(`gatsby-plugin-pugrecss`, () => {
 
     it(`build-html: Should match snapshot ${index}`, () => {
       onCreateWebpackConfig({ actions, stage: stage[1], getConfig }, options);
+      expect(actions.replaceWebpackConfig).toMatchSnapshot();
+      expect(actions.setWebpackConfig).toMatchSnapshot();
+    });
+
+    it(`develop-html: Should match snapshot ${index}`, () => {
+      onCreateWebpackConfig({ actions, stage: stage[2], getConfig }, options);
+      expect(actions.replaceWebpackConfig).toMatchSnapshot();
+      expect(actions.setWebpackConfig).toMatchSnapshot();
+    });
+
+    it(`develop: Should match snapshot ${index}`, () => {
+      onCreateWebpackConfig({ actions, stage: stage[3], getConfig }, options);
       expect(actions.replaceWebpackConfig).toMatchSnapshot();
       expect(actions.setWebpackConfig).toMatchSnapshot();
     });
