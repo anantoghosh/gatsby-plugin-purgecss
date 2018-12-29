@@ -32,6 +32,7 @@ export function onCreateWebpackConfig(
     printRejected: false,
     printAll: false,
     debug: false,
+    develop: false,
     ignore: [],
     ...userOptions
   };
@@ -40,8 +41,12 @@ export function onCreateWebpackConfig(
     stats.printStats();
   }
 
-  if (stage !== 'build-javascript') {
+  if (stage === 'develop-html' || stage === 'build-html') {
     return;
+  } else if (stage === 'develop') {
+    if (!userOptions.develop) {
+      return;
+    }
   }
 
   const { setWebpackConfig } = actions;
