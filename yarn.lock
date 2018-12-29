@@ -3520,7 +3520,13 @@ debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.
   dependencies:
     ms "2.0.0"
 
-debug@4.1.0, debug@^4.1.0:
+debug@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  dependencies:
+    ms "^2.1.1"
+
+debug@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.0.tgz#373687bffa678b38b1cd91f861b63850035ddc87"
   dependencies:
@@ -9126,9 +9132,9 @@ relay-runtime@1.5.0:
     babel-runtime "^6.23.0"
     fbjs "^0.8.14"
 
-release-it@9.3.0:
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-9.3.0.tgz#4c60ebef4d5f4f08db081ce7b989170cb28cd711"
+release-it@9.4.0:
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-9.4.0.tgz#4a1a93b6c2ed3313c2ae7cd243e8d99bc3c36b30"
   dependencies:
     "@octokit/rest" "16.3.0"
     "@webpro/is-subdir" "1.0.0"
@@ -9140,7 +9146,7 @@ release-it@9.3.0:
     conventional-changelog "3.0.5"
     conventional-recommended-bump "4.0.4"
     cpy "7.0.1"
-    debug "4.1.0"
+    debug "4.1.1"
     globby "8.0.1"
     got "8.3.2"
     inquirer "6.2.1"
