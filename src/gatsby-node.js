@@ -70,7 +70,7 @@ export function onCreateWebpackConfig(
       rule.oneOf.forEach(rule => {
         if (Array.isArray(rule.use)) {
           const index = findLoader(rule.use, loadersRegex);
-          insertLoader(rule.use, index, purgecssloader);
+          insertLoader(rule.use, index ? index - 1 : index, purgecssloader);
         }
       });
     }
