@@ -16,6 +16,10 @@ exports[`gatsby-plugin-pugrecss build-html: Should match snapshot 3 1`] = `[Mock
 
 exports[`gatsby-plugin-pugrecss build-html: Should match snapshot 3 2`] = `[MockFunction]`;
 
+exports[`gatsby-plugin-pugrecss build-html: Should match snapshot 4 1`] = `[MockFunction]`;
+
+exports[`gatsby-plugin-pugrecss build-html: Should match snapshot 4 2`] = `[MockFunction]`;
+
 exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = `
 [MockFunction] {
   "calls": Array [
@@ -178,6 +182,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -194,12 +204,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
@@ -224,6 +228,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -240,12 +250,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
@@ -273,6 +277,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -289,12 +299,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
@@ -318,6 +322,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -334,12 +344,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
@@ -367,6 +371,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -383,12 +393,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
@@ -412,6 +416,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -428,12 +438,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
@@ -677,6 +681,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -711,12 +721,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
@@ -741,6 +745,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -775,12 +785,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
@@ -808,6 +812,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -842,12 +852,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
@@ -871,6 +875,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -905,12 +915,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
@@ -938,6 +942,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -972,12 +982,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
@@ -1001,6 +1005,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -1035,12 +1045,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
@@ -1284,6 +1288,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -1336,12 +1346,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
@@ -1366,6 +1370,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -1418,12 +1428,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
@@ -1451,6 +1455,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -1503,12 +1513,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
@@ -1532,6 +1536,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -1584,12 +1594,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
@@ -1617,6 +1621,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -1669,12 +1679,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
@@ -1698,6 +1702,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -1750,12 +1760,6 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                           "body",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
@@ -1999,6 +2003,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -2059,7 +2069,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "debug": false,
-                        "develop": false,
+                        "develop": true,
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
@@ -2067,15 +2077,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "whitelist": Array [
                           "html",
                           "body",
-                          ".html",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
@@ -2100,6 +2103,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -2160,7 +2169,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "debug": false,
-                        "develop": false,
+                        "develop": true,
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
@@ -2168,15 +2177,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "whitelist": Array [
                           "html",
                           "body",
-                          ".html",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
@@ -2204,6 +2206,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -2264,7 +2272,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "debug": false,
-                        "develop": false,
+                        "develop": true,
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
@@ -2272,15 +2280,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "whitelist": Array [
                           "html",
                           "body",
-                          ".html",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
@@ -2304,6 +2305,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -2364,7 +2371,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "debug": false,
-                        "develop": false,
+                        "develop": true,
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
@@ -2372,15 +2379,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "whitelist": Array [
                           "html",
                           "body",
-                          ".html",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
@@ -2408,6 +2408,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -2468,7 +2474,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "debug": false,
-                        "develop": false,
+                        "develop": true,
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
@@ -2476,15 +2482,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "whitelist": Array [
                           "html",
                           "body",
-                          ".html",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
@@ -2508,6 +2507,12 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                       ],
                     },
                     Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
                       "loader": "path/loader.js",
                       "options": Object {
                         "content": Array [
@@ -2568,7 +2573,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                           "src/**/!(*.d).{ts,js,jsx,tsx}",
                         ],
                         "debug": false,
-                        "develop": false,
+                        "develop": true,
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
@@ -2576,15 +2581,8 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "whitelist": Array [
                           "html",
                           "body",
-                          ".html",
                         ],
                       },
-                    },
-                    Object {
-                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
-                      "options": Array [
-                        [Function],
-                      ],
                     },
                     Object {
                       "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
@@ -2623,6 +2621,943 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
 `;
 
 exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 2`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "module": Object {
+          "rules": Array [
+            Object {
+              "test": /\\\\\\.css\\$/,
+              "use": Array [
+                Object {
+                  "loader": "path/loader.js",
+                  "options": Object {
+                    "content": Array [
+                      "src/**/!(*.d).{ts,js,jsx,tsx}",
+                    ],
+                    "debug": false,
+                    "develop": true,
+                    "ignore": Array [],
+                    "printAll": false,
+                    "printRejected": false,
+                    "rejected": true,
+                    "whitelist": Array [
+                      "html",
+                      "body",
+                    ],
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "module": Object {
+          "rules": Array [
+            Object {
+              "exclude": /\\(node_modules\\|bower_components\\)/,
+              "test": /\\\\\\.jsx\\?\\$/,
+              "use": Array [
+                Object {
+                  "loader": "gatsby-plugin-purgecss/node_modules/babel-loader/lib/index.js",
+                  "options": Object {
+                    "babelrc": false,
+                    "cacheDirectory": true,
+                    "plugins": Array [
+                      "gatsby-plugin-purgecss/node_modules/babel-plugin-remove-graphql-queries/index.js",
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "presets": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "sourceType": "unambiguous",
+                  },
+                },
+              ],
+            },
+            Object {
+              "test": /\\\\\\.ya\\?ml/,
+              "use": Array [
+                Object {
+                  "loader": "gatsby-plugin-purgecss/node_modules/json-loader/index.js",
+                  "options": Object {},
+                },
+                Object {
+                  "loader": "gatsby-plugin-purgecss/node_modules/yaml-loader/index.js",
+                  "options": Object {},
+                },
+              ],
+            },
+            Object {
+              "test": /\\\\\\.\\(eot\\|otf\\|ttf\\|woff\\(2\\)\\?\\)\\(\\\\\\?\\.\\*\\)\\?\\$/,
+              "use": Array [
+                Object {
+                  "loader": "gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js",
+                  "options": Object {
+                    "limit": 10000,
+                    "name": "static/[name]-[hash].[ext]",
+                  },
+                },
+              ],
+            },
+            Object {
+              "test": /\\\\\\.\\(ico\\|svg\\|jpg\\|jpeg\\|png\\|gif\\|webp\\)\\(\\\\\\?\\.\\*\\)\\?\\$/,
+              "use": Array [
+                Object {
+                  "loader": "gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js",
+                  "options": Object {
+                    "limit": 10000,
+                    "name": "static/[name]-[hash].[ext]",
+                  },
+                },
+              ],
+            },
+            Object {
+              "test": /\\\\\\.\\(mp4\\|webm\\|wav\\|mp3\\|m4a\\|aac\\|oga\\|flac\\)\\$/,
+              "use": Array [
+                Object {
+                  "loader": "gatsby-plugin-purgecss/node_modules/url-loader/dist/cjs.js",
+                  "options": Object {
+                    "name": "static/[name]-[hash].[ext]",
+                  },
+                },
+              ],
+            },
+            Object {
+              "oneOf": Array [
+                Object {
+                  "test": /\\\\\\.module\\\\\\.css\\$/,
+                  "use": Array [
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
+                      "options": Object {},
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "test": /\\\\\\.css\\$/,
+                  "use": Array [
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
+                      "options": Object {},
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            Object {
+              "test": /HashHistory/,
+              "use": "null-loader",
+            },
+            Object {
+              "test": /MemoryHistory/,
+              "use": "null-loader",
+            },
+            Object {
+              "test": /StaticRouter/,
+              "use": "null-loader",
+            },
+            Object {
+              "test": /MemoryRouter/,
+              "use": "null-loader",
+            },
+            Object {
+              "test": /HashRouter/,
+              "use": "null-loader",
+            },
+            Object {
+              "oneOf": Array [
+                Object {
+                  "test": /\\\\\\.module\\\\\\.styl\\$/,
+                  "use": Array [
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
+                      "options": Object {},
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": false,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": true,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": true,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                          ".html",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "exclude": /\\\\\\.module\\\\\\.styl\\$/,
+                  "test": /\\\\\\.styl\\$/,
+                  "use": Array [
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
+                      "options": Object {},
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": false,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": true,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": true,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                          ".html",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/stylus-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            Object {
+              "oneOf": Array [
+                Object {
+                  "test": /\\\\\\.module\\\\\\.s\\(a\\|c\\)ss\\$/,
+                  "use": Array [
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
+                      "options": Object {},
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": false,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": true,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": true,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                          ".html",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "test": /\\\\\\.s\\(a\\|c\\)ss\\$/,
+                  "use": Array [
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
+                      "options": Object {},
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": false,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": true,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": true,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                          ".html",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/sass-loader/lib/loader.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            Object {
+              "oneOf": Array [
+                Object {
+                  "test": /\\\\\\.module\\\\\\.less\\$/,
+                  "use": Array [
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
+                      "options": Object {},
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": false,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": true,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": true,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                          ".html",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "test": /\\\\\\.less\\$/,
+                  "use": Array [
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/mini-css-extract-plugin/dist/loader.js",
+                      "options": Object {},
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/css-loader/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/postcss-loader/lib/index.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": false,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": true,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": true,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "path/loader.js",
+                      "options": Object {
+                        "content": Array [
+                          "src/**/!(*.d).{ts,js,jsx,tsx}",
+                        ],
+                        "debug": false,
+                        "develop": false,
+                        "ignore": Array [],
+                        "printAll": false,
+                        "printRejected": false,
+                        "rejected": true,
+                        "whitelist": Array [
+                          "html",
+                          "body",
+                          ".html",
+                        ],
+                      },
+                    },
+                    Object {
+                      "loader": "gatsby-plugin-purgecss/node_modules/less-loader/dist/cjs.js",
+                      "options": Array [
+                        [Function],
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            Object {
+              "oneOf": Array [
+                Object {
+                  "test": /\\\\\\.module\\\\\\.test\\$/,
+                  "use": "null-loader",
+                },
+                Object {
+                  "test": /\\\\\\.test\\$/,
+                  "use": "null-loader",
+                },
+              ],
+            },
+          ],
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 2`] = `
 [MockFunction] {
   "calls": Array [
     Array [
