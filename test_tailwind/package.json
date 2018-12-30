@@ -11,12 +11,7 @@
     "gatsby": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "gatsby-plugin-less": "latest",
-    "gatsby-plugin-sass": "latest",
-    "gatsby-plugin-stylus": "latest",
-    "gatsby-plugin-postcs": "latest",
-    "tailwindcss": "latest",
-    "less": "latest",
-    "node-sass": "latest"
+    "gatsby-plugin-postcss": "latest",
+    "tailwindcss": "latest"
   }
 }
