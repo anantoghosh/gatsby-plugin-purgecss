@@ -23,7 +23,7 @@ const c = {
       return `cd test_build && npm install ../${filename} && cd ..`;
     return `cd test_build && yarn cache clean "gatsby-plugin-purgecss" && yarn add -D file:../${filename} && cd ..`;
   },
-  installTailwind(filename) {
+  installInTailwind(filename) {
     if (pkgManager === 'npm')
       return `cd test_tailwind && npm install ../${filename} && cd ..`;
     return `cd test_tailwind && yarn cache clean "gatsby-plugin-purgecss" && yarn add -D file:../${filename} && cd ..`;
@@ -56,7 +56,7 @@ function test_ci() {
   run(c.listTailwind);
 
   console.log('\nInstalling gatsby-plugin-purgecss package');
-  run(c.installTailwind(files[0]));
+  run(c.installInTailwind(files[0]));
 
   console.log('\nRunning gatsby build in test_tailwind');
   run(c.buildTestTailwindBuild);
