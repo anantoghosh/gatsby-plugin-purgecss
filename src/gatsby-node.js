@@ -33,9 +33,28 @@ export function onCreateWebpackConfig(
     printAll: false,
     debug: false,
     develop: false,
+    tailwind: false,
     ignore: [],
+    extractors: [],
     ...userOptions
   };
+
+  if (userOptions.tailwind) {
+    userOptions.extractors = [
+      {
+        extractor: class {
+          /**
+           * @param {object} content
+           */
+          static extract(content) {
+            return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+          }
+        },
+        extensions: ['js', 'ts', 'jsx', 'tsx']
+      },
+      ...userOptions.extractors
+    ];
+  }
 
   if (userOptions.rejected && stage === 'build-html') {
     stats.printStats();
