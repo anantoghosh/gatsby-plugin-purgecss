@@ -8,7 +8,7 @@ import { findLoader, insertLoader } from './utils';
 import path from './paths';
 import { stats, Debug } from './shared';
 
-const loadersRegex = /stylus-loader|sass-loader|less-loader/;
+const loadersRegex = /postcss-loader/;
 
 /**
  * @param {object} param0
@@ -70,27 +70,13 @@ export function onCreateWebpackConfig(
       rule.oneOf.forEach(rule => {
         if (Array.isArray(rule.use)) {
           const index = findLoader(rule.use, loadersRegex);
-          insertLoader(rule.use, index ? index - 1 : index, purgecssloader);
+          insertLoader(rule.use, index, purgecssloader);
         }
       });
     }
   });
 
   actions.replaceWebpackConfig(config);
-
-  /**
-   * @type {RuleSetRule}
-   */
-  const purgecssRule = {
-    test: /\.css$/,
-    use: [purgecssloader]
-  };
-
-  setWebpackConfig({
-    module: {
-      rules: [purgecssRule]
-    }
-  });
 
   if (userOptions.debug) {
     Debug.writeConfig(getConfig());
