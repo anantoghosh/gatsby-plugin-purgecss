@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "gatsby": "next",
-    "react": "16.6.3",
-    "react-dom": "16.6.3",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
     "gatsby-plugin-less": "next",
     "gatsby-plugin-sass": "next",
     "gatsby-plugin-stylus": "next",
