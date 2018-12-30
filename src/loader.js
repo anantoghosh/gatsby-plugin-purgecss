@@ -39,6 +39,7 @@ export default function loader(source) {
 
     if (options.ignore.some(file => normalizedPath.includes(file))) {
       console.log('\ngatsby-plugin-purgecss: Ignored ', this.resourcePath);
+      stats.addRemovedSize(source);
       return source;
     }
   }
