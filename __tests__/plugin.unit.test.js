@@ -39,6 +39,10 @@ describe(`gatsby-plugin-pugrecss`, () => {
     },
     {
       plugins: [],
+      tailwind: true
+    },
+    {
+      plugins: [],
       whitelist: ['.html']
     }
   ];
