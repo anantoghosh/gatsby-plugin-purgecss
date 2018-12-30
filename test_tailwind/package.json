@@ -1,0 +1,17 @@
+{
+  "name": "gatsby-tailwind",
+  "description": "Gatsby Tailwind",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "gatsby-plugin-postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}
