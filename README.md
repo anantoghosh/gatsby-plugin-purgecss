@@ -14,9 +14,11 @@ For Gatsby 2 only
 
 ## What is this plugin about?
 
-**Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎉**  
+**Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎉. Supports tailwind, bootstrap, bulma etc.**  
 
-> **Please read [Help! Purgecss breaks my site](#help-purgecss-breaks-my-site) 😯 to make sure gatsby-plugin-purgecss does not cause you issues**
+
+> **Please read [Help! Purgecss breaks my site](#help-purgecss-breaks-my-site) 😯 to make sure gatsby-plugin-purgecss does not cause you issues and [TLDR](#TLDR) for the important bits
+**
 
 📘 [Read the latest docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/README.md) • [Changelog](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/CHANGELOG.md) 
 
@@ -43,7 +45,7 @@ npm i gatsby-plugin-purgecss
 
 ### Usage
 
-> **Add the plugin AFTER other css plugins**
+> **Add the plugin AFTER other css/postcss plugins**
 
 ```js
 // gatsy-config.js
@@ -52,12 +54,29 @@ module.exports = {
     `gatsby-plugin-stylus`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-less`,
+    `gatsby-plugin-postcss`,
     // Add after these plugins if used
-    `gatsby-plugin-purgecss`
+    { 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print Removed Selectors
+        tailwind: true, // Enable tailwindcss support
+        whitelist: ['whitelistclass'], // Don't remove this selector
+        ignore: ['ignored.css'] // Ignore file/folder
+      }
+    }
   ]
 };
 ```
 [Available Options.](#options)
+## TLDR
+* Define options in `gatsby-config.js`, not `purgecss.config.js`.
+* If using tailwindcss, use the [`tailwind: true` option](#tailwind).
+* Use [`printRejected: true`](#printrejected) option to print the removed selectors.
+* Only files processed by Webpack will be purged.
+* `my-selector` will not match `mySelector`.
+* Whitelist required selectors or ignore files/folder using the [Whitelist Solutions](#whitelist-solutions) guide.
+
 ## Help! Purgecss breaks my site
 
 ### Diagnosing the issue
@@ -180,8 +199,9 @@ If you do find/write a better extractor suited for Gatsby, please help me add it
 
 ### Running
 
-This plugin only runs when building the project (`gatsby build`).  
+By default, this plugin only runs when building the project (`gatsby build`).  
 It will print the amount of css removed.
+To run it while using `gatsby develop`, use the `develop: true` option.
 
 ### Size reporting
 The size reported by this plugin is the approximate size of the css content *before* any optimizations have been performed.  
@@ -197,6 +217,8 @@ Since html and body tags do not appear in `src/` files, it is whitelisted by def
 Since v2.3.0, manually including 'html', 'body' is no longer required.
 
 ### Using with postcss syntax plugins
+Since v3, `gatsby-plugin-purgecss` should work with other postcss plugins.
+For older versions:  
 `gatsby-plugin-purgecss` is executed before postcss loader and can only purge css syntax. If you are using any syntax based postcss plugin, then it may not get purged. In such cases you will see "Could not parse file, skipping. Your build will not break." message. `gatsby-plugin-purgecss` will simply ignore the file and continue without issue.
 It would be better if you use purgecss postcss plugin directly instead.
 
@@ -267,6 +289,28 @@ ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/fi
 ```
 **Note:** always use forward slash `/` for folders, even on Windows.  
 default: `[]`
+
+### tailwind
+Enable Tailwind support.  
+Added in v3.  
+**`tailwind: boolean`**
+```js
+tailwind: true
+```
+Uses extractors needed for parsing tailwind class names.  
+Enable if you are using tailwindcss.  
+default: `false`
+
+### develop
+Enable plugin while using `gatsby develop`.  
+Added in v3.  
+**`develop: boolean`**
+```js
+develop: true
+```
+This does not print the total css removed.  
+To see what is being removed, use it with the printRejected option.  
+default: `false`
 
 ### debug
 Enable debugging  
