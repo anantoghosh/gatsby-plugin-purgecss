@@ -67,3 +67,5 @@ plugins
 /utils.js
 /paths.js
 /shared.js
+/test_build/gatsby-plugin-purgecss-debug-config.js
+/test_build/gatsby-plugin-purgecss-debug.js
