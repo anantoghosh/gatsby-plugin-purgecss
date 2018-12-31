@@ -131,6 +131,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -172,6 +173,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -237,6 +239,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -285,6 +288,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -336,6 +340,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -383,6 +388,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -434,6 +440,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -481,6 +488,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -640,6 +648,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -660,6 +669,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -701,6 +711,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -721,6 +732,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -786,6 +798,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -806,6 +819,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -854,6 +868,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -874,6 +889,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -925,6 +941,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -945,6 +962,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -992,6 +1010,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1012,6 +1031,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1063,6 +1083,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1083,6 +1104,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1130,6 +1152,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1150,6 +1173,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1309,6 +1333,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1329,6 +1354,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1349,6 +1375,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1390,6 +1417,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1410,6 +1438,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1430,6 +1459,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1495,6 +1525,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1515,6 +1546,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1535,6 +1567,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1583,6 +1616,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1603,6 +1637,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1623,6 +1658,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1674,6 +1710,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1694,6 +1731,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1714,6 +1752,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1761,6 +1800,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1781,6 +1821,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1801,6 +1842,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1852,6 +1894,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1872,6 +1915,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1892,6 +1936,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1939,6 +1984,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1959,6 +2005,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -1979,6 +2026,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2138,6 +2186,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2158,6 +2207,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2178,6 +2228,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2198,6 +2249,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2239,6 +2291,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2259,6 +2312,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2279,6 +2333,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2299,6 +2354,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2364,6 +2420,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2384,6 +2441,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2404,6 +2462,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2424,6 +2483,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2472,6 +2532,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2492,6 +2553,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2512,6 +2574,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2532,6 +2595,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2583,6 +2647,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2603,6 +2668,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2623,6 +2689,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2643,6 +2710,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2690,6 +2758,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2710,6 +2779,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2730,6 +2800,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2750,6 +2821,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2801,6 +2873,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2821,6 +2894,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2841,6 +2915,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2861,6 +2936,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2908,6 +2984,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2928,6 +3005,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2948,6 +3026,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -2968,6 +3047,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3127,6 +3207,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3147,6 +3228,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3167,6 +3249,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3187,6 +3270,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3207,6 +3291,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3237,6 +3322,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -3278,6 +3364,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3298,6 +3385,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3318,6 +3406,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3338,6 +3427,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3358,6 +3448,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3388,6 +3479,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -3453,6 +3545,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3473,6 +3566,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3493,6 +3587,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3513,6 +3608,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3533,6 +3629,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3563,6 +3660,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -3611,6 +3709,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3631,6 +3730,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3651,6 +3751,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3671,6 +3772,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3691,6 +3793,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3721,6 +3824,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -3772,6 +3876,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3792,6 +3897,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3812,6 +3918,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3832,6 +3939,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3852,6 +3960,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3882,6 +3991,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -3929,6 +4039,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3949,6 +4060,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3969,6 +4081,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -3989,6 +4102,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4009,6 +4123,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4039,6 +4154,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -4090,6 +4206,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4110,6 +4227,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4130,6 +4248,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4150,6 +4269,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4170,6 +4290,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4200,6 +4321,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -4247,6 +4369,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4267,6 +4390,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4287,6 +4411,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4307,6 +4432,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4327,6 +4453,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4357,6 +4484,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -4516,6 +4644,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4536,6 +4665,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4556,6 +4686,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4576,6 +4707,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4596,6 +4728,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4626,6 +4759,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -4646,6 +4780,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4688,6 +4823,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4708,6 +4844,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4728,6 +4865,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4748,6 +4886,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4768,6 +4907,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4798,6 +4938,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -4818,6 +4959,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4884,6 +5026,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4904,6 +5047,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4924,6 +5068,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4944,6 +5089,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4964,6 +5110,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -4994,6 +5141,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -5014,6 +5162,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5063,6 +5212,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5083,6 +5233,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5103,6 +5254,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5123,6 +5275,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5143,6 +5296,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5173,6 +5327,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -5193,6 +5348,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5245,6 +5401,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5265,6 +5422,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5285,6 +5443,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5305,6 +5464,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5325,6 +5485,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5355,6 +5516,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -5375,6 +5537,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5423,6 +5586,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5443,6 +5607,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5463,6 +5628,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5483,6 +5649,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5503,6 +5670,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5533,6 +5701,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -5553,6 +5722,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5605,6 +5775,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5625,6 +5796,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5645,6 +5817,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5665,6 +5838,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5685,6 +5859,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5715,6 +5890,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -5735,6 +5911,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5783,6 +5960,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5803,6 +5981,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5823,6 +6002,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5843,6 +6023,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5863,6 +6044,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -5893,6 +6075,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": true,
                         "whitelist": Array [
@@ -5913,6 +6096,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6085,6 +6269,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6105,6 +6290,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6125,6 +6311,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6145,6 +6332,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6165,6 +6353,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6206,6 +6395,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6226,6 +6416,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6246,6 +6437,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6266,6 +6458,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6286,6 +6479,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6351,6 +6545,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6371,6 +6566,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6391,6 +6587,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6411,6 +6608,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6431,6 +6629,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6479,6 +6678,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6499,6 +6699,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6519,6 +6720,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6539,6 +6741,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6559,6 +6762,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6610,6 +6814,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6630,6 +6835,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6650,6 +6856,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6670,6 +6877,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6690,6 +6898,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6737,6 +6946,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6757,6 +6967,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6777,6 +6988,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6797,6 +7009,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6817,6 +7030,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6868,6 +7082,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6888,6 +7103,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6908,6 +7124,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6928,6 +7145,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6948,6 +7166,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -6995,6 +7214,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -7015,6 +7235,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": false,
                         "tailwind": false,
                         "whitelist": Array [
@@ -7035,6 +7256,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -7055,6 +7277,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [
@@ -7075,6 +7298,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
                         "ignore": Array [],
                         "printAll": false,
                         "printRejected": false,
+                        "purgeOnly": Array [],
                         "rejected": true,
                         "tailwind": false,
                         "whitelist": Array [

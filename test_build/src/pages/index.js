@@ -14,6 +14,9 @@ import './whitelisted.css';
 import other from './other.css';
 import './ignored.css';
 import './ignored/ignoredFolder.css';
+import '../pages2/style.css';
+import '../pages2/style_ignore.css';
+import '../pages3/style.css';
 
 export default () => (
   <div className="global-ok">

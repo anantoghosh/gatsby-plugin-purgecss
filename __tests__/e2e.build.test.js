@@ -190,4 +190,18 @@ describe('Check purge status', async () => {
       expect(html).toContain('#ignored_folder_ok');
     });
   });
+
+  describe('Purged only the files in purgeOnly', () => {
+    test('Purged folder in purgeOnly', async () => {
+      expect(html).not.toContain('#purgeOnly2_no');
+    });
+
+    test('Ignored file in purgeOnly', async () => {
+      expect(html).toContain('#purgeOnly2_ok');
+    });
+
+    test(`Kept folder not in purgeOnly`, async () => {
+      expect(html).toContain('#purgeOnly3_ok');
+    });
+  });
 });
