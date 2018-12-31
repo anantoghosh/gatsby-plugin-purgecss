@@ -6,6 +6,7 @@
  * @property {boolean} OptionObject.rejected
  * @property {string[]} OptionObject.content
  * @property {string[]} OptionObject.ignore
+ * @property {string[]} OptionObject.purgeOnly
  * @property {boolean} OptionObject.debug
  * @property {boolean} OptionObject.printRejected
  * @property {boolean} OptionObject.whitelist
@@ -34,6 +35,20 @@ export default function loader(source) {
 
     if (options.ignore.some(file => normalizedPath.includes(file))) {
       console.log('\ngatsby-plugin-purgecss: Ignored ', this.resourcePath);
+      stats.addRemovedSize(source);
+      return source;
+    }
+  }
+
+  if (Array.isArray(options.purgeOnly) && options.purgeOnly.length > 0) {
+    const normalizedPath = normalizePath(this.resourcePath, this.rootContext);
+
+    if (options.purgeOnly.some(file => normalizedPath.includes(file))) {
+      console.log(
+        '\ngatsby-plugin-purgecss: Only processing ',
+        this.resourcePath
+      );
+    } else {
       stats.addRemovedSize(source);
       return source;
     }

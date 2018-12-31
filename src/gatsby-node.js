@@ -35,6 +35,7 @@ export function onCreateWebpackConfig(
     develop: false,
     tailwind: false,
     ignore: [],
+    purgeOnly: [],
     extractors: [],
     ...userOptions
   };
