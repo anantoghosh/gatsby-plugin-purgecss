@@ -15,8 +15,7 @@
 import PurgeCss from 'purgecss';
 import { getOptions } from 'loader-utils';
 import { stats, Debug } from './shared';
-import { color } from './utils';
-import path from 'path';
+import { color, normalizePath } from './utils';
 
 /**
  * Purgecss Loader
@@ -31,11 +30,7 @@ export default function loader(source) {
   }
 
   if (Array.isArray(options.ignore) && options.ignore.length > 0) {
-    const relativePath = this.resourcePath.replace(
-      path.normalize(this.rootContext),
-      ''
-    );
-    const normalizedPath = relativePath.split(path.sep).join('/');
+    const normalizedPath = normalizePath(this.resourcePath, this.rootContext);
 
     if (options.ignore.some(file => normalizedPath.includes(file))) {
       console.log('\ngatsby-plugin-purgecss: Ignored ', this.resourcePath);

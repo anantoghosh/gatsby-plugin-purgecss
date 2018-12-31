@@ -1,4 +1,4 @@
-import { findLoader, insertLoader } from '../src/utils';
+import { findLoader, insertLoader, normalizePath } from '../src/utils';
 
 const otherLoadersRegex = /stylus-loader|sass-loader|less-loader/;
 
@@ -98,5 +98,25 @@ describe('Utils Tests', () => {
       insertLoader(useConfig2, null, { loader: 'added' });
       expect(useConfig2).toMatchObject(useConfig2);
     });
+  });
+
+  describe('normalizePath', () => {
+    if (process.platform === 'win32') {
+      it('Should turn windows path seperator to forward slashes', () => {
+        const p = normalizePath(
+          'D:\\develop\\project\\src\\style.css',
+          'D:\\develop\\project\\'
+        );
+        expect(p).toBe('src/style.css');
+      });
+    } else {
+      it('Should return relative path', () => {
+        const p = normalizePath(
+          '/home/user/project/src/style.css',
+          '/home/user/project/'
+        );
+        expect(p).toBe('src/style.css');
+      });
+    }
   });
 });

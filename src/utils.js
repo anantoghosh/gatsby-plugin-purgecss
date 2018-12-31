@@ -1,3 +1,5 @@
+import path from 'path';
+
 /**
  * @typedef {import('webpack').RuleSetUseItem} RuleSetUseItem
  * @typedef {import('webpack').RuleSetLoader} RuleSetLoader
@@ -41,6 +43,18 @@ const insertLoader = (useArray, index, loader) => {
   useArray.splice(index, 0, loader);
 };
 
+/**
+ * Return Relative Normalized path with forward slash
+ * @param {string} resourcePath
+ * @param {string} rootContext
+ * @returns {string}
+ */
+const normalizePath = (resourcePath, rootContext) => {
+  const relativePath = resourcePath.replace(path.normalize(rootContext), '');
+  const normalizedPath = relativePath.split(path.sep).join('/');
+  return normalizedPath;
+};
+
 const color = {
   Reset: '\x1b[0m',
   Bright: '\x1b[1m',
@@ -69,4 +83,4 @@ const color = {
   BgWhite: '\x1b[47m'
 };
 
-export { findLoader, insertLoader, color };
+export { findLoader, insertLoader, color, normalizePath };
