@@ -9298,9 +9298,9 @@ relay-runtime@1.5.0:
     babel-runtime "^6.23.0"
     fbjs "^0.8.14"
 
-release-it@9.4.0:
-  version "9.4.0"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-9.4.0.tgz#4a1a93b6c2ed3313c2ae7cd243e8d99bc3c36b30"
+release-it@9.4.3:
+  version "9.4.3"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-9.4.3.tgz#0c29bd15c6221801197dd469f5c127c561a82419"
   dependencies:
     "@octokit/rest" "16.3.0"
     "@webpro/is-subdir" "1.0.0"
