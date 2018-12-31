@@ -2147,6 +2147,12 @@ better-assert@~1.0.0:
   dependencies:
     callsite "1.0.0"
 
+better-opn@0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/better-opn/-/better-opn-0.1.4.tgz#271d03bd8bcb8406d2d9d4cda5c0944d726ea171"
+  dependencies:
+    opn "^5.4.0"
+
 better-queue-memory@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/better-queue-memory/-/better-queue-memory-1.0.2.tgz#aa6d169aa1d0cc77409185cb9cb5c7dc251bcd41"
@@ -4942,9 +4948,9 @@ gatsby-react-router-scroll@^2.0.2:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.78:
-  version "2.0.78"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.78.tgz#d59ac4becddf8d13b70bb4fc00f5f1e0f37ef77c"
+gatsby@2.0.79:
+  version "2.0.79"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.79.tgz#6ca8a89da5259bc1cd6bfe6e730c7c5a9cd6a03d"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4963,6 +4969,7 @@ gatsby@2.0.78:
     babel-plugin-dynamic-import-node "^1.2.0"
     babel-plugin-remove-graphql-queries "^2.5.2"
     babel-preset-gatsby "^0.1.6"
+    better-opn "0.1.4"
     better-queue "^3.8.6"
     bluebird "^3.5.0"
     browserslist "3.2.8"
@@ -5029,7 +5036,6 @@ gatsby@2.0.78:
     normalize-path "^2.1.1"
     null-loader "^0.1.1"
     opentracing "^0.14.3"
-    opn "^5.3.0"
     optimize-css-assets-webpack-plugin "^5.0.1"
     parse-filepath "^1.0.1"
     physical-cpu-count "^2.0.0"
@@ -7932,9 +7938,15 @@ opn@5.1.0:
   dependencies:
     is-wsl "^1.1.0"
 
-opn@^5.1.0, opn@^5.3.0:
+opn@^5.1.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.3.0.tgz#64871565c863875f052cfdf53d3e3cb5adb53b1c"
+  dependencies:
+    is-wsl "^1.1.0"
+
+opn@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/opn/-/opn-5.4.0.tgz#cb545e7aab78562beb11aa3bfabc7042e1761035"
   dependencies:
     is-wsl "^1.1.0"
 
