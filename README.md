@@ -62,13 +62,14 @@ module.exports = {
         // develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['whitelist'], // Don't remove this selector
-        // ignore: ['ignored.css', 'prismjs/', 'docsearch.js/'] // Ignore file/folder
+        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     }
   ]
 };
 ```
-[Read about all available options.](#options)
+[Read about all the available options.](#options)
 ## TLDR
 * Define options in `gatsby-config.js`, not `purgecss.config.js`.
 * If using tailwindcss, use the [`tailwind: true` option](#tailwind).
@@ -76,7 +77,8 @@ module.exports = {
 * Only files processed by Webpack will be purged.
 * `my-selector` will not match `mySelector`.
 * Whitelist required selectors or ignore files/folder using the [Whitelist Solutions](#whitelist-solutions) guide.
-* Ignore complete packages with `ignore: ['packagename/']`
+* Ignore complete packages with [`ignore: ['packagename/']`](#ignore).
+* To only purge specific files/packages use [`purgeOnly: ['fileOrPackage/']`](#purgeOnly).
 
 ## Help! Purgecss breaks my site
 
@@ -282,11 +284,22 @@ whitelist: ['my-selector', 'footer']
 Since v2.3.0 manually including 'html', 'body' is no longer required.  
 default: `[]`
 
+### purgeOnly
+Only purge these files/folders.  
+Added in v3.1.0.  
+**`ignore: Array<string>`**
+```js
+purgeOnly: ['/main.css', 'bootstrap/', 'node_modules/font-awesome/']
+```
+**Note:** always use forward slash `/` for folders, even on Windows.  
+Can be combined with the [`ignore` option](#ignore).  
+default: `[]`
+
 ### ignore
 Stop these files or folders from getting purged.  
 **`ignore: Array<string>`**
 ```js
-ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
+ignore: ['/ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
 ```
 **Note:** always use forward slash `/` for folders, even on Windows.  
 default: `[]`
@@ -310,7 +323,7 @@ Added in v3.
 develop: true
 ```
 This does not print the total css removed.  
-To see what is being removed, use it with the printRejected option.  
+To see what is being removed, use it with the [printRejected option](#printRejected).  
 default: `false`
 
 ### debug
