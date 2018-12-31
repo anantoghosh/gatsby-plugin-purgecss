@@ -30,7 +30,7 @@ export default function loader(source) {
     stats.addSize(source);
   }
 
-  if (Array.isArray(options.ignore)) {
+  if (Array.isArray(options.ignore) && options.ignore.length > 0) {
     const relativePath = this.resourcePath.replace(
       path.normalize(this.rootContext),
       ''
