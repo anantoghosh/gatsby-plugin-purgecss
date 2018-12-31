@@ -17,10 +17,9 @@ For Gatsby 2 only
 **Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎉. Supports tailwind, bootstrap, bulma etc.**  
 
 
-> **Please read [Help! Purgecss breaks my site](#help-purgecss-breaks-my-site) 😯 to make sure gatsby-plugin-purgecss does not cause you issues and [TLDR](#TLDR) for the important bits
-**
+>**Please read [Help! Purgecss breaks my site](#help-purgecss-breaks-my-site) 😯 to make sure gatsby-plugin-purgecss does not cause you issues and [TLDR](#TLDR) for the important bits**
 
-📘 [Read the latest docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/README.md) • [Changelog](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/CHANGELOG.md) 
+📘 [Read the latest docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/README.md) • [Changelog](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/CHANGELOG.md) • 
 
 ### Demo
 When used in [gatsby-starter-bootstrap](https://github.com/jaxx2104/gatsby-starter-bootstrap)
@@ -59,16 +58,17 @@ module.exports = {
     { 
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true, // Print Removed Selectors
-        tailwind: true, // Enable tailwindcss support
-        whitelist: ['whitelistclass'], // Don't remove this selector
-        ignore: ['ignored.css'] // Ignore file/folder
+        printRejected: true, // Print removed selectors and processed file names
+        // develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        // whitelist: ['whitelist'], // Don't remove this selector
+        // ignore: ['ignored.css', 'prismjs/', 'docsearch.js/'] // Ignore file/folder
       }
     }
   ]
 };
 ```
-[Available Options.](#options)
+[Read about all available options.](#options)
 ## TLDR
 * Define options in `gatsby-config.js`, not `purgecss.config.js`.
 * If using tailwindcss, use the [`tailwind: true` option](#tailwind).
@@ -76,11 +76,12 @@ module.exports = {
 * Only files processed by Webpack will be purged.
 * `my-selector` will not match `mySelector`.
 * Whitelist required selectors or ignore files/folder using the [Whitelist Solutions](#whitelist-solutions) guide.
+* Ignore complete packages with `ignore: ['packagename/']`
 
 ## Help! Purgecss breaks my site
 
 ### Diagnosing the issue
-* Use [`printRejected: true` option](#printrejected) which will print the the filenames and the selectors which were removed.
+* Use [`printRejected: true` option](#printrejected) which will print the filenames and the selectors which were removed.
 * Identify which of the required selectors were removed.
 * Whitelist the required selectors or completely ignore files using [Whitelist Solutions](#whitelist-solutions) guide.
 * Look at the [Issues](#issues) section to understand why/how the purge was performed.
@@ -92,7 +93,7 @@ This section documents purgecss behavior in removing unused css. Most of the rul
 #### Issue 1: CSS file not getting purged
 For `gatsby-plugin-purgecss` to work on a css file it **must be imported by a script file inside your src folder**. This plugin depends on webpack to process css. **If webpack does not use the css file then `gatsby-plugin-purgecss` cannot process it.**
 
-Also, make sure that you [included the plugin](#usage) after sass/less/stylus plugins. 
+Also, make sure that you [included the plugin](#usage) after sass/less/stylus/postcss plugins. 
 
 #### Issue 2: Selectors with dashes in name gets removed when used with named imports
 For eg:
