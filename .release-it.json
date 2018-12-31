@@ -13,5 +13,8 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "npm": {
+    "publish": false
   }
 }
