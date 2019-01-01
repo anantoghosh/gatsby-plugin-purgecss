@@ -1,3 +1,18 @@
+# [3.1.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/3.0.0...3.1.0) (2019-01-01)
+
+
+### Bug Fixes
+
+* Add ignored file size to New Css Size ([59cba42](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/59cba42))
+* Check ignore array length too ([7ce76f2](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/7ce76f2))
+
+
+### Features
+
+* Add `purgeOnly` option ([47eb2a5](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/47eb2a5))
+
+
+
 # [3.0.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/2.4.0...3.0.0) (2018-12-30)
 
 ### Breaking Change
