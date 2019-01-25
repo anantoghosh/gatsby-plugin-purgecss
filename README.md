@@ -16,8 +16,12 @@ For Gatsby 2 only
 
 **Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎉. Supports tailwind, bootstrap, bulma etc.**  
 
+<hr />
 
->**Please read [Help! Purgecss breaks my site](#help-purgecss-breaks-my-site) 😯 to make sure gatsby-plugin-purgecss does not cause you issues and [TLDR](#TLDR) for the important bits**
+⚠️ NOTE: This is NOT an install and forget type plugin. By default, it may remove required styles too.  
+**Please read [Help! Purgecss breaks my site](#help-purgecss-breaks-my-site) 😯 to make sure gatsby-plugin-purgecss does not cause you issues and [TLDR](#TLDR) for the important bits**
+
+<hr />
 
 📘 [Read the latest docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/README.md) • [Changelog](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/CHANGELOG.md) • 
 
@@ -142,6 +146,9 @@ content: [
 ];
 ```
 
+#### Issue 6: Works in `develop`, breaks in `build`
+`gatsby-plugin-purgecss` by default does not run when using `gatsby develop`.
+
 ### Whitelist Solutions
 You can use any of these techniques to stop purgecss from removing required styles
 #### 1. Whitelist the selector using the whitelist option in gatsby-config.js
@@ -228,8 +235,9 @@ This plugin loads css files (or transformed output from css plugins) and searche
 Since html and body tags do not appear in `src/` files, it is whitelisted by default to not be removed.  
 Since v2.3.0, manually including 'html', 'body' is no longer required.
 
-### Webpack Loader Order
-Sass/Less/Stylus(or any other loader) -> PostCSS -> **PurgeCSS** -> CSSLoader -> (CSSExtract/StyleLoader)
+### Webpack loader order
+Sass/Less/Stylus(or any other loader) -> PostCSS -> **PurgeCSS** -> CSSLoader -> (CSSExtract/StyleLoader)  
+Note: Sass/Less/Stylus `@import`s are executed before this plugin, therefore, it won't see the `@import`ed files as separate files.
 
 ### Using with postcss syntax plugins
 Since v3, `gatsby-plugin-purgecss` should work with other postcss plugins.
