@@ -19,6 +19,7 @@ For Gatsby 2 only
 <hr />
 
 ⚠️ NOTE: This is NOT an install and forget type plugin. By default, it may remove required styles too.  
+ 
 **Please read [Help! Purgecss breaks my site](#help-purgecss-breaks-my-site) 😯 to make sure gatsby-plugin-purgecss does not cause you issues and [TLDR](#TLDR) for the important bits**
 
 <hr />
