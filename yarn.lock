@@ -703,10 +703,6 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@moocar/lokijs@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@moocar/lokijs/-/lokijs-1.0.1.tgz#545227c173030dd0e6b1e6bdcef528012a6c325c"
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4990,9 +4986,9 @@ gatsby-cli@^2.4.8:
     yargs "^11.1.0"
     yurnalist "^1.0.2"
 
-gatsby-link@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.8.tgz#35db4c24372c9da54ffc9c3baf165b90d1fcfcb9"
+gatsby-link@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.9.tgz#f40b5ca5a739eb36accb75f42963e6c82d307432"
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@reach/router" "^1.1.1"
@@ -5042,17 +5038,17 @@ gatsby-plugin-stylus@2.0.3:
     stylus "^0.54.5"
     stylus-loader "^3.0.1"
 
-gatsby-react-router-scroll@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-2.0.2.tgz#d8046ce2f3bfa52ef6ec55804007d976b0bb6bef"
+gatsby-react-router-scroll@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-2.0.3.tgz#024885dbafc41666faad50038375098ca376c3a8"
   dependencies:
     "@babel/runtime" "^7.0.0"
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.0.91:
-  version "2.0.91"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.91.tgz#177869f475615dd4bd67e6b9d96779b214f3df52"
+gatsby@2.0.98:
+  version "2.0.98"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.98.tgz#2f57ca467b4370e3e95cbdde45186430467cb1f6"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5060,7 +5056,6 @@ gatsby@2.0.91:
     "@babel/polyfill" "^7.0.0"
     "@babel/runtime" "^7.0.0"
     "@babel/traverse" "^7.0.0"
-    "@moocar/lokijs" "^1.0.1"
     "@reach/router" "^1.1.1"
     address "1.0.3"
     autoprefixer "^8.6.5"
@@ -5108,9 +5103,9 @@ gatsby@2.0.91:
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
     gatsby-cli "^2.4.8"
-    gatsby-link "^2.0.8"
+    gatsby-link "^2.0.9"
     gatsby-plugin-page-creator "^2.0.5"
-    gatsby-react-router-scroll "^2.0.2"
+    gatsby-react-router-scroll "^2.0.3"
     glob "^7.1.1"
     graphql "^0.13.2"
     graphql-relay "^0.5.5"
@@ -5127,6 +5122,7 @@ gatsby@2.0.91:
     json-stringify-safe "^5.0.1"
     kebab-hash "^0.1.2"
     lodash "^4.17.10"
+    lokijs "^1.5.6"
     md5 "^2.2.1"
     md5-file "^3.1.1"
     mime "^2.2.0"
@@ -7171,6 +7167,10 @@ loglevelnext@^1.0.1:
   dependencies:
     es6-symbol "^3.1.1"
     object.assign "^4.1.0"
+
+lokijs@^1.5.6:
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/lokijs/-/lokijs-1.5.6.tgz#6de6b8c3ff7a972fd0104169f81e7ddc244c029f"
 
 long@4.0.0:
   version "4.0.0"
