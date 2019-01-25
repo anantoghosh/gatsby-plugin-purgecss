@@ -8,12 +8,12 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "next",
-    "react": "16.7.0",
-    "react-dom": "16.7.0",
-    "gatsby-plugin-less": "next",
-    "gatsby-plugin-sass": "next",
-    "gatsby-plugin-stylus": "next",
+    "gatsby": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "gatsby-plugin-less": "latest",
+    "gatsby-plugin-sass": "latest",
+    "gatsby-plugin-stylus": "latest",
     "less": "latest",
     "node-sass": "latest"
   }
