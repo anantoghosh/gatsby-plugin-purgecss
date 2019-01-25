@@ -150,16 +150,14 @@ whitelist: ['my-selector']
 ```
 [Read about whitelist option.](#whitelist---from-purgecss)
 
-#### 2. For selector with dashes in them and using named imports
-You *could* write it like `className={style['my-selector']}` instead.
-
-#### 3. Use a JavaScript comment
+#### 2. Use a JavaScript comment
 ```jsx
 // my-selector
 <div className={style.mySelector} />
 ```
 This comment can be in any script file inside `src`.
-#### 4.  Use Regex pattern to exclude many selectors
+
+#### 3.  Use Regex pattern to exclude many selectors
 `whitelistPatterns` option is available from purgecss
 ```js
 whitelistPatterns: [/^btn/]
@@ -168,14 +166,14 @@ For eg, this pattern will whitelist all selectors starting with btn: btn btn-pri
 [Read about whitelistPatterns option.](#whitelistpatterns---from-purgecss)  
 Look at the [`whitelistPatternsChildren` option](#whitelist---from-purgecss) in purgecss to also whitelist children of the selectors.
 
-#### 5. Use purgecss ignore comment in css file
+#### 4. Use purgecss ignore comment in css file
 ```css
 /* purgecss ignore */
 .my-selector { color: 'white' }
 ```
 This comment will ignore the selector on the next line.
 
-#### 6. Use purgecss ignore block comments in css file
+#### 5. Use purgecss ignore block comments in css file
 ```css
 /* purgecss start ignore */
 button { color: 'white' };
@@ -184,12 +182,23 @@ button { color: 'white' };
 ```
 This comment pair will ignore all css selectors between them.
 
-#### 7. Ignore files and folder using the ignore options
+#### 6. Ignore files and folder using the ignore options
 ```js
 ignore: ['ignoredFile.css', 'ignoredFolder/', 'sub/folder/ignore/', 'inFolder/file.css']
 ```
 **Note:** always use forward slash `/` for folders, even on Windows.  
 [Read about ignore option.](#ignore)
+
+#### 7. Purge only specified files and skip everything else
+```js
+purgeOnly: ['/mainstyles.css', 'node_modules/bootstrap']
+```
+**Note:** always use forward slash `/` for folders, even on Windows.  
+Good if you only need to purge some large css library and not touch anything else.  
+[Read about purgeOnly option.](#purgeOnly)
+
+#### 8. For selector with dashes in them and using named imports
+You *could* write it like `className={style['my-selector']}` instead.
 
 ### Improving Purgecss selector detection
 Purgecss relies on extractors to get the list of selector used in a file. The default extractor considers every word of a file as a selector.
@@ -218,6 +227,9 @@ This plugin loads css files (or transformed output from css plugins) and searche
 
 Since html and body tags do not appear in `src/` files, it is whitelisted by default to not be removed.  
 Since v2.3.0, manually including 'html', 'body' is no longer required.
+
+### Webpack Loader Order
+Sass/Less/Stylus(or any other loader) -> PostCSS -> **PurgeCSS** -> CSSLoader -> (CSSExtract/StyleLoader)
 
 ### Using with postcss syntax plugins
 Since v3, `gatsby-plugin-purgecss` should work with other postcss plugins.
