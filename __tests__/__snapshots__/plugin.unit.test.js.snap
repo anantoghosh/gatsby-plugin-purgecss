@@ -532,7 +532,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 0 1`] = 
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -1217,7 +1217,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 1 1`] = 
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -2070,7 +2070,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 2 1`] = 
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -3091,7 +3091,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 3 1`] = 
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -4528,7 +4528,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 4 1`] = 
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -6141,7 +6141,7 @@ exports[`gatsby-plugin-pugrecss build-javascript: Should match snapshot 5 1`] = 
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
@@ -7342,7 +7342,7 @@ exports[`gatsby-plugin-pugrecss develop: Should match snapshot 3 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
