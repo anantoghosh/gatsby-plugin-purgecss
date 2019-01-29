@@ -16,7 +16,7 @@
     "gatsby-plugin-postcss": "2.0.3",
     "gatsby-plugin-sass": "2.0.8",
     "gatsby-plugin-stylus": "2.0.4",
-    "jest": "23.6.0",
+    "jest": "24.0.0",
     "less": "3.9.0",
     "node-sass": "4.11.0",
     "react": "16.7.0",
