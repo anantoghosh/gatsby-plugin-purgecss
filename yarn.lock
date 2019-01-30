@@ -1153,24 +1153,25 @@
     universal-user-agent "^2.0.1"
     url-template "^2.0.8"
 
-"@octokit/request@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@octokit/request/-/request-2.2.1.tgz#1b445e3052842b1f3ab94d68e2606840c85b4265"
+"@octokit/request@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@octokit/request/-/request-2.3.0.tgz#da2672308bcf0b9376ef66f51bddbe5eb87cc00a"
+  integrity sha512-5YRqYNZOAaL7+nt7w3Scp6Sz4P2g7wKFP9npx1xdExMomk8/M/ICXVLYVam2wzxeY0cIc6wcKpjC5KI4jiNbGw==
   dependencies:
     "@octokit/endpoint" "^3.1.1"
     is-plain-object "^2.0.4"
     node-fetch "^2.3.0"
     universal-user-agent "^2.0.1"
 
-"@octokit/rest@16.8.1":
-  version "16.8.1"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.8.1.tgz#2d3ea3bbee140feb991476971a927f2e8a103982"
+"@octokit/rest@16.13.3":
+  version "16.13.3"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.13.3.tgz#706fd99eb94de7fad13c4ebdf2d589bb4df41ba5"
+  integrity sha512-vrCQYuLkGcFCWe0VyWdRfhmAcyZWLL/Igwz+qnFyRKXn9ml1li0Au8e4hGXbY6Q3kQ+3YWUOGDl3OkO1znh7dA==
   dependencies:
-    "@octokit/request" "2.2.1"
+    "@octokit/request" "2.3.0"
     before-after-hook "^1.2.0"
     btoa-lite "^1.0.0"
     lodash.get "^4.4.2"
-    lodash.pick "^4.4.0"
     lodash.set "^4.3.2"
     lodash.uniq "^4.5.0"
     octokit-pagination-methods "^1.1.0"
@@ -5667,9 +5668,10 @@ globule@^1.0.0:
     lodash "~4.17.10"
     minimatch "~3.0.2"
 
-got@9.5.1:
-  version "9.5.1"
-  resolved "https://registry.yarnpkg.com/got/-/got-9.5.1.tgz#9cd83c64978225790c5142fc4e492cdea01256ef"
+got@9.6.0:
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/got/-/got-9.6.0.tgz#edf45e7d67f99545705de1f7bbeeeb121765ed85"
+  integrity sha512-R7eWptXuGYxwijs0eV+v3o6+XH1IqVK8dJOEecQfTmkncw9AV4dcw/Dhxi8MdlqPthxxpZyizMzyg8RTmEsG+Q==
   dependencies:
     "@sindresorhus/is" "^0.14.0"
     "@szmarczak/http-timer" "^1.1.2"
@@ -7473,10 +7475,6 @@ lodash.mergewith@^4.6.0:
 lodash.padend@4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.padend/-/lodash.padend-4.6.1.tgz#53ccba047d06e158d311f45da625f4e49e6f166e"
-
-lodash.pick@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
 
 lodash.set@^4.3.2:
   version "4.3.2"
@@ -9907,11 +9905,12 @@ relay-runtime@1.5.0:
     babel-runtime "^6.23.0"
     fbjs "^0.8.14"
 
-release-it@10.0.4:
-  version "10.0.4"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-10.0.4.tgz#61db44f106018835ffbf502e913529c1f5d2f0e0"
+release-it@10.0.7:
+  version "10.0.7"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-10.0.7.tgz#2a1b6b906cfd84d1ac3ee3aa298dfbc595ef21dd"
+  integrity sha512-T/nEGQi8103nEiABYJQf4y2cpUazyfwQybVwCqCVqU1Qv4XNiKi4hpMPTjhwjuikLFb2Cqg2Rslt2em7WK9Bcw==
   dependencies:
-    "@octokit/rest" "16.8.1"
+    "@octokit/rest" "16.13.3"
     async-retry "1.2.3"
     bump-file "2.0.0"
     chalk "2.4.2"
@@ -9923,7 +9922,7 @@ release-it@10.0.4:
     form-data "2.3.3"
     git-url-parse "11.1.2"
     globby "9.0.0"
-    got "9.5.1"
+    got "9.6.0"
     inquirer "6.2.1"
     is-ci "2.0.0"
     lodash "4.17.11"
