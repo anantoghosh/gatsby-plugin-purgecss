@@ -5094,10 +5094,10 @@ gatsby-react-router-scroll@^2.0.4:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.10.tgz#130f91efa9ccfc9331e33d5883cda96bc99b8df0"
-  integrity sha512-yqC9KRfsNct1QAI9ilrNofXz9fPQlqb5DliZnJ3su9KX4BzVCO3J8ysafTAmzP8LvnpGIxI7rF8YUcN63/HaJQ==
+gatsby@2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.11.tgz#e9f10754cae419534aef06768ff309150ae395c1"
+  integrity sha512-PD/UGJRR5FHUmd99HvXdm3A4e7tUbE36chKyRJugXzxJ+0O0MbiKd5+Ovpi0+Ni87JEq2SP3Zhao1xAwJdHtkw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
