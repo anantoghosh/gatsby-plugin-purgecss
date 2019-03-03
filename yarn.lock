@@ -2182,6 +2182,13 @@ better-opn@0.1.4:
   dependencies:
     opn "^5.4.0"
 
+better-path-resolve@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/better-path-resolve/-/better-path-resolve-1.0.0.tgz#13a35a1104cdd48a7b74bf8758f96a1ee613f99d"
+  integrity sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==
+  dependencies:
+    is-windows "^1.0.0"
+
 better-queue-memory@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/better-queue-memory/-/better-queue-memory-1.0.2.tgz#aa6d169aa1d0cc77409185cb9cb5c7dc251bcd41"
@@ -10697,12 +10704,14 @@ symbol-tree@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
 
-symlink-dir@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-2.0.2.tgz#ca27a0fff155d932b8948ac90bf301738eb77ca4"
+symlink-dir@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-3.0.0.tgz#8e5108089dd4e8b03e9dc8f8a4f82b9f15d0534b"
+  integrity sha512-CDS0WxzMprRn5kQoCsK1+2fAHq0FUogqAy44iCeQ5MG8Q7l6lpnjU/942GufMw+T/UQbfo7wW1krtVopdp28FQ==
   dependencies:
     "@types/mz" "0.0.32"
     "@types/node" "^10.0.8"
+    better-path-resolve "^1.0.0"
     graceful-fs "^4.1.11"
     is-windows "^1.0.0"
     mkdirp-promise "^5.0.0"
