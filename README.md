@@ -44,7 +44,7 @@ When used in [gatsby-starter-bootstrap-cv](https://github.com/mhjadav/gatsby-sta
 ## Installation
 
 ```sh
-npm i gatsby-plugin-purgecss
+npm install --save gatsby-plugin-purgecss
 ```
 
 ### Usage
