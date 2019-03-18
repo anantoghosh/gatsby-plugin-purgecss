@@ -1,3 +1,7 @@
+## [3.1.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/3.1.0...3.1.1) (2019-03-18)
+
+Minor documentation changes.
+
 # [3.1.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/3.0.0...3.1.0) (2019-01-01)
 
 
@@ -20,15 +24,6 @@
 If you have added `gatsby-plugin-postcss` in your `gatsby-config.js` file, specify `gatsby-plugin-purgecss` after the `gatsby-plugin-postcss` plugin.  
 Tailwind support added using the `tailwind: true` option.
 Running the plugin when using `gatsby develop` added using the `develop: true` option.
-
-### Bug Fixes
-
-* **deps:** update react monorepo to v16.5.0 ([fad3a83](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/fad3a83))
-* **deps:** update react monorepo to v16.5.1 ([75de5e6](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/75de5e6))
-* **deps:** update react monorepo to v16.5.2 ([a3e98a0](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/a3e98a0))
-* **deps:** update react monorepo to v16.6.0 ([d210f8a](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/d210f8a))
-* **deps:** update react monorepo to v16.6.3 ([c554d71](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/c554d71))
-* **deps:** update react monorepo to v16.7.0 ([#153](https://github.com/anantoghosh/gatsby-plugin-purgecss/issues/153)) ([4d4af5d](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/4d4af5d))
 
 
 ### Features
