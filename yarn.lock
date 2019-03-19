@@ -5270,10 +5270,10 @@ gatsby-react-router-scroll@^2.0.6:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.1.38:
-  version "2.1.38"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.38.tgz#621697928422ff4aaef1aefe98dacb37a9bb00d3"
-  integrity sha512-xOvhvTqSQe2N/xiisjYgV3ZYrxuylmSgYetYVxhs+JhcIHnsnJL/DO9XvBOiwkVBzrROSp1MfIlMd4hUjLx/Lg==
+gatsby@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.2.0.tgz#46973febe3fb2ea5f09d9eccd50a3529ac9d2f2e"
+  integrity sha512-+ljmxEKlBRikLOh1lpYVyP5rd5qcD/mTTz7R70FpqNM4uEcdcAmNlSYuLEhh3NgIXqjr99HgvjcsqGRkbDGVGg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5335,15 +5335,15 @@ gatsby@2.1.38:
     gatsby-react-router-scroll "^2.0.6"
     glob "^7.1.1"
     graphql "^14.1.1"
+    graphql-compose "^5.11.0"
     graphql-playground-middleware-express "^1.7.10"
     graphql-relay "^0.6.0"
-    graphql-skip-limit "^2.0.6"
     graphql-tools "^3.0.4"
-    graphql-type-json "^0.2.1"
     hash-mod "^0.0.5"
     invariant "^2.2.4"
     is-relative "^1.0.0"
     is-relative-url "^2.0.0"
+    is-wsl "^1.1.0"
     jest-worker "^23.2.0"
     joi "12.x.x"
     json-loader "^0.5.7"
@@ -5684,6 +5684,14 @@ graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
+graphql-compose@^5.11.0:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-5.12.0.tgz#335341dd843657200081f84e76734d72a1ddaba7"
+  integrity sha512-U6H3JUBWR8WyYhtH9zRno2y5pHh4T5ypDzBYddGVq7IUukcTMQNlfVmydiElc4ktzPFRc+P/38Gh4MWT54qWmA==
+  dependencies:
+    graphql-type-json "^0.2.1"
+    object-path "^0.11.4"
+
 graphql-config@^2.0.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-2.1.0.tgz#f07107ac44b661282d2002497de588f01aa92c9d"
@@ -5725,13 +5733,6 @@ graphql-request@^1.5.0:
   dependencies:
     cross-fetch "2.0.0"
     graphql "^0.13.2"
-
-graphql-skip-limit@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/graphql-skip-limit/-/graphql-skip-limit-2.0.6.tgz#67cdfbf33254db338aade6e7b44ea3e779b4b1c4"
-  integrity sha512-Jg/K/Tvxno5Rkq+KRwEZ0ME+PZBRrgDIvYIUvYMj8/hitc38hXen1XLuHEbqfrlkmrzPzQv6TB6W5utfZwJs+Q==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
 
 graphql-tools@^3.0.4:
   version "3.1.1"
@@ -8313,7 +8314,7 @@ object-keys@^1.0.11, object-keys@^1.0.8:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.12.tgz#09c53855377575310cca62f55bb334abff7b3ed2"
 
-object-path@^0.11.2:
+object-path@^0.11.2, object-path@^0.11.4:
   version "0.11.4"
   resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.4.tgz#370ae752fbf37de3ea70a861c23bba8915691949"
 
