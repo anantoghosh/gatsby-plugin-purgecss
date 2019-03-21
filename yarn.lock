@@ -5258,10 +5258,10 @@ gather-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gather-stream/-/gather-stream-1.0.0.tgz#b33994af457a8115700d410f317733cbe7a0904b"
 
-gatsby-cli@^2.4.16:
-  version "2.4.16"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.4.16.tgz#62581d5c6289ab72cbb34a36ad4ac83fc649768b"
-  integrity sha512-ZjvnGJHQw0mOS+xN4XIvfIv5bjptzv3MWaAdQcDfE59/0Lnv0Nl5CkbWvbY9NVzXg5M+qqniy6OeCHmuAW3vTg==
+gatsby-cli@^2.4.17:
+  version "2.4.17"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.4.17.tgz#38f0d2fd55de595b457a1d2a1048fb8f88a8f143"
+  integrity sha512-qhhFqYy7N8G4d8hSJycdib5OeU2bHgQq+TUdMFs0wZ13Kmyr34EabdnHdSdhZdS/lUAjet6L2KugTZ6DnQFERw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
@@ -5351,10 +5351,10 @@ gatsby-react-router-scroll@^2.0.6:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.2.3.tgz#8ee215f9020c90fb96f07db1db476861159eb193"
-  integrity sha512-qGq4tqww68EHmf2sOFKuLvA6nFhlvHQ2oiwLLXBLpse+dX7lVQKKKN4XXV9GRpPbMG4CvgRF/rfqUBzawGsAQg==
+gatsby@2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.2.5.tgz#0c4220c634ee69b9af1b35318019eb10d60e7a69"
+  integrity sha512-gc2d8bbcV/AF06pk1XDn7YzE/4fz2jC0PePKq6Wr/eOM9n2PSyimzBcxRon95HzGsgmXDT4pnS3KNrvlQkkbRw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5410,13 +5410,13 @@ gatsby@2.2.3:
     flat "^4.0.0"
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
-    gatsby-cli "^2.4.16"
+    gatsby-cli "^2.4.17"
     gatsby-link "^2.0.16"
     gatsby-plugin-page-creator "^2.0.10"
     gatsby-react-router-scroll "^2.0.6"
     glob "^7.1.1"
     graphql "^14.1.1"
-    graphql-compose "^5.11.0"
+    graphql-compose "^6.0.3"
     graphql-playground-middleware-express "^1.7.10"
     graphql-relay "^0.6.0"
     graphql-tools "^3.0.4"
@@ -5765,10 +5765,10 @@ graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
-graphql-compose@^5.11.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-5.12.0.tgz#335341dd843657200081f84e76734d72a1ddaba7"
-  integrity sha512-U6H3JUBWR8WyYhtH9zRno2y5pHh4T5ypDzBYddGVq7IUukcTMQNlfVmydiElc4ktzPFRc+P/38Gh4MWT54qWmA==
+graphql-compose@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-6.0.3.tgz#fa5668a30694abef4166703aa03af07a741039a8"
+  integrity sha512-QpywEtNvlEQS0a5VIseMA/tk67QmEN9NNUx1B1tzGR/p7MePyus9wvci2cIP/mwdDrvLRRbwpmidSKQXFD3SEA==
   dependencies:
     graphql-type-json "^0.2.1"
     object-path "^0.11.4"
