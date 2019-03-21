@@ -1618,10 +1618,6 @@
   version "10.5.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.3.tgz#5bcfaf088ad17894232012877669634c06b20cc5"
 
-"@types/node@^10.0.8":
-  version "10.5.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.2.tgz#f19f05314d5421fe37e74153254201a7bf00a707"
-
 "@types/node@^7.0.11":
   version "7.0.67"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.67.tgz#3aeacf429e24e08e14d7621039d37b7f53542ecf"
@@ -11036,13 +11032,13 @@ symbol-tree@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
 
-symlink-dir@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-3.0.0.tgz#8e5108089dd4e8b03e9dc8f8a4f82b9f15d0534b"
-  integrity sha512-CDS0WxzMprRn5kQoCsK1+2fAHq0FUogqAy44iCeQ5MG8Q7l6lpnjU/942GufMw+T/UQbfo7wW1krtVopdp28FQ==
+symlink-dir@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-3.0.1.tgz#a7041b4a5bb7db0263bf451a4e6d6eee6ccf7d72"
+  integrity sha512-k6rEJ0dfpRFPtgrQsqzpjN/3gTo0ORKQzZ3lqTQo1ZJVekNK2Aj3MkH0OtjIKqZxC6lft4/XyLSqeS1s8UK1UQ==
   dependencies:
     "@types/mz" "0.0.32"
-    "@types/node" "^10.0.8"
+    "@types/node" "*"
     better-path-resolve "^1.0.0"
     graceful-fs "^4.1.11"
     is-windows "^1.0.0"
