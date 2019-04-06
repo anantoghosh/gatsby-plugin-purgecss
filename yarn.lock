@@ -10036,13 +10036,13 @@ remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
 
-rename-overwrite@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/rename-overwrite/-/rename-overwrite-1.0.3.tgz#b9eb7c173ac28c4eb009b7b5ab9e3052315e2fd0"
+rename-overwrite@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/rename-overwrite/-/rename-overwrite-2.0.1.tgz#a174516741bacfc443f9667f1765340793fa096d"
+  integrity sha512-9PDT/PjrQqI9IMbeEOuTINr4hASyGAh0gy4k1Q6xDh+POdtOAPyiEx5mO62ofY9AAJ01Vh3cZovkv3uH4RItBw==
   dependencies:
     graceful-fs "^4.1.11"
     rimraf "^2.6.1"
-    util.promisify "^1.0.0"
 
 renderkid@^2.0.1:
   version "2.0.1"
@@ -11110,10 +11110,10 @@ symbol-tree@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
 
-symlink-dir@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-3.0.1.tgz#a7041b4a5bb7db0263bf451a4e6d6eee6ccf7d72"
-  integrity sha512-k6rEJ0dfpRFPtgrQsqzpjN/3gTo0ORKQzZ3lqTQo1ZJVekNK2Aj3MkH0OtjIKqZxC6lft4/XyLSqeS1s8UK1UQ==
+symlink-dir@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/symlink-dir/-/symlink-dir-3.0.2.tgz#6cbe4fc340cdd0ec1f3da4ea7955740dc001717a"
+  integrity sha512-FjZGwbQYV73MjfuRWNjqkH2tTt79mFlvZYogJY4LCfDOm7PYgN/ODHAkh8GPbpD7B7QtDjyPm9Zu/8DHmp7I0Q==
   dependencies:
     "@types/mz" "0.0.32"
     "@types/node" "*"
@@ -11122,7 +11122,7 @@ symlink-dir@3.0.1:
     is-windows "^1.0.0"
     mkdirp-promise "^5.0.0"
     mz "^2.4.0"
-    rename-overwrite "^1.0.3"
+    rename-overwrite "^2.0.1"
 
 table@^5.0.2:
   version "5.1.1"
