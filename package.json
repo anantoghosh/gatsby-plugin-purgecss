@@ -22,7 +22,7 @@
     "node-sass": "4.11.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "release-it": "10.4.0",
+    "release-it": "10.4.1",
     "runjs": "4.4.2",
     "symlink-dir": "3.0.2",
     "tailwindcss": "0.7.4"
