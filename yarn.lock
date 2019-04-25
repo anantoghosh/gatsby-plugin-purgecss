@@ -10228,10 +10228,10 @@ relay-runtime@2.0.0:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
 
-release-it@10.4.3:
-  version "10.4.3"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-10.4.3.tgz#39a7eee8741b3b1d84957a67e42e4406da6a077b"
-  integrity sha512-SSuAk9Xo1INbHefvOfmScnry1xphyoGyX0PQdtJvusZjibqnR0aoMsDbt+0BbkJtafJr5OJlY9FjwVScVs0gTQ==
+release-it@10.4.4:
+  version "10.4.4"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-10.4.4.tgz#7aacdf0b7cff27614a48b131845a4cd8c2e4c517"
+  integrity sha512-Lz3EN+wbL0ZnIO2ujqBNwxabTGU+aBWTeYubukai3AL5/x+jAClm5QfmDsBWul5Zl4A5KpRu3VX8n5ePEXIlFQ==
   dependencies:
     "@octokit/rest" "16.25.0"
     async-retry "1.2.3"
