@@ -1,8 +1,6 @@
 {
-  "increment": "conventional:angular",
   "scripts": {
-    "beforeStage": "yarn build",
-    "afterBump": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "beforeStage": "yarn build"
   },
   "git": {
     "requireCleaningWorkingDir": true
@@ -16,5 +14,11 @@
   },
   "npm": {
     "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
   }
 }
