@@ -1633,7 +1633,7 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@release-it/conventional-changelog@^1.0.2":
+"@release-it/conventional-changelog@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-1.0.2.tgz#4c756a2c75dd07cf5310f2de3e5ec09fd1aebaa0"
   integrity sha512-/S9mVkB413Xhmknz7Qlwu/98s2hTNMmm00D6od3c1xxQibwQKdu8V+MKuo/jF0Yd2xs2kvdi+4syOultWz8GtA==
