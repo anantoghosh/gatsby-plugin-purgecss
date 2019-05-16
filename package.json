@@ -10,7 +10,7 @@
     "@babel/core": "7.4.4",
     "@babel/plugin-proposal-object-rest-spread": "7.4.4",
     "@babel/preset-env": "7.4.4",
-    "@release-it/conventional-changelog": "^1.0.2",
+    "@release-it/conventional-changelog": "1.0.2",
     "coveralls": "3.0.3",
     "dotenv": "8.0.0",
     "gatsby": "2.5.0",
