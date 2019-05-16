@@ -27,11 +27,11 @@ describe('Check purge status', async () => {
 
   describe('Keeps selectors', () => {
     test('Kept simple selector', async () => {
-      expect(html).toContain('bg-blue');
+      expect(html).toContain('bg-blue-500');
     });
 
     test('Kept hover selector', async () => {
-      expect(html).toContain('.hover\\:bg-blue-dark:hover');
+      expect(html).toContain('.hover\\:bg-blue-700:hover');
     });
   });
 
@@ -41,8 +41,7 @@ describe('Check purge status', async () => {
     });
 
     test('Removed hover selector', async () => {
-      expect(html).not.toContain('.hover\\:bg-blue-light:hover');
+      expect(html).not.toContain('.hover\\:bg-blue-600:hover');
     });
   });
-
 });
