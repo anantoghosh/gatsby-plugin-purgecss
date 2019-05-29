@@ -10654,7 +10654,41 @@ relay-runtime@2.0.0:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
 
-release-it@12.2.1, release-it@^12.2.1:
+release-it@12.2.2:
+  version "12.2.2"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-12.2.2.tgz#bafa99392e8b4ea8ed9f4d72eab51185aca460be"
+  integrity sha512-zr00XYO6YioLirehTJcMIef/xfF+K9grd5CELqYMEJoMNSvumYVxp2syl8IJpvAj8d8u3AD4TqfUvgJ5o6eYgQ==
+  dependencies:
+    "@iarna/toml" "2.2.3"
+    "@octokit/rest" "16.25.0"
+    async-retry "1.2.3"
+    chalk "2.4.2"
+    cosmiconfig "5.2.0"
+    debug "4.1.1"
+    deprecated-obj "1.0.0"
+    detect-repo-changelog "1.0.1"
+    find-up "3.0.0"
+    form-data "2.3.3"
+    git-url-parse "11.1.2"
+    globby "9.2.0"
+    got "9.6.0"
+    import-cwd "2.1.0"
+    inquirer "6.3.1"
+    is-ci "2.0.0"
+    lodash "4.17.11"
+    mime-types "2.1.24"
+    ora "3.4.0"
+    os-name "3.1.0"
+    semver "6.0.0"
+    shelljs "0.8.3"
+    supports-color "6.1.0"
+    update-notifier "2.5.0"
+    url-join "4.0.0"
+    uuid "3.3.2"
+    window-size "1.1.1"
+    yargs-parser "13.0.0"
+
+release-it@^12.2.1:
   version "12.2.1"
   resolved "https://registry.yarnpkg.com/release-it/-/release-it-12.2.1.tgz#13aa5102723716200d37f8686fc272f167633498"
   integrity sha512-MudVfmqXKPWJKdQdYk/dUzMdiRNPuE6Y/c9tnT8QgZeIFhLCWHnRvkSTiNN/4Gs29zHauEEcHWbzgG1wzy3+sA==
