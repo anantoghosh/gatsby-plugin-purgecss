@@ -4390,6 +4390,14 @@ deprecated-obj@1.0.0:
     flat "^4.1.0"
     lodash "^4.17.11"
 
+deprecated-obj@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/deprecated-obj/-/deprecated-obj-1.0.1.tgz#d7051278d2c141dc672ac3410d06642e990003b7"
+  integrity sha512-igs766xNtF7Fv/R//gT644e6dr+bT6kJrg+qyJA9affCyvf70UUNKIUIMUSROBg1sPUrBnENPsDdDHcBLI5wFQ==
+  dependencies:
+    flat "^4.1.0"
+    lodash "^4.17.11"
+
 deprecation@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/deprecation/-/deprecation-1.0.1.tgz#2df79b79005752180816b7b6e079cbd80490d711"
@@ -10587,10 +10595,10 @@ relay-runtime@2.0.0:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
 
-release-it@12.2.2:
-  version "12.2.2"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-12.2.2.tgz#bafa99392e8b4ea8ed9f4d72eab51185aca460be"
-  integrity sha512-zr00XYO6YioLirehTJcMIef/xfF+K9grd5CELqYMEJoMNSvumYVxp2syl8IJpvAj8d8u3AD4TqfUvgJ5o6eYgQ==
+release-it@12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-12.3.0.tgz#2ac7c0d37d7773dcaacb4b29cde64c487862a512"
+  integrity sha512-mMEbdhyUDyX05viUl1pKcDLpNOxpgiig6OfvJXleNJqYKjIvNtYVkBxLHXH//kmT2NYnAkx8NvN8IZJQRei8zQ==
   dependencies:
     "@iarna/toml" "2.2.3"
     "@octokit/rest" "16.25.0"
@@ -10598,7 +10606,7 @@ release-it@12.2.2:
     chalk "2.4.2"
     cosmiconfig "5.2.0"
     debug "4.1.1"
-    deprecated-obj "1.0.0"
+    deprecated-obj "1.0.1"
     detect-repo-changelog "1.0.1"
     find-up "3.0.0"
     form-data "2.3.3"
