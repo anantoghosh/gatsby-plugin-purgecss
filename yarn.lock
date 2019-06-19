@@ -5623,10 +5623,10 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
-gatsby-cli@^2.6.10:
-  version "2.6.10"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.6.10.tgz#ce727ccd907b4dd33100714a40f85679c189ce9d"
-  integrity sha512-5jXC4PmNK4eKSaLmHwUvMF+Pa2um8j/Te01KN4p2KEC60FddUbgAg3B+nZAlPeXbuJKuulna6wndA/6PjQa9ag==
+gatsby-cli@^2.6.12:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.6.12.tgz#22e2e99df00a6c273061693e3b81e8637ac982bb"
+  integrity sha512-Ed1oM9ahiI32iO47QgcIw1hBLeroqVFURjrNCHebOWEVJcTS1JaslcACJWN2Hq5OUyHC42hN7bDKU6IkmGe/Uw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
@@ -5651,6 +5651,7 @@ gatsby-cli@^2.6.10:
     object.entries "^1.1.0"
     opentracing "^0.14.3"
     pretty-error "^2.1.1"
+    progress "^2.0.3"
     prompts "^2.1.0"
     react "^16.8.4"
     resolve-cwd "^2.0.0"
@@ -5712,10 +5713,10 @@ gatsby-plugin-postcss@2.0.7:
     "@babel/runtime" "^7.0.0"
     postcss-loader "^3.0.0"
 
-gatsby-plugin-sass@2.0.11:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.0.11.tgz#25ef6a206107e24ac49d50866f0595c2aa489649"
-  integrity sha512-EopQgb7FoC8XmkM691NppbAwPi2JaC6yv7SWrSdCDEJkLxr9V98KCfr7tMk0KW64LF8pj+XjtwKVtEwCPEQ0gg==
+gatsby-plugin-sass@2.0.13:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.0.13.tgz#f66bd5fec28cf1a186a1e3c09b268dbd3a1702aa"
+  integrity sha512-LvuMIabg1yLdWYh+59HWufiWzDScGp+R5Bu8nEA1wu4eEORf05SHGpQAty48oSJ7IoLKzafRNJFObdZ9f/Gl/w==
   dependencies:
     "@babel/runtime" "^7.0.0"
     sass-loader "^7.0.1"
@@ -5760,10 +5761,10 @@ gatsby-telemetry@^1.0.12:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby@2.9.7:
-  version "2.9.7"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.9.7.tgz#bda2fa9ebbdaabeedb25de74c925d6e2c6665091"
-  integrity sha512-Z4QQs7WAPbRxmSfOjJdbVwByTtXwk1oDWFsA9LHG0LURCpqkpqEAmdAS82G4JwYSKjciqDvRzE0aKwAJ54wjDw==
+gatsby@2.9.9:
+  version "2.9.9"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.9.9.tgz#9a435ca5751b0958bc764b8eb801356158e47c0e"
+  integrity sha512-jAAMCn7NNeymwTQ2+EcpWQmwbOEjd6RiBAxc7aBvfSg3PDJUG50bCeWC9TaYC81hiHq3XSHgJLDB+02BSJmjkw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5821,7 +5822,7 @@ gatsby@2.9.7:
     flat "^4.0.0"
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
-    gatsby-cli "^2.6.10"
+    gatsby-cli "^2.6.12"
     gatsby-graphiql-explorer "^0.1.2"
     gatsby-link "^2.1.1"
     gatsby-plugin-page-creator "^2.0.13"
@@ -9970,6 +9971,11 @@ process@~0.5.1:
 progress@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz#8a1be366bf8fc23db2bd23f10c6fe920b4389d1f"
+
+progress@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
+  integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
 promise-inflight@^1.0.1:
   version "1.0.1"
