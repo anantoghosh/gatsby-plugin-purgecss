@@ -11,7 +11,7 @@
     "@babel/plugin-proposal-object-rest-spread": "7.5.4",
     "@babel/preset-env": "7.5.4",
     "@release-it/conventional-changelog": "1.1.0",
-    "coveralls": "3.0.4",
+    "coveralls": "3.0.5",
     "dotenv": "8.0.0",
     "gatsby": "2.13.19",
     "gatsby-plugin-less": "2.1.2",
