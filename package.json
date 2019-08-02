@@ -26,7 +26,7 @@
     "release-it": "12.3.4",
     "runjs": "4.4.2",
     "symlink-dir": "3.1.0",
-    "tailwindcss": "1.0.5"
+    "tailwindcss": "1.0.6"
   },
   "dependencies": {
     "fs-extra": "^8.0.1",
