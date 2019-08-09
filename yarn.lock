@@ -6072,10 +6072,10 @@ gatsby-plugin-postcss@2.1.2:
     "@babel/runtime" "^7.0.0"
     postcss-loader "^3.0.0"
 
-gatsby-plugin-sass@2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.1.4.tgz#93602fe2ccff6a1b86b392e36becfc783e92feb8"
-  integrity sha512-aVd5rBKUNn4AzvxbRZKMKAo0x5y532Adj5wUWGbd0wW0yyAuGa0nc/wd58Wf7kVChTI1uAaOMnbGh+mW6owmjw==
+gatsby-plugin-sass@2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.1.5.tgz#c7624171d409e346e6d0553c9acd0c7a668ac268"
+  integrity sha512-JxBdfSA1GFg6NCZ+OJSiM1bzyE4Ov3L7n00siSAJAn90l8yTBLgW7Pm4UVQT7xlx2bhbikSovqOr48zPxBDY6w==
   dependencies:
     "@babel/runtime" "^7.0.0"
     sass-loader "^7.0.1"
@@ -6121,10 +6121,10 @@ gatsby-telemetry@^1.1.11:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby@2.13.54:
-  version "2.13.54"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.13.54.tgz#faa3d0435e184b4cac1a8af1f9940b7b6b7ea375"
-  integrity sha512-VUN789hwTMHi7IdpnbmBpSsKmcYc1PHrf+apyVSdKHnB4+W6ziNlFTegabTn5LYkEOvKeFMDdWGkpM5/Rh73wg==
+gatsby@2.13.55:
+  version "2.13.55"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.13.55.tgz#dfef1a2154c5526799b0f455f711c47f2116bc03"
+  integrity sha512-nhsOc7ZH9gtn8xjFMh0FZobe3hsDN4OEPKaOJ+L43JE2D5Hq1YB5T2SeSQ4e6524v8GU/ij0wxIXEibMYtpygA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -6191,7 +6191,7 @@ gatsby@2.13.54:
     gatsby-telemetry "^1.1.11"
     glob "^7.1.1"
     got "8.0.0"
-    graphql "^14.1.1"
+    graphql "^14.2.0"
     graphql-compose "^6.3.2"
     graphql-playground-middleware-express "^1.7.10"
     invariant "^2.2.4"
@@ -6660,10 +6660,10 @@ graphql@^0.13.2:
   dependencies:
     iterall "^1.2.1"
 
-graphql@^14.1.1:
-  version "14.1.1"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
-  integrity sha512-C5zDzLqvfPAgTtP8AUPIt9keDabrdRAqSWjj2OPRKrKxI9Fb65I36s1uCs1UUBFnSWTdO7hyHi7z1ZbwKMKF6Q==
+graphql@^14.2.0:
+  version "14.4.2"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.4.2.tgz#553a7d546d524663eda49ed6df77577be3203ae3"
+  integrity sha512-6uQadiRgnpnSS56hdZUSvFrVcQ6OF9y6wkxJfKquFtHlnl7+KSuWwSJsdwiK1vybm1HgcdbpGkCpvhvsVQ0UZQ==
   dependencies:
     iterall "^1.2.2"
 
