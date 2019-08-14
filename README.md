@@ -248,7 +248,7 @@ It would be better if you use purgecss postcss plugin directly instead.
 
 ## Options
 
-This plugins supports most purgecss options as is (except `css`).
+This plugin supports most purgecss options as is (except `css`).
 > [Read about purgecss options in detail](https://www.purgecss.com/configuration)
 
 Options can be specified in your `gatsby-config.js` file like so:
