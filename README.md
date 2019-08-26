@@ -84,6 +84,7 @@ module.exports = {
 * Whitelist required selectors or ignore files/folder using the [Whitelist Solutions](#whitelist-solutions) guide.
 * Ignore complete packages with [`ignore: ['packagename/']`](#ignore).
 * To only purge specific files/packages use [`purgeOnly: ['fileOrPackage/']`](#purgeOnly).
+* Only `js, jsx, ts, tsx` files are scanned for selectors by default. If you want to add `md` or `mdx` use `content: [path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}')]` or better, just whitelist the required selectors.
 
 ## Help! Purgecss breaks my site
 
@@ -149,6 +150,15 @@ content: [
 
 #### Issue 6: Works in `develop`, breaks in `build`
 `gatsby-plugin-purgecss` by default does not run when using `gatsby develop`.
+
+#### Issue 7: Selectors in markdown (.md, .mdx) files are getting removed
+Markdown files are not scanned for selectors by default.
+Use the [`content` option.](#content---from-purgecss) to add them.
+```js
+content: [path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}')]
+```
+Note: This may decrease the amount of styles removed because purgecss will consider every word in the markdown file to be a selector.  
+If possible, just whitelist the required selectors instead of using this option.
 
 ### Whitelist Solutions
 You can use any of these techniques to stop purgecss from removing required styles
