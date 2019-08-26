@@ -19,7 +19,7 @@ describe('Verify Build', () => {
   });
 });
 
-describe('Check purge status', async () => {
+describe('Check purge status', () => {
   let html;
   beforeAll(async () => {
     html = await fs.readFile(dir + '/public/index.html', 'utf-8');
