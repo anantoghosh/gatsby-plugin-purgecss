@@ -51,7 +51,7 @@ export function onCreateWebpackConfig(
             return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
           }
         },
-        extensions: ['js', 'ts', 'jsx', 'tsx']
+        extensions: ['js', 'ts', 'jsx', 'tsx', 'md', 'mdx']
       },
       ...userOptions.extractors
     ];
