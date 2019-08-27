@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/4.0.0...4.0.1) (2019-08-27)
+
+
+### Bug Fixes
+
+* Add `md` and `mdx` extension to the tailwind extractor ([ba2d81e](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/ba2d81e))
+
 # [4.0.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/3.1.1...4.0.0) (2019-05-16)
 
 ### Build System
