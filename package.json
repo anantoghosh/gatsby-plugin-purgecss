@@ -6,10 +6,10 @@
   "license": "MIT",
   "author": "Ananto Ghosh",
   "devDependencies": {
-    "@babel/cli": "7.6.0",
-    "@babel/core": "7.6.0",
+    "@babel/cli": "7.6.2",
+    "@babel/core": "7.6.2",
     "@babel/plugin-transform-modules-commonjs": "7.6.0",
-    "@babel/preset-env": "7.6.0",
+    "@babel/preset-env": "7.6.2",
     "@release-it/conventional-changelog": "1.1.0",
     "coveralls": "3.0.6",
     "dotenv": "8.1.0",
