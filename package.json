@@ -13,7 +13,7 @@
     "@release-it/conventional-changelog": "1.1.0",
     "coveralls": "3.0.9",
     "dotenv": "8.2.0",
-    "gatsby": "2.19.36",
+    "gatsby": "2.19.37",
     "gatsby-plugin-less": "3.0.20",
     "gatsby-plugin-postcss": "2.1.21",
     "gatsby-plugin-sass": "2.1.30",
