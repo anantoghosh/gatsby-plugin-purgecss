@@ -52,17 +52,11 @@ export function onCreateWebpackConfig(
   };
 
   if (userOptions.tailwind) {
-    userOptions.extractors = [
-      {
-        extractor:
-          /**
-           * @param {string} content
-           */
-          content => content.match(/[A-Za-z0-9-_:\/]+/g) || [],
-        extensions: ['js', 'ts', 'jsx', 'tsx', 'md', 'mdx']
-      },
-      ...userOptions.extractors
-    ];
+    userOptions.defaultExtractor =
+      /**
+       * @param {string} content
+       */
+      content => content.match(/[\w-/:]+(?<!:)/g) || [];
   }
 
   if (userOptions.rejected && stage === 'build-html') {
