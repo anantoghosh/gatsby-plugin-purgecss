@@ -11,12 +11,23 @@ import { stats, Debug } from './shared';
 const loadersRegex = /postcss-loader/;
 
 /**
- * @param {object} param0
- * @param {object} param1
+ * @typedef {object} OptionObject
+ * @property {boolean} OptionObject.rejected
+ * @property {string[]} OptionObject.content
+ * @property {string[]} OptionObject.ignore
+ * @property {string[]} OptionObject.purgeOnly
+ * @property {boolean} OptionObject.debug
+ * @property {boolean} OptionObject.printRejected
+ * @property {string[]} OptionObject.whitelist
+ * @property {boolean} OptionObject.printAll
+ * @property {boolean} OptionObject.tailwind
+ * @property {boolean} OptionObject.develop
+ * @property {any[]} OptionObject.extractors
  */
+
 export function onCreateWebpackConfig(
   { actions, stage, getConfig },
-  { plugins, ...userOptions }
+  { plugins, ...userOptions /** @type OptionObject */ }
 ) {
   const whitelist = ['html', 'body'];
 
@@ -43,14 +54,11 @@ export function onCreateWebpackConfig(
   if (userOptions.tailwind) {
     userOptions.extractors = [
       {
-        extractor: class {
+        extractor:
           /**
-           * @param {object} content
+           * @param {string} content
            */
-          static extract(content) {
-            return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-          }
-        },
+          content => content.match(/[A-Za-z0-9-_:\/]+/g) || [],
         extensions: ['js', 'ts', 'jsx', 'tsx', 'md', 'mdx']
       },
       ...userOptions.extractors
@@ -75,7 +83,7 @@ export function onCreateWebpackConfig(
    * @type {WebpackConfig}
    */
   const config = getConfig();
-  const existingRules = config.module.rules;
+  const existingRules = config?.module?.rules;
 
   /**
    * @type {RuleSetLoader}
@@ -85,7 +93,7 @@ export function onCreateWebpackConfig(
     options: userOptions
   };
 
-  existingRules.forEach(rule => {
+  existingRules?.forEach(rule => {
     if (Array.isArray(rule.oneOf)) {
       rule.oneOf.forEach(rule => {
         if (Array.isArray(rule.use)) {
