@@ -1,6 +1,6 @@
 {
-  "scripts": {
-    "beforeStage": "yarn build"
+  "hooks": {
+    "before:init": "yarn build"
   },
   "git": {
     "requireCleaningWorkingDir": true
