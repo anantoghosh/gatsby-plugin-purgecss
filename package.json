@@ -30,8 +30,8 @@
   },
   "dependencies": {
     "fs-extra": "^9.0.0",
-    "purgecss": "^2.1.0"
-    "loader-utils": "^2.0.0",
+    "purgecss": "^2.1.0",
+    "loader-utils": "^2.0.0"
   },
   "peerDependencies": {
     "gatsby": ">2.0.0-beta"
