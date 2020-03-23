@@ -9,11 +9,11 @@
  * @property {string[]} OptionObject.purgeOnly
  * @property {boolean} OptionObject.debug
  * @property {boolean} OptionObject.printRejected
- * @property {boolean} OptionObject.whitelist
+ * @property {string[]} OptionObject.whitelist
  * @property {boolean} OptionObject.printAll
  */
 
-import PurgeCss from 'purgecss';
+import Purgecss from 'purgecss';
 import { getOptions } from 'loader-utils';
 import { stats, Debug } from './shared';
 import { color, normalizePath } from './utils';
@@ -23,8 +23,14 @@ import { color, normalizePath } from './utils';
  * @this {LoaderContext & {rootContext:string}}
  * @param {string} source
  */
-export default function loader(source) {
+export default async function loader(source) {
   const options = /** @type {OptionObject} */ (getOptions(this));
+
+  const callback = this.async();
+  if (callback === undefined) {
+    console.log('gatsby-plugin-purgecss: Async Loader Error');
+    return;
+  }
 
   if (options.rejected) {
     stats.addSize(source);
@@ -36,7 +42,7 @@ export default function loader(source) {
     if (options.ignore.some(file => normalizedPath.includes(file))) {
       console.log('\ngatsby-plugin-purgecss: Ignored ', this.resourcePath);
       stats.addRemovedSize(source);
-      return source;
+      return callback(null, source);
     }
   }
 
@@ -50,17 +56,16 @@ export default function loader(source) {
       );
     } else {
       stats.addRemovedSize(source);
-      return source;
+      return callback(null, source);
     }
   }
 
   let css;
   try {
-    // @ts-ignore
-    css = new PurgeCss({
+    css = await new Purgecss().purge({
       css: [{ raw: source }],
       ...options
-    }).purge();
+    });
   } catch (error) {
     console.log(
       '\ngatsby-plugin-purgecss: Could not parse file, skipping. Your build will not break.\n',
@@ -73,13 +78,13 @@ export default function loader(source) {
       console.log('Use debug option to investigate further.');
     }
 
-    return source;
+    return callback(error, source);
   }
 
   if (options.rejected) {
     const rejected = css[0].rejected;
 
-    stats.add(rejected.length);
+    stats.add(rejected?.length ?? 0);
     stats.addRemovedSize(css[0].css);
 
     if (options.printRejected && Array.isArray(rejected)) {
@@ -95,5 +100,5 @@ export default function loader(source) {
     }
   }
 
-  return css[0].css;
+  return callback(null, css[0].css);
 }
