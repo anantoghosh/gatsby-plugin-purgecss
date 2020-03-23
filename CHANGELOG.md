@@ -1,3 +1,25 @@
+# [5.0.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/4.0.1...5.0.0) (2020-03-23)
+
+
+### Features
+
+* Update tailwind regex ([791c06a](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/791c06a))
+* Upgrade to PurgeCSS v2 ([d2e8831](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/d2e8831))
+
+
+### BREAKING CHANGES
+
+Major update to purgecss may require updated config.  
+If using extractors, change to the new extractor format
+```js
+extractors: [
+  (content) => {
+     // return array of css selectors
+  },
+  extensions: ['js']
+]
+```
+
 ## [4.0.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/4.0.0...4.0.1) (2019-08-27)
 
 
