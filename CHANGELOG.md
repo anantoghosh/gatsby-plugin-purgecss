@@ -5,6 +5,7 @@
 
 * Update tailwind regex ([791c06a](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/791c06a))
 * Upgrade to PurgeCSS v2 ([d2e8831](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/d2e8831))
+* Loader now runs asynchronously
 
 
 ### BREAKING CHANGES
