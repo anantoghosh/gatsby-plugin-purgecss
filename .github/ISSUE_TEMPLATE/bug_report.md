@@ -5,7 +5,7 @@ about: Create a report to help us improve
 ---
 
 **Verify if it is a postcss bug**
-First verify that gatsby-plugin-purgecss is working by setting the option `rejected: true` which will print out the list of removed selectors.
+First verify that gatsby-plugin-purgecss is working by setting the option `printRejected: true` which will print out the list of removed selectors.
 If the plugin is working, but the css is not getting purged as you would have hoped then it's very likely a purgecss issue. File for purgecss related bugs here https://github.com/FullHuman/purgecss/issues.
 
 - [ ] **I have verified that this is not a purgecss issue.**
