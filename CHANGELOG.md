@@ -14,10 +14,12 @@ Major update to purgecss may require updated config.
 If using extractors, change to the new extractor format
 ```js
 extractors: [
-  (content) => {
-     // return array of css selectors
-  },
-  extensions: ['js']
+  {
+    extractor: (content) => {
+      // return array of css selectors
+    },
+    extensions: ['js']
+  }
 ]
 ```
 
