@@ -10,7 +10,7 @@
     "@babel/core": "7.9.0",
     "@babel/plugin-transform-modules-commonjs": "7.9.0",
     "@babel/preset-env": "7.9.5",
-    "@release-it/conventional-changelog": "1.1.0",
+    "@release-it/conventional-changelog": "1.1.1",
     "coveralls": "3.0.11",
     "dotenv": "8.2.0",
     "gatsby": "2.20.14",
