@@ -56,7 +56,7 @@ export function onCreateWebpackConfig(
       /**
        * @param {string} content
        */
-      content => content.match(/[\w-/:]+(?<!:)/g) || [];
+      content => content.match(/[\w-/.:]+(?<!:)/g) || [];
   }
 
   if (userOptions.rejected && stage === 'build-html') {
