@@ -5,7 +5,9 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "gatsby": "latest",
@@ -15,6 +17,8 @@
     "gatsby-plugin-sass": "latest",
     "gatsby-plugin-stylus": "latest",
     "less": "latest",
-    "node-sass": "latest"
-  }
+    "node-sass": "latest",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
