@@ -18,7 +18,7 @@
     "gatsby-plugin-postcss": "2.3.0",
     "gatsby-plugin-sass": "2.3.0",
     "gatsby-plugin-stylus": "2.3.0",
-    "jest": "25.5.3",
+    "jest": "25.5.4",
     "less": "3.11.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
