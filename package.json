@@ -7,9 +7,9 @@
   "author": "Ananto Ghosh",
   "devDependencies": {
     "@babel/cli": "7.10.1",
-    "@babel/core": "7.10.1",
+    "@babel/core": "7.10.2",
     "@babel/plugin-transform-modules-commonjs": "7.10.1",
-    "@babel/preset-env": "7.10.1",
+    "@babel/preset-env": "7.10.2",
     "@release-it/conventional-changelog": "1.1.4",
     "coveralls": "3.1.0",
     "dotenv": "8.2.0",
