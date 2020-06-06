@@ -24,7 +24,7 @@
     "react-dom": "16.13.1",
     "release-it": "13.6.2",
     "runjs": "4.4.2",
-    "sass": "1.26.7",
+    "sass": "1.26.8",
     "symlink-dir": "4.0.3",
     "tailwindcss": "1.4.6"
   },
