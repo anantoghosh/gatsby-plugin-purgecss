@@ -7984,10 +7984,10 @@ gatsby-page-utils@^0.2.16:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-less@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-4.0.0.tgz#47fdf010192906951047c77a215480847e0e4384"
-  integrity sha512-C/cxNjc38ytOw2tr7mzwxolKyuirt704la7HTX1wyiBOsE+o8KD7HPIgIEhXLEf8JLLb3rF+w+TNa1CxNffLrw==
+gatsby-plugin-less@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-4.0.1.tgz#2444d2dffdc92613e1e4b9ef4d355a36114bbd5b"
+  integrity sha512-h9wiYddGTFr8MyBEFU1hXlzAVV/O4jcxXuZyYL1qM2IlYB6DQ0q8JkGIspIRLIfCGQnr7uzMVfEjbU/dpTy8xA==
   dependencies:
     "@babel/runtime" "^7.10.3"
     less-loader "^6.1.3"
@@ -8005,18 +8005,18 @@ gatsby-plugin-page-creator@^2.3.16:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-postcss@2.3.9:
-  version "2.3.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-2.3.9.tgz#35cf564a7c7490d277e0e072dd4fa43612b6f91c"
-  integrity sha512-HBSfB2QY3RhUQv9bgbI3DBHcrVoIdMJaykD+L1xdyhCSgvzKgAH0OpQAhRrujf9tDbMmrkKiejara9u/mGvZcQ==
+gatsby-plugin-postcss@2.3.10:
+  version "2.3.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-2.3.10.tgz#dd9e781cb81b0d17a3200a59328c4e1e1913170c"
+  integrity sha512-+IndRUTcFFF33Z0I4zEBB9HUNJkaFLHZBSXDTrWGaDpgywH/L+aBTJuqk/juS+pUQgTMDrpAjFMKZb3z73UVFQ==
   dependencies:
     "@babel/runtime" "^7.10.3"
     postcss-loader "^3.0.0"
 
-gatsby-plugin-sass@2.3.10:
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.10.tgz#a6aec4a218318c613cf09de8defa42300283f6b9"
-  integrity sha512-ZF/+SNMogv6C+UksTLGCwQxeA5224fmp1ojJ/wOkmwMM83HClQ5wwcs0utQZmIOCAszEn+wi2wul1Tyiyh4YBg==
+gatsby-plugin-sass@2.3.11:
+  version "2.3.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.11.tgz#983039536d3a981b11612f2af17d7921acbea24e"
+  integrity sha512-1QlTPx7s82YhAnDYOhhPmyD7YlVEoNBykelS7RmoEMZTpBhE+SYgQKdL6lsdEUGp8QLwU8VKTRL0SAlrkUwmJA==
   dependencies:
     "@babel/runtime" "^7.10.3"
     sass-loader "^7.3.1"
@@ -8135,10 +8135,10 @@ gatsby-telemetry@^1.3.18:
     node-fetch "2.6.0"
     uuid "3.4.0"
 
-gatsby@2.23.22:
-  version "2.23.22"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.23.22.tgz#40260b744c0d1537d5cad03c9d57f86fce67cf3f"
-  integrity sha512-3kQUOeYZDle17tgvBD8DHIv2jjjKISV6c/+adRPxIBtcsA/zc+otrLXDD8PL77jd2xiE8X7/lMq2O4LsvOx+qQ==
+gatsby@2.23.23:
+  version "2.23.23"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.23.23.tgz#6797ba0c1b416bdfd86688155390055fd4b3185e"
+  integrity sha512-plpUIBEsXu1z7KeLCk/tgH+iQDugCB4QHNS1FJ8rXdOVq6+5qwRdHUI2cT1S8aRTizuQcfhoqAF5L2nnM+DNDw==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/core" "^7.10.3"
