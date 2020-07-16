@@ -26,7 +26,7 @@
     "runjs": "4.4.2",
     "sass": "1.26.10",
     "symlink-dir": "4.1.0",
-    "tailwindcss": "1.4.6"
+    "tailwindcss": "1.5.1"
   },
   "dependencies": {
     "fs-extra": "^9.0.0",
