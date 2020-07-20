@@ -4305,10 +4305,10 @@ babel-plugin-macros@^2.8.0:
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
 
-babel-plugin-remove-graphql-queries@^2.9.14:
-  version "2.9.14"
-  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.14.tgz#49bf6cdf0a37c2a37c11bf4648675c26732a0492"
-  integrity sha512-V4o7CvS5bud+Tk9ni4gSr2l980K2H0lQ0A7skfSMvHrPlek+Rcs+4tNVpHnKuAWoXTZ+63tW06B4ENn+wf35bg==
+babel-plugin-remove-graphql-queries@^2.9.15:
+  version "2.9.15"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.15.tgz#b879881b0cbac6cd8b1a9fba1a6f10d172ce8234"
+  integrity sha512-cGNEEOO32kKcI+ZZBcCIliPOvyd7/Dp8zyJ/ZD1lXKuH1frzdbWG2nbxm+iil8OIxWaeHfxf083IHvb868TY9A==
 
 babel-plugin-transform-react-remove-prop-types@^0.4.24:
   version "0.4.24"
@@ -8087,10 +8087,10 @@ gatsby-page-utils@^0.2.17:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-less@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-4.0.2.tgz#cdb2444c2f1f079261d5e9605b93918ca3f58632"
-  integrity sha512-ZK38pHxUBGFsrjOqscdyk3o8JVxlW+P/Z+aeH6rDzONg02JLq91nMnWRiyev1d6doy7TpTO1WYFLaIWcUMFJmg==
+gatsby-plugin-less@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-4.0.3.tgz#170f207369dceaa7ca584e21ad7c2bdd4be2c80f"
+  integrity sha512-cmBi0gSISUcagRr+gWNTl91HgNIzojdkyLrOk0Rl53ZVzaYsM6PItQm8UJYIJ+I4bvYUyFQ4/Qs4XaADnTflJQ==
   dependencies:
     "@babel/runtime" "^7.10.3"
     less-loader "^6.1.3"
@@ -8133,10 +8133,10 @@ gatsby-plugin-stylus@2.3.10:
     stylus "^0.54.7"
     stylus-loader "^3.0.2"
 
-gatsby-plugin-typescript@^2.4.15:
-  version "2.4.15"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.15.tgz#7bb67569b8a2f55700b20d2d7ba01f69e936c34c"
-  integrity sha512-sh/BypdmqcpjGJBECPzRY1l7uDmVif8gqTPwcGb38WNENgRel619URc1bJEJRtfFpYEyBKTjVL0h2C5LQHQ1QQ==
+gatsby-plugin-typescript@^2.4.16:
+  version "2.4.16"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.16.tgz#6ac43a2381e297c9f67885175ba6aafc73f753b3"
+  integrity sha512-A95+B10jn7nCBROibfxWe2/jPtXxq4jjZpjhvPcC95xXg8q7J1Zb3USP6oJSYmhQ4EI+JPcvljlnOS6dqn//wg==
   dependencies:
     "@babel/core" "^7.10.3"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.10.1"
@@ -8144,7 +8144,7 @@ gatsby-plugin-typescript@^2.4.15:
     "@babel/plugin-proposal-optional-chaining" "^7.10.3"
     "@babel/preset-typescript" "^7.10.1"
     "@babel/runtime" "^7.10.3"
-    babel-plugin-remove-graphql-queries "^2.9.14"
+    babel-plugin-remove-graphql-queries "^2.9.15"
 
 gatsby-react-router-scroll@^3.0.12:
   version "3.0.12"
@@ -8238,10 +8238,10 @@ gatsby-telemetry@^1.3.20:
     node-fetch "2.6.0"
     uuid "3.4.0"
 
-gatsby@2.24.5:
-  version "2.24.5"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.5.tgz#1b85868989ba3c3c85d4cf071cca513d431ebf55"
-  integrity sha512-V27hmA0326d/a3omVM+PsCKnLjY1g+cXEhsHjXSjdFnk27eDCDYaTHY5UXHTIon8dMVb4hNtSScJX9S7FhQIUw==
+gatsby@2.24.7:
+  version "2.24.7"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.7.tgz#20d458cb8f9feabda242033df232486ddb63aa7b"
+  integrity sha512-H9qEG5cRnHU/lRFaX2hS++6FZbCINavL38wz+UWD95qJ3GmpVHxnob2eQYZzy32CFvprCK9469kGcN9j0jTf0g==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/core" "^7.10.3"
@@ -8264,7 +8264,7 @@ gatsby@2.24.5:
     babel-loader "^8.1.0"
     babel-plugin-add-module-exports "^0.3.3"
     babel-plugin-dynamic-import-node "^2.3.3"
-    babel-plugin-remove-graphql-queries "^2.9.14"
+    babel-plugin-remove-graphql-queries "^2.9.15"
     babel-preset-gatsby "^0.5.2"
     better-opn "1.0.0"
     better-queue "^3.8.10"
@@ -8309,7 +8309,7 @@ gatsby@2.24.5:
     gatsby-legacy-polyfills "^0.0.2"
     gatsby-link "^2.4.13"
     gatsby-plugin-page-creator "^2.3.17"
-    gatsby-plugin-typescript "^2.4.15"
+    gatsby-plugin-typescript "^2.4.16"
     gatsby-react-router-scroll "^3.0.12"
     gatsby-telemetry "^1.3.20"
     glob "^7.1.6"
