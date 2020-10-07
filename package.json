@@ -16,7 +16,7 @@
     "gatsby": "2.24.68",
     "gatsby-plugin-less": "4.0.6",
     "gatsby-plugin-postcss": "3.0.1",
-    "gatsby-plugin-sass": "2.3.15",
+    "gatsby-plugin-sass": "2.3.16",
     "gatsby-plugin-stylus": "2.3.13",
     "jest": "26.5.0",
     "less": "3.12.2",
