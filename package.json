@@ -22,7 +22,7 @@
     "less": "3.12.2",
     "react": "17.0.0",
     "react-dom": "17.0.0",
-    "release-it": "14.2.0",
+    "release-it": "14.2.2",
     "runjs": "4.4.2",
     "sass": "1.27.0",
     "symlink-dir": "4.1.0",
