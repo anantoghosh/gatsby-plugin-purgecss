@@ -37,6 +37,7 @@
   "dependencies": {
     "fs-extra": "^9.0.1",
     "loader-utils": "^2.0.0",
+    "merge-anything": "^4.0.1",
     "purgecss": "^4.0.2"
   },
   "peerDependencies": {

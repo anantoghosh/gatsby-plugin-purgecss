@@ -2,27 +2,22 @@ import { findLoader, insertLoader } from './utils';
 import path from './paths';
 import { stats } from './shared';
 import { writeConfig } from './debug';
+import { mergeAndConcat } from 'merge-anything';
 import type { GatsbyNode } from 'gatsby';
-import type { Configuration } from 'webpack';
+import type { Configuration, RuleSetLoader } from 'webpack';
 import type { Options } from './types';
 
 const loadersRegex = /postcss-loader/;
 
+// eslint-disable-next-line sonarjs/cognitive-complexity
 export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = function (
   { actions, stage, getConfig },
   pluginOptions
 ) {
-  const whitelist = ['html', 'body'];
   const { plugins, ...options } = pluginOptions ?? {};
   const userOptions = (options as unknown) as Options;
 
-  if (userOptions.purgeCSSOptions?.safelist) {
-    userOptions.safelist = [...whitelist, ...userOptions.safelist];
-  } else {
-    userOptions.safelist = whitelist;
-  }
-
-  const mergedUserOptions: Options = {
+  const defaultOptions: Options = {
     rejected: true,
     printRejected: false,
     printAll: false,
@@ -31,13 +26,31 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
     tailwind: false,
     ignore: [],
     purgeOnly: [],
-    ...userOptions,
+    purgeCSSOptions: {
+      content: [],
+      css: [],
+      safelist: { standard: ['html', 'body'] },
+    },
   };
 
-  if (mergedUserOptions.tailwind) {
-    mergedUserOptions.purgeCSSOptions.defaultExtractor = (content) =>
+  if (userOptions.tailwind) {
+    /** This is defined in defaultOptions */
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    defaultOptions.purgeCSSOptions!.defaultExtractor = (content) =>
       content.match(/[\w-/:]+(?<!:)/g) ?? [];
   }
+
+  /** If safelist is an array, normalize it to object with standard key */
+  if (
+    userOptions.purgeCSSOptions?.safelist &&
+    Array.isArray(userOptions.purgeCSSOptions.safelist)
+  ) {
+    userOptions.purgeCSSOptions.safelist = {
+      standard: [...userOptions.purgeCSSOptions.safelist],
+    };
+  }
+
+  const mergedUserOptions = mergeAndConcat(defaultOptions, userOptions);
 
   if (mergedUserOptions.rejected && stage === 'build-html') {
     stats.printStats();
@@ -54,13 +67,10 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
   const config = getConfig() as Configuration;
   const existingRules = config.module?.rules;
 
-  /**
-   * @type {RuleSetLoader}
-   */
   const purgecssloader = {
     loader: path.loader,
-    options: mergedUserOptions,
-  };
+    options: mergedUserOptions.purgeCSSOptions,
+  } as RuleSetLoader;
 
   for (const rules of existingRules ?? []) {
     for (const rule of rules.oneOf ?? []) {

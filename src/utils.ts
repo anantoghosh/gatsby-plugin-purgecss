@@ -17,10 +17,10 @@ const findLoader = (useArray: RuleSetUseItem[], loaderNamesRegex: RegExp) => {
       loaderName = loaderObject.loader;
     }
 
-    return loaderName.match(loaderNamesRegex) !== null;
+    return loaderNamesRegex.exec(loaderName) !== null;
   });
 
-  return index === -1 ? null : index;
+  return index === -1 ? undefined : index;
 };
 
 /**
@@ -28,10 +28,10 @@ const findLoader = (useArray: RuleSetUseItem[], loaderNamesRegex: RegExp) => {
  */
 const insertLoader = (
   useArray: RuleSetUseItem[],
-  index: number | null,
+  index: number | undefined,
   loader: RuleSetLoader
 ) => {
-  if (index === null) {
+  if (index === undefined) {
     return;
   }
   useArray.splice(index, 0, loader);
@@ -47,31 +47,31 @@ const normalizePath = (resourcePath: string, rootContext: string) => {
 };
 
 const color = {
-  Reset: '\x1b[0m',
-  Bright: '\x1b[1m',
-  Dim: '\x1b[2m',
-  Underscore: '\x1b[4m',
-  Blink: '\x1b[5m',
-  Reverse: '\x1b[7m',
-  Hidden: '\x1b[8m',
+  Reset: '\u001B[0m',
+  Bright: '\u001B[1m',
+  Dim: '\u001B[2m',
+  Underscore: '\u001B[4m',
+  Blink: '\u001B[5m',
+  Reverse: '\u001B[7m',
+  Hidden: '\u001B[8m',
 
-  FgBlack: '\x1b[30m',
-  FgRed: '\x1b[31m',
-  FgGreen: '\x1b[32m',
-  FgYellow: '\x1b[33m',
-  FgBlue: '\x1b[34m',
-  FgMagenta: '\x1b[35m',
-  FgCyan: '\x1b[36m',
-  FgWhite: '\x1b[37m',
+  FgBlack: '\u001B[30m',
+  FgRed: '\u001B[31m',
+  FgGreen: '\u001B[32m',
+  FgYellow: '\u001B[33m',
+  FgBlue: '\u001B[34m',
+  FgMagenta: '\u001B[35m',
+  FgCyan: '\u001B[36m',
+  FgWhite: '\u001B[37m',
 
-  BgBlack: '\x1b[40m',
-  BgRed: '\x1b[41m',
-  BgGreen: '\x1b[42m',
-  BgYellow: '\x1b[43m',
-  BgBlue: '\x1b[44m',
-  BgMagenta: '\x1b[45m',
-  BgCyan: '\x1b[46m',
-  BgWhite: '\x1b[47m',
+  BgBlack: '\u001B[40m',
+  BgRed: '\u001B[41m',
+  BgGreen: '\u001B[42m',
+  BgYellow: '\u001B[43m',
+  BgBlue: '\u001B[44m',
+  BgMagenta: '\u001B[45m',
+  BgCyan: '\u001B[46m',
+  BgWhite: '\u001B[47m',
 };
 
 export { findLoader, insertLoader, color, normalizePath };
