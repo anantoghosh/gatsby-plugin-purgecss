@@ -1,6 +1,6 @@
 import { onCreateWebpackConfig } from '../src/gatsby-node';
 import configData from '../testData';
-import fs from 'fs-extra';
+
 jest.mock('fs-extra');
 
 jest.mock(`../src/paths`, () => ({
@@ -8,7 +8,7 @@ jest.mock(`../src/paths`, () => ({
   loader: 'path/loader.js'
 }));
 
-describe(`gatsby-plugin-pugrecss`, () => {
+describe(`gatsby-plugin-purgecss`, () => {
   const actions = {
     setWebpackConfig: jest.fn(),
     replaceWebpackConfig: jest.fn()

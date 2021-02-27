@@ -12,9 +12,11 @@ export function writeConfig(config: unknown) {
       inspect(config, { depth: 15 }),
       'utf8'
     );
+    return 0;
   } catch (error: unknown) {
     console.log('\nCould not write file.');
     console.log(error);
+    return -1;
   }
 }
 
@@ -29,8 +31,10 @@ export function writeAppendError(errorMessage: unknown) {
       inspect(errorMessage),
       'utf8'
     );
+    return 0;
   } catch (error: unknown) {
     console.log('\nCould not write file.');
     console.log(error);
+    return -1;
   }
 }
