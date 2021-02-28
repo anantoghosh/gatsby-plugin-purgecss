@@ -37,7 +37,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
     /** This is defined in defaultOptions */
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     defaultOptions.purgeCSSOptions!.defaultExtractor = (content) =>
-      content.match(/[\w-/:]+(?<!:)/g) ?? [];
+      content.match(/[^\s"'<>`]*[^\s"':<>`]/g) ?? [];
   }
 
   /** If safelist is an array, normalize it to object with standard key */
