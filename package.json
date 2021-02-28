@@ -42,9 +42,7 @@
     "test:local": "ts-node scripts/test_local.ts --project scripts/tsconfig.scripts.json",
     "test:unit": "jest unit",
     "test:build": "jest build",
-    "jest": "jest",
-    "release": "git branch -v && node -r dotenv/config node_modules/release-it/bin/release-it.js",
-    "runjs": "run"
+    "release": "git branch -v && node -r dotenv/config node_modules/release-it/bin/release-it.js"
   },
   "files": [
     "index.js",
