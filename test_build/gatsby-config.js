@@ -6,7 +6,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
+        printSummary: true,
         printRejected: true,
+        printAll: true,
         develop: true,
         debug: true,
         ignore: ['/ignored.css', 'ignored/', 'pages2/style_ignore.css'],

@@ -11,20 +11,6 @@ describe('Test Stats', () => {
     expect(stats.percentChange).toBe('0.00');
   });
 
-  it('removedQuantity should be 0 initially', () => {
-    expect(stats.removedQuantity).toBe(0);
-  });
-
-  it('Should update removedQuantity with new value', () => {
-    stats.add(5);
-    expect(stats.removedQuantity).toBe(5);
-  });
-
-  it('Should add to removedQuantity', () => {
-    stats.add(6);
-    expect(stats.removedQuantity).toBe(11);
-  });
-
   it('Should add string size to totalCssSize', () => {
     stats.addSize('a'.repeat(2048));
     expect(stats.totalCssSize).toBe(2048);

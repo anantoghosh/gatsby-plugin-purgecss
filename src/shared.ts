@@ -5,18 +5,12 @@ const KiB = 1024;
 
 const HUNDRED = 100;
 class Stats {
-  removedQuantity: number;
   totalCssSize: number;
   purgedCssSize: number;
 
   constructor() {
-    this.removedQuantity = 0;
     this.totalCssSize = 0;
     this.purgedCssSize = 0;
-  }
-
-  add(quantity: number) {
-    this.removedQuantity = this.removedQuantity + quantity;
   }
 
   addSize(css: string) {

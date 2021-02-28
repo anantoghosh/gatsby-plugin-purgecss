@@ -7,7 +7,7 @@ export interface Options {
   ignore?: string[];
   purgeOnly?: string[];
   tailwind?: boolean;
-  rejected?: boolean;
+  printSummary?: boolean;
   printRejected?: boolean;
   printAll?: boolean;
   debug?: boolean;

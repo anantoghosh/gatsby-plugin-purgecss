@@ -18,7 +18,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
   const userOptions = (options as unknown) as Options;
 
   const defaultOptions: Options = {
-    rejected: true,
+    printSummary: true,
     printRejected: false,
     printAll: false,
     debug: false,
@@ -27,6 +27,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
     ignore: [],
     purgeOnly: [],
     purgeCSSOptions: {
+      rejected: userOptions.printRejected ?? false,
       content: [],
       css: [],
       safelist: { standard: ['html', 'body'] },
@@ -52,7 +53,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
 
   const mergedUserOptions = mergeAndConcat(defaultOptions, userOptions);
 
-  if (mergedUserOptions.rejected && stage === 'build-html') {
+  if (mergedUserOptions.printSummary && stage === 'build-html') {
     stats.printStats();
   }
 

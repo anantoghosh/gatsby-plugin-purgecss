@@ -22,7 +22,7 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
 
   const options = (getOptions(this) as unknown) as Options;
 
-  if (options.rejected) {
+  if (options.printSummary) {
     stats.addSize(source);
   }
 
@@ -30,7 +30,7 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
     const normalizedPath = normalizePath(this.resourcePath, this.rootContext);
 
     if (options.ignore.some((file) => normalizedPath.includes(file))) {
-      console.log('\ngatsby-plugin-purgecss: Ignored', this.resourcePath);
+      console.log('gatsby-plugin-purgecss: Ignored', this.resourcePath);
       stats.addRemovedSize(source);
       callback(undefined, source);
       return;
@@ -42,7 +42,7 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
 
     if (options.purgeOnly.some((file) => normalizedPath.includes(file))) {
       console.log(
-        '\ngatsby-plugin-purgecss: Only processing',
+        'gatsby-plugin-purgecss: Only processing',
         this.resourcePath
       );
     } else {
@@ -59,23 +59,21 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
       content: [path.src],
     })
     .then((result) => {
-      if (options.rejected) {
-        const rejected = result[0].rejected;
-
-        stats.add(rejected?.length ?? 0);
+      if (options.printSummary) {
         stats.addRemovedSize(result[0].css);
-
-        if (options.printRejected && Array.isArray(rejected)) {
-          const filtered = rejected.map((value) => {
-            return value.replace('\n', '');
-          });
-          console.log(color.FgGreen, '\nFrom:', this.resourcePath);
-          console.log(
-            color.Reset,
-            'Removed Selectors:',
-            options.printAll ? JSON.stringify(filtered) : filtered
-          );
-        }
+      }
+      
+      const rejected = result[0].rejected;
+      if (options.printRejected && Array.isArray(rejected)) {
+        const filtered = rejected.map((value) => {
+          return value.replace('\n', '');
+        });
+        console.log(color.FgGreen, '\nFrom:', this.resourcePath);
+        console.log(
+          color.Reset,
+          'Removed Selectors:',
+          options.printAll ? JSON.stringify(filtered) : filtered
+        );
       }
 
       callback(undefined, result[0].css);

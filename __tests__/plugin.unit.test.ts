@@ -17,10 +17,6 @@ describe(`gatsby-plugin-purgecss`, () => {
 
   const getConfig = jest.fn().mockReturnValue(configData);
 
-  // beforeEach(() => {
-  //   actions.setWebpackConfig.mockReset();
-  // });
-
   const stage: CreateWebpackConfigArgs['stage'][] = [
     'build-javascript',
     'build-html',
@@ -34,7 +30,8 @@ describe(`gatsby-plugin-purgecss`, () => {
     {
       plugins: [],
       debug: true,
-      rejected: false,
+      summary: true,
+      printRejected: true,
       develop: true,
       tailwind: true,
       purgeCSSOptions: {
