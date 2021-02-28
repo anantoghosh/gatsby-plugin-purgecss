@@ -1,8 +1,9 @@
 import Purgecss from 'purgecss';
 import { getOptions } from 'loader-utils';
 import { stats } from './shared';
-import { writeAppendError } from "./debug";
+import { writeAppendError } from './debug';
 import { color, normalizePath } from './utils';
+import path from './paths';
 import type { loader as webpackLoader } from 'webpack';
 import type { Options } from './types';
 
@@ -55,7 +56,7 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
     .purge({
       ...options.purgeCSSOptions,
       css: [{ raw: source }],
-      content: [''],
+      content: [path.src],
     })
     .then((result) => {
       if (options.rejected) {
@@ -82,7 +83,8 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
     .catch((error: unknown) => {
       console.log(
         '\ngatsby-plugin-purgecss: Could not parse file, skipping. Your build will not break.\n',
-        this.resourcePath
+        this.resourcePath,
+        error
       );
 
       if (options.debug) {

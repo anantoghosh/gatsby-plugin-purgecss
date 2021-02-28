@@ -2,6 +2,7 @@
   "extends": "../tsconfig.json",
   "include": ["./**/*"],
   "compilerOptions": {
+    "module": "CommonJS",
     "allowJs": true /* Allow javascript files to be compiled. */
   }
 }

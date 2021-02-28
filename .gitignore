@@ -70,3 +70,12 @@ plugins
 /test_build/gatsby-plugin-purgecss-debug-config.js
 /test_build/gatsby-plugin-purgecss-debug.js
 dist/
+
+tsconfig.tsbuildinfo
+debug.js
+gatsby-node.js
+loader.js
+paths.js
+shared.js
+types.js
+utils.j

@@ -1,20 +1,27 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
-  "license": "MIT",
+  "name": "my-gatsby-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Gatsby Site",
+  "author": "Ananto Ghosh",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
     "develop": "gatsby develop",
+    "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "gatsby-plugin-less": "latest",
-    "gatsby-plugin-sass": "latest",
-    "gatsby-plugin-stylus": "latest",
-    "less": "latest",
-    "node-sass": "latest"
+    "gatsby": "^2.32.8",
+    "gatsby-plugin-less": "^4.7.0",
+    "gatsby-plugin-sass": "^3.2.0",
+    "gatsby-plugin-stylus": "^2.10.0",
+    "less": "^4.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass": "^1.32.8"
   }
 }

@@ -27,7 +27,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
     ignore: [],
     purgeOnly: [],
     purgeCSSOptions: {
-      content: [path.src],
+      content: [],
       css: [],
       safelist: { standard: ['html', 'body'] },
     },
@@ -69,7 +69,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
 
   const purgecssloader = {
     loader: path.loader,
-    options: mergedUserOptions.purgeCSSOptions,
+    options: mergedUserOptions,
   } as RuleSetLoader;
 
   for (const rules of existingRules ?? []) {
