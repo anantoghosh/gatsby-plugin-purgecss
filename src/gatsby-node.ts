@@ -27,7 +27,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
     ignore: [],
     purgeOnly: [],
     purgeCSSOptions: {
-      content: [],
+      content: [path.src],
       css: [],
       safelist: { standard: ['html', 'body'] },
     },
