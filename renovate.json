@@ -1,17 +1,12 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
+  "timezone": "Asia/Kolkata",
+  "schedule": ["after 7pm on friday"],
   "rebaseStalePrs": true,
+  "stabilityDays": 3,
+  "rangeStrategy": "replace",
   "devDependencies": {
     "automerge": true
   },
-  "prCreation": "not-pending",
-  "unpublishSafe": true,
-  "packageRules": [
-    {
-      "packagePatterns": ["^gatsby"],
-      "unpublishSafe": false
-    }
-  ]
+  "prCreation": "status-success"
 }
