@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-purgecss",
   "description": "Gatsby plugin for purgecss. Removes unused css/sass/less/stylus from files and modules. Supports Tailwindcss, Bootstrap, Bulma etc.",
-  "version": "6.0.0-0",
+  "version": "6.0.0",
   "main": "index.js",
   "license": "MIT",
   "author": "Ananto Ghosh",
@@ -13,7 +13,7 @@
     "@types/webpack": "^4.41.26",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "coveralls": "^3.1.0",
-    "dotenv": "^8.2.0",
+    "dotenv-cli": "^4.0.0",
     "eslint": "^7.20.0",
     "eslint-config-good-code": "^1.0.2",
     "eslint-plugin-sonarjs": "^0.6.0",
@@ -42,7 +42,7 @@
     "test:local": "ts-node scripts/test_local.ts --project scripts/tsconfig.scripts.json",
     "test:unit": "jest unit",
     "test:build": "jest build",
-    "release": "git branch -v && node -r dotenv/config node_modules/release-it/bin/release-it.js"
+    "release": "dotenv release-it"
   },
   "files": [
     "index.js",
