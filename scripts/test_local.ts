@@ -19,6 +19,5 @@ import c = require("./commands");
     await sh(c.jestE2E, "Run E2E tests");
   } catch (error) {
     console.error(error);
-    return 1;
   }
 })();

@@ -1,5 +1,4 @@
 #!/usr/bin/env ts-node-script
-
 import fs = require("fs-extra");
 import sh = require("./sh");
 import c = require("./commands");
@@ -35,6 +34,6 @@ import c = require("./commands");
     await sh(c.jestCoverage, "Testing with coverage report");
   } catch (error) {
     console.error(error);
-    return 1;
+    process.exitCode = 1;
   }
 })();

@@ -38,10 +38,11 @@
   "scripts": {
     "build": "tsc",
     "build:local": "tsc --outDir plugins/gatsby-plugin-purgecss",
-    "test": "ts-node scripts/test.ts --project scripts/tsconfig.scripts.json",
+    "test": "ts-node scripts/test_ci.ts --project scripts/tsconfig.scripts.json",
     "test:local": "ts-node scripts/test_local.ts --project scripts/tsconfig.scripts.json",
     "test:unit": "jest unit",
     "test:build": "jest build",
+    "jest:coverage": "jest --ci --coverage",
     "release": "dotenv release-it"
   },
   "files": [
