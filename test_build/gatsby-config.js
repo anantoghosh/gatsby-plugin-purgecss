@@ -1,24 +1,22 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-stylus`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require('sass')
-      }
-    },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-less`,
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
+        printSummary: true,
         printRejected: true,
+        printAll: true,
         develop: true,
         debug: true,
-        whitelist: ['whitelist'],
-        whitelistPatterns: [/Regex$/],
         ignore: ['/ignored.css', 'ignored/', 'pages2/style_ignore.css'],
-        purgeOnly: ['pages/', 'pages2/']
-      }
-    }
-  ]
+        purgeOnly: ['pages/', 'pages2/'],
+        purgeCSSOptions: {
+          safelist: ['whitelist', /Regex$/],
+        },
+      },
+    },
+  ],
 };

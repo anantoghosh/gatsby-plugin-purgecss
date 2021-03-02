@@ -74,7 +74,7 @@ describe('Utils Tests', () => {
 
     it('Should not find any loaders', () => {
       const index = findLoader(useConfig2, otherLoadersRegex);
-      expect(index).toBe(null);
+      expect(index).toBe(undefined);
     });
 
     it('Should find sass loader in path', () => {
@@ -95,7 +95,7 @@ describe('Utils Tests', () => {
     });
 
     it('Should not do anything if index null', () => {
-      insertLoader(useConfig2, null, { loader: 'added' });
+      insertLoader(useConfig2, undefined, { loader: 'added' });
       expect(useConfig2).toMatchObject(useConfig2);
     });
   });

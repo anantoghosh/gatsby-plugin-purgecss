@@ -1,4 +1,4 @@
-const fs = require('fs-extra');
+import fs from 'fs-extra';
 
 const dir = 'test_build';
 
@@ -20,7 +20,7 @@ describe('Verify Build', () => {
 });
 
 describe('Check purge status', () => {
-  let html;
+  let html: string;
   beforeAll(async () => {
     html = await fs.readFile(dir + '/public/index.html', 'utf-8');
   });
