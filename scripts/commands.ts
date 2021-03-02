@@ -5,7 +5,7 @@ export = {
   buildLocal: "npm run build:local",
   pack: "npm pack",
   installBuild: `${pkgManager} install`,
-  listBuild: `${pkgManager} list --depth 0 gatsby less node-sass gatsby-plugin-sass gatsby-plugin-less gatsby-plugin-stylus`,
+  listBuild: `${pkgManager} list --depth 0 gatsby less sass gatsby-plugin-sass gatsby-plugin-less gatsby-plugin-stylus`,
   buildTestBuild: "npm run build",
   jestCoverage: "npm run jest:coverage",
   jestUnit: "jest unit",
