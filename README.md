@@ -91,6 +91,7 @@ module.exports = {
 - Ignore complete packages with [`ignore: ['packagename/']`](#ignore).
 - To only purge specific files/packages use [`purgeOnly: ['fileOrPackage/']`](#purgeOnly).
 - Only `js, jsx, ts, tsx` files are scanned for selectors by default. If you want to add `md` or `mdx` use `content: [path.join(process.cwd(), 'src/**/!(*.d).{ts,js,jsx,tsx,md,mdx}')]` or better, just whitelist the required selectors.
+- Tailwind now can use purgecss directly too so you may want to use that. This plugin has the benefit of being able to define more options (ignore, purgeOnly, printRejected etc.) and can purge CSS modules.
 
 ## Help! Purgecss breaks my site
 
@@ -390,6 +391,8 @@ default: `[]`
 ### tailwind
 
 Enable Tailwind support.  
+> Tailwind now can use purgecss directly too so you may want to use that. This plugin has the benefit of being able to define more options (ignore, purgeOnly, printRejected etc.) and can purge CSS modules.
+
 **`tailwind: boolean`**
 
 ```js
