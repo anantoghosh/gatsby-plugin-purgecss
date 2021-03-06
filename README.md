@@ -1,4 +1,5 @@
 # Gatsby Plugin Purgecss [![npm version](https://badge.fury.io/js/gatsby-plugin-purgecss.svg)](https://www.npmjs.com/package/gatsby-plugin-purgecss) [![npm downloads](https://img.shields.io/npm/dt/gatsby-plugin-purgecss.svg)](https://www.npmjs.com/package/gatsby-plugin-purgecss)
+Works with Gatsby v2/v3
 
 [![CircleCI](https://circleci.com/gh/anantoghosh/gatsby-plugin-purgecss/tree/master.svg?style=svg)](https://circleci.com/gh/anantoghosh/gatsby-plugin-purgecss/tree/master)
 [![Build Status](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss.svg?branch=master)](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss)
@@ -198,7 +199,7 @@ purgeCSSOptions: {
   safelist: ['my-selector'], // Don't remove this selector
 }
 ```
-
+[PurgeCSS docs.](https://purgecss.com/safelisting.html#specific-selectors)  
 [Read about safelist option.](#safelist---from-purgecss)
 
 #### 2. Use a JavaScript comment
@@ -450,6 +451,7 @@ purgeCSSOptions: {
   safelist: ['my-selector', 'footer'];
 }
 ```
+[More options for safelist](https://purgecss.com/safelisting.html#specific-selectors)  
 
 **Note:** do NOT add `.` or `#` for classes and ids.  
 `'html'`, `'body'` are always safelisted.  
