@@ -1,34 +1,85 @@
-# [5.0.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/4.0.1...5.0.0) (2020-03-23)
+# [6.0.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/5.0.0...6.0.0) (2021-03-02)
 
+### BREAKING CHANGES
+
+- Updated to PurgeCSS 4.
+- Changes to options format.
+
+#### Migration from < v6
+
+1. Remove `rejected` option. Instead use `printSummary: false` if you **don't** want the stats to show.
+2. PurgeCSS options are now defined under PurgeCSSOptions
+   - Move whitelist to PurgeCSSOptions -> safelist
+   - Move content to PurgeCSSOptions -> content
+   - Move and update any other Purge 
+   CSS options used under the same key.
+     https://purgecss.com/configuration.html#options
+
+```js
+// gatsy-config.js BEFORE
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        rejected: true,
+        printRejected:true,
+        ignore: ['/ignore.css'],
+        whitelist: ['mySelector']
+      },
+    },
+```
+
+```js
+// gatsy-config.js AFTER
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected:true,
+        ignore: ['/ignore.css'],
+        purgeCSSOptions: {
+          safelist: ['mySelector']
+        },
+      },
+    },
+```
+
+### Bug Fixes
+
+- update tailwind regex ([f7602e3](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/f7602e3b74f45ad0cb31141f79ec818ce980f043))
 
 ### Features
 
-* Update tailwind regex ([791c06a](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/791c06a))
-* Upgrade to PurgeCSS v2 ([d2e8831](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/d2e8831))
-* Loader now runs asynchronously
+- Move to typescript
+- Update to latest PurgeCSS v4.
 
+# [5.0.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/4.0.1...5.0.0) (2020-03-23)
+
+### Features
+
+- Update tailwind regex ([791c06a](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/791c06a))
+- Upgrade to PurgeCSS v2 ([d2e8831](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/d2e8831))
+- Loader now runs asynchronously
 
 ### BREAKING CHANGES
 
 Major update to purgecss may require updated config.  
 If using extractors, change to the new extractor format
+
 ```js
 extractors: [
   {
     extractor: (content) => {
       // return array of css selectors
     },
-    extensions: ['js']
-  }
-]
+    extensions: ["js"],
+  },
+];
 ```
 
 ## [4.0.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/4.0.0...4.0.1) (2019-08-27)
 
-
 ### Bug Fixes
 
-* Add `md` and `mdx` extension to the tailwind extractor ([ba2d81e](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/ba2d81e))
+- Add `md` and `mdx` extension to the tailwind extractor ([ba2d81e](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/ba2d81e))
 
 # [4.0.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/3.1.1...4.0.0) (2019-05-16)
 
