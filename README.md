@@ -53,7 +53,7 @@ npm i gatsby-plugin-purgecss
 > **Add the plugin AFTER other css/postcss plugins**
 
 ```js
-// gatsy-config.js
+// gatsby-config.js
 module.exports = {
   plugins: [
     `gatsby-plugin-stylus`,
