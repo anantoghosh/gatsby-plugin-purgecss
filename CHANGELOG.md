@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.0.0...6.0.1) (2021-04-12)
+
+
+### Bug Fixes
+
+* Set correct peerDependency on gatsby ([c5df7f1](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/c5df7f10d2e6c147326c3c1f6a0dddf1dc6ba971))
+
 # [6.0.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/5.0.0...6.0.0) (2021-03-02)
 
 ### BREAKING CHANGES
