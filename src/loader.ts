@@ -3,9 +3,8 @@ import { getOptions } from 'loader-utils';
 import { stats } from './shared';
 import { writeAppendError } from './debug';
 import { color, normalizePath } from './utils';
-import path from './paths';
 import type { loader as webpackLoader } from 'webpack';
-import type { Options } from './types';
+import type { MergedOptions } from './types';
 
 // eslint-disable-next-line sonarjs/cognitive-complexity
 const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
@@ -20,7 +19,7 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
     return;
   }
 
-  const options = (getOptions(this) as unknown) as Options;
+  const options = (getOptions(this) as unknown) as MergedOptions;
 
   if (options.printSummary) {
     stats.addSize(source);
@@ -41,10 +40,7 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
     const normalizedPath = normalizePath(this.resourcePath, this.rootContext);
 
     if (options.purgeOnly.some((file) => normalizedPath.includes(file))) {
-      console.log(
-        'gatsby-plugin-purgecss: Only processing',
-        this.resourcePath
-      );
+      console.log('gatsby-plugin-purgecss: Only processing', this.resourcePath);
     } else {
       stats.addRemovedSize(source);
       callback(undefined, source);
@@ -56,13 +52,12 @@ const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
     .purge({
       ...options.purgeCSSOptions,
       css: [{ raw: source }],
-      content: [path.src],
     })
     .then((result) => {
       if (options.printSummary) {
         stats.addRemovedSize(result[0].css);
       }
-      
+
       const rejected = result[0].rejected;
       if (options.printRejected && Array.isArray(rejected)) {
         const filtered = rejected.map((value) => {

@@ -5,7 +5,7 @@ import { writeConfig } from './debug';
 import { mergeAndConcat } from 'merge-anything';
 import type { GatsbyNode } from 'gatsby';
 import type { Configuration, RuleSetLoader } from 'webpack';
-import type { Options } from './types';
+import type { MergedOptions, Options } from './types';
 
 const loadersRegex = /postcss-loader/;
 
@@ -17,7 +17,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
   const { plugins, ...options } = pluginOptions ?? {};
   const userOptions = (options as unknown) as Options;
 
-  const defaultOptions: Options = {
+  const defaultOptions: MergedOptions = {
     printSummary: true,
     printRejected: false,
     printAll: false,
@@ -28,16 +28,14 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
     purgeOnly: [],
     purgeCSSOptions: {
       rejected: userOptions.printRejected ?? false,
-      content: [],
+      content: userOptions.purgeCSSOptions?.content ? [] : [path.src],
       css: [],
       safelist: { standard: ['html', 'body'] },
     },
   };
 
   if (userOptions.tailwind) {
-    /** This is defined in defaultOptions */
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    defaultOptions.purgeCSSOptions!.defaultExtractor = (content) =>
+    defaultOptions.purgeCSSOptions.defaultExtractor = (content) =>
       content.match(/[^\s"'<>`]*[^\s"':<>`]/g) ?? [];
   }
 
