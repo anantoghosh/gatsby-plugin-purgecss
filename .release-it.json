@@ -3,7 +3,7 @@
     "before:init": "yarn build"
   },
   "git": {
-    "requireCleanWorkingDir": true,
+    "requireCleanWorkingDir": false,
     "requireBranch": "master"
   },
   "github": {

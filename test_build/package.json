@@ -23,5 +23,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "gatsby-plugin-purgecss": "file:../gatsby-plugin-purgecss-6.0.1.tgz"
   }
 }

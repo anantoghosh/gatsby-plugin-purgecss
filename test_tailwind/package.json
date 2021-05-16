@@ -22,5 +22,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "gatsby-plugin-purgecss": "file:../gatsby-plugin-purgecss-6.0.1.tgz"
   }
 }

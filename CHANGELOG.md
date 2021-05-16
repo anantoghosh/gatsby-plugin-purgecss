@@ -1,3 +1,10 @@
+## [6.0.2](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.0.1...6.0.2) (2021-05-16)
+
+
+### Bug Fixes
+
+* [#958](https://github.com/anantoghosh/gatsby-plugin-purgecss/issues/958) make content option overridable ([d3fd7bc](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/d3fd7bc180ec953d10577b4b58331b8c74e79520))
+
 ## [6.0.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.0.0...6.0.1) (2021-04-12)
 
 
