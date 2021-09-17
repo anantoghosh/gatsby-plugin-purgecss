@@ -16,7 +16,7 @@
     "dotenv-cli": "^4.0.0",
     "eslint": "^7.21.0",
     "eslint-config-good-code": "^1.0.2",
-    "eslint-plugin-sonarjs": "^0.7.0",
+    "eslint-plugin-sonarjs": "^0.10.0",
     "eslint-plugin-unicorn": "^36.0.0",
     "execa": "^5.0.0",
     "gatsby": "^3.0.0",
