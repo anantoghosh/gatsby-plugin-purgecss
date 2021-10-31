@@ -15,13 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^3.0.0",
-    "gatsby-plugin-less": "^5.0.0",
-    "gatsby-plugin-sass": "^4.0.0",
-    "gatsby-plugin-stylus": "^3.0.0",
-    "less": "^4.1.1",
+    "gatsby": "^4.0.0",
+    "gatsby-plugin-less": "^6.0.0",
+    "gatsby-plugin-sass": "^5.0.0",
+    "gatsby-plugin-stylus": "^4.0.0",
+    "less": "^4.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "sass": "^1.32.8"
+    "sass": "^1.43.4"
   }
 }

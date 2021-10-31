@@ -1,15 +1,11 @@
 # Gatsby Plugin Purgecss [![npm version](https://badge.fury.io/js/gatsby-plugin-purgecss.svg)](https://www.npmjs.com/package/gatsby-plugin-purgecss) [![npm downloads](https://img.shields.io/npm/dt/gatsby-plugin-purgecss.svg)](https://www.npmjs.com/package/gatsby-plugin-purgecss)
-Works with Gatsby v2/v3
+Works with Gatsby v2/v3/v4
 
 [![CircleCI](https://circleci.com/gh/anantoghosh/gatsby-plugin-purgecss/tree/master.svg?style=svg)](https://circleci.com/gh/anantoghosh/gatsby-plugin-purgecss/tree/master)
 [![Build Status](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss.svg?branch=master)](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss)
 [![Coverage Status](https://coveralls.io/repos/github/anantoghosh/gatsby-plugin-purgecss/badge.svg?branch=master)](https://coveralls.io/github/anantoghosh/gatsby-plugin-purgecss?branch=master)
 [![Renovate badge](https://camo.githubusercontent.com/d89df1f233d795498824e8739f439d2172d7ff12/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656e6f766174652d656e61626c65642d627269676874677265656e2e737667)](https://renovatebot.com/) [![Known Vulnerabilities](https://snyk.io/test/github/anantoghosh/gatsby-plugin-purgecss/badge.svg?targetFile=package.json)](https://snyk.io/test/github/anantoghosh/gatsby-plugin-purgecss?targetFile=package.json)
 [![tested with jest](https://anantoghosh.github.io/stop-watch/jest_op.svg)](https://github.com/facebook/jest)
-
-[![dependencies](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss.svg)](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss/)
-[![dev dependencies](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss/dev-status.svg)](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss?type=dev)
-[![peer dependencies](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss/peer-status.svg)](https://david-dm.org/anantoghosh/gatsby-plugin-purgecss?type=peer)
 
 ## What is this plugin about?
 
@@ -73,6 +69,7 @@ module.exports = {
           // https://purgecss.com/configuration.html#options
           // safelist: ['safelist'], // Don't remove this selector
         },
+        // More options defined here https://purgecss.com/configuration.html#options
       },
     },
   ],

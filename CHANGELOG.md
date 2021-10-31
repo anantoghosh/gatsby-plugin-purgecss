@@ -30,7 +30,7 @@
      https://purgecss.com/configuration.html#options
 
 ```js
-// gatsy-config.js BEFORE
+// gatsby-config.js BEFORE
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
@@ -43,7 +43,7 @@
 ```
 
 ```js
-// gatsy-config.js AFTER
+// gatsby-config.js AFTER
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
