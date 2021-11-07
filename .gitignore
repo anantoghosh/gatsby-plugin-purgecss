@@ -67,18 +67,6 @@ typings/
 !.yarn/versions
 
 .vscode
-.cache/
-public
-yarn-error.log
-plugins
-/gatsby-node.js
-/loader.js
-/utils.js
-/paths.js
-/shared.js
-/test_build/gatsby-plugin-purgecss-debug-config.js
-/test_build/gatsby-plugin-purgecss-debug.js
-dist/
 
 tsconfig.tsbuildinfo
 debug.js
