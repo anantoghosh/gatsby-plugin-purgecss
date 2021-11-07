@@ -1,6 +1,7 @@
 # Gatsby Plugin Purgecss [![npm version](https://badge.fury.io/js/gatsby-plugin-purgecss.svg)](https://www.npmjs.com/package/gatsby-plugin-purgecss) [![npm downloads](https://img.shields.io/npm/dt/gatsby-plugin-purgecss.svg)](https://www.npmjs.com/package/gatsby-plugin-purgecss)
 Works with Gatsby v2/v3/v4
 
+[![Node.js CI](https://github.com/anantoghosh/gatsby-plugin-purgecss/actions/workflows/node.js.yml/badge.svg)](https://github.com/anantoghosh/gatsby-plugin-purgecss/actions/workflows/node.js.yml)
 [![CircleCI](https://circleci.com/gh/anantoghosh/gatsby-plugin-purgecss/tree/master.svg?style=svg)](https://circleci.com/gh/anantoghosh/gatsby-plugin-purgecss/tree/master)
 [![Build Status](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss.svg?branch=master)](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss)
 [![Coverage Status](https://coveralls.io/repos/github/anantoghosh/gatsby-plugin-purgecss/badge.svg?branch=master)](https://coveralls.io/github/anantoghosh/gatsby-plugin-purgecss?branch=master)
