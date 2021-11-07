@@ -1,81 +1,17 @@
 {
-  "name": "gatsby-plugin-purgecss",
+  "name": "gatsby-plugin-purgecss-monorepo",
   "description": "Gatsby plugin for purgecss. Removes unused css/sass/less/stylus from files and modules. Supports Tailwindcss, Bootstrap, Bulma etc.",
-  "version": "6.1.0",
+  "version": "1.0.0",
+  "private": true,
   "main": "index.js",
   "license": "MIT",
   "author": "Ananto Ghosh",
-  "devDependencies": {
-    "@release-it/conventional-changelog": "^3.0.0",
-    "@types/fs-extra": "^9.0.8",
-    "@types/jest": "^26.0.2",
-    "@types/loader-utils": "^2.0.1",
-    "@types/node": "^14.14.21",
-    "@types/webpack": "^4.41.26",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "coveralls": "^3.1.0",
-    "dotenv-cli": "^4.0.0",
-    "eslint": "^7.21.0",
-    "eslint-config-good-code": "^1.0.2",
-    "eslint-plugin-sonarjs": "^0.10.0",
-    "eslint-plugin-unicorn": "^37.0.0",
-    "execa": "^5.0.0",
-    "gatsby": "^4.0.2",
-    "jest": "^26.6.3",
-    "release-it": "^14.11.6",
-    "ts-jest": "^26.5.2",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.1.3"
-  },
-  "dependencies": {
-    "fs-extra": "^9.0.1",
-    "loader-utils": "^2.0.0",
-    "merge-anything": "^4.0.1",
-    "purgecss": "^4.0.2"
-  },
-  "peerDependencies": {
-    "gatsby": "^2.0.0 || ^3.0.0 || ^4.0.0"
-  },
-  "scripts": {
-    "build": "tsc",
-    "build:local": "tsc --outDir plugins/gatsby-plugin-purgecss",
-    "test": "ts-node scripts/test_ci.ts --project scripts/tsconfig.scripts.json",
-    "test:local": "ts-node scripts/test_local.ts --project scripts/tsconfig.scripts.json",
-    "test:unit": "jest unit",
-    "test:build": "jest build",
-    "jest:coverage": "jest --ci --coverage",
-    "release": "dotenv release-it"
-  },
-  "files": [
-    "index.js",
-    "debug.js",
-    "gatsby-node.js",
-    "loader.js",
-    "paths.js",
-    "shared.js",
-    "types.js",
-    "utils.js"
+  "workspaces": [
+    "packages/*"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anantoghosh/gatsby-plugin-purgecss.git"
+  "scripts": {
+    "ci": "yarn workspaces foreach -pt run build && yarn workspace gatsby-plugin-purgecss run jest:coverage"
   },
-  "bugs": {
-    "url": "https://github.com/anantoghosh/gatsby-plugin-purgecss/issues"
-  },
-  "homepage": "https://github.com/anantoghosh/gatsby-plugin-purgecss#readme",
-  "keywords": [
-    "gatsby",
-    "gatsby-plugin",
-    "css",
-    "sass",
-    "scss",
-    "stylus",
-    "less",
-    "optimize",
-    "clean",
-    "purgecss",
-    "purify",
-    "purifycss"
-  ]
+  "repository": "https://github.com/anantoghosh/gatsby-plugin-purgecss",
+  "packageManager": "yarn@3.1.0"
 }

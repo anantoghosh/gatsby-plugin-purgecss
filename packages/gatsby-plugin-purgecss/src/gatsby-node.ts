@@ -4,7 +4,7 @@ import { stats } from './shared';
 import { writeConfig } from './debug';
 import { mergeAndConcat } from 'merge-anything';
 import type { GatsbyNode } from 'gatsby';
-import type { Configuration, RuleSetLoader } from 'webpack';
+import type { Configuration, RuleSetRule } from 'webpack';
 import type { MergedOptions, Options } from './types';
 
 const loadersRegex = /postcss-loader/;
@@ -14,7 +14,7 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
   { actions, stage, getConfig },
   pluginOptions
 ) {
-  const { plugins, ...options } = pluginOptions ?? {};
+  const { plugins, ...options } = pluginOptions;
   const userOptions = (options as unknown) as Options;
 
   const defaultOptions: MergedOptions = {
@@ -64,14 +64,14 @@ export const onCreateWebpackConfig: GatsbyNode['onCreateWebpackConfig'] = functi
   }
 
   const config = getConfig() as Configuration;
-  const existingRules = config.module?.rules;
+  const existingRules = config.module?.rules as RuleSetRule[];
 
   const purgecssloader = {
     loader: path.loader,
     options: mergedUserOptions,
-  } as RuleSetLoader;
+  } as RuleSetRule;
 
-  for (const rules of existingRules ?? []) {
+  for (const rules of existingRules) {
     for (const rule of rules.oneOf ?? []) {
       if (Array.isArray(rule.use)) {
         const index = findLoader(rule.use, loadersRegex);

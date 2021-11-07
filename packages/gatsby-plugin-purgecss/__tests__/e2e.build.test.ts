@@ -1,23 +1,23 @@
 import fs from 'fs-extra';
 
-const dir = 'test_build';
+const dir = '../test_build';
 
-describe('Verify Build', () => {
-  test('node_modules exists', async () => {
-    const exists = await fs.pathExists(dir + '/node_modules');
-    expect(exists).toBeTruthy();
-  });
+// describe('Verify Build', () => {
+//   test('node_modules exists', async () => {
+//     const exists = await fs.pathExists(dir + '/node_modules');
+//     expect(exists).toBeTruthy();
+//   });
 
-  test('project has a build', async () => {
-    const exists = await fs.pathExists(dir + '/public');
-    expect(exists).toBeTruthy();
-  });
+//   test('project has a build', async () => {
+//     const exists = await fs.pathExists(dir + '/public');
+//     expect(exists).toBeTruthy();
+//   });
 
-  test('index.html was generated', async () => {
-    const exists = await fs.pathExists(dir + '/public/index.html');
-    expect(exists).toBeTruthy();
-  });
-});
+//   test('index.html was generated', async () => {
+//     const exists = await fs.pathExists(dir + '/public/index.html');
+//     expect(exists).toBeTruthy();
+//   });
+// });
 
 describe('Check purge status', () => {
   let html: string;

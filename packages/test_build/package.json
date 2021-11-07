@@ -17,6 +17,7 @@
   "dependencies": {
     "gatsby": "^4.0.0",
     "gatsby-plugin-less": "^6.0.0",
+    "gatsby-plugin-purgecss": "workspace:*",
     "gatsby-plugin-sass": "^5.0.0",
     "gatsby-plugin-stylus": "^4.0.0",
     "less": "^4.1.2",

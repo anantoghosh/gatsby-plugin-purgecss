@@ -1,25 +1,20 @@
 import Purgecss from 'purgecss';
-import { getOptions } from 'loader-utils';
 import { stats } from './shared';
 import { writeAppendError } from './debug';
 import { color, normalizePath } from './utils';
-import type { loader as webpackLoader } from 'webpack';
+import type { LoaderDefinitionFunction } from 'webpack';
 import type { MergedOptions } from './types';
 
 // eslint-disable-next-line sonarjs/cognitive-complexity
-const purgeCSSLoader: webpackLoader.Loader = function loader(this, source) {
+const purgeCSSLoader: LoaderDefinitionFunction<MergedOptions> = function loader(this, source) {
   if (Buffer.isBuffer(source)) {
     console.warn('gatsby-plugin-purgecss: Cannot process raw buffers');
     return;
   }
 
   const callback = this.async();
-  if (callback === undefined) {
-    console.warn('gatsby-plugin-purgecss: Async Loader Error');
-    return;
-  }
 
-  const options = (getOptions(this) as unknown) as MergedOptions;
+  const options = this.getOptions();
 
   if (options.printSummary) {
     stats.addSize(source);
