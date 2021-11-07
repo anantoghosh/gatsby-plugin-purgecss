@@ -57,11 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
-.vscode
-.cache/
-public
-yarn-error.log
-plugins
+/.vscode
+/.cache
+/public
+/plugins
 /gatsby-node.js
 /loader.js
 /utils.js
@@ -69,7 +68,7 @@ plugins
 /shared.js
 /test_build/gatsby-plugin-purgecss-debug-config.js
 /test_build/gatsby-plugin-purgecss-debug.js
-dist/
+/dist
 
 tsconfig.tsbuildinfo
 debug.js

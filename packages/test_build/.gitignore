@@ -2,3 +2,4 @@ node_modules/
 .cache/
 public
 gatsby-plugin-purgecss-debug-config.js
+/plugins
