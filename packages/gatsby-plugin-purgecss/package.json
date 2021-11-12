@@ -15,7 +15,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "coveralls": "^3.1.0",
     "dotenv-cli": "^4.0.0",
-    "eslint": "^7.21.0",
+    "eslint": "^8.0.0",
     "eslint-config-good-code": "^1.0.2",
     "eslint-plugin-sonarjs": "^0.10.0",
     "eslint-plugin-unicorn": "^37.0.0",
