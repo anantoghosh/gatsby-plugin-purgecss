@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Ananto Ghosh",
   "devDependencies": {
-    "@release-it/conventional-changelog": "^3.0.0",
+    "@release-it/conventional-changelog": "^4.0.0",
     "@types/fs-extra": "^9.0.8",
     "@types/jest": "^27.0.0",
     "@types/loader-utils": "^2.0.1",
