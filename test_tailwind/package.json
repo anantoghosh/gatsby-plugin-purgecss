@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",
-    "gatsby": "^2.32.8",
-    "gatsby-plugin-postcss": "^3.7.0",
+    "gatsby": "^4.0.0",
+    "gatsby-plugin-postcss": "^5.0.0",
     "postcss": "^8.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
