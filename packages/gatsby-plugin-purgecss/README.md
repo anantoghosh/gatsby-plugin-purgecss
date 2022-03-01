@@ -8,6 +8,8 @@ Works with Gatsby v2/v3/v4
 [![Renovate badge](https://camo.githubusercontent.com/d89df1f233d795498824e8739f439d2172d7ff12/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656e6f766174652d656e61626c65642d627269676874677265656e2e737667)](https://renovatebot.com/) [![Known Vulnerabilities](https://snyk.io/test/github/anantoghosh/gatsby-plugin-purgecss/badge.svg?targetFile=package.json)](https://snyk.io/test/github/anantoghosh/gatsby-plugin-purgecss?targetFile=package.json)
 [![tested with jest](https://anantoghosh.github.io/stop-watch/jest_op.svg)](https://github.com/facebook/jest)
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/ananto)
+
 ## What is this plugin about?
 
 **Remove unused css from css/sass/less/stylus files and modules in your Gatsby project using [purgecss](https://github.com/FullHuman/purgecss). 🎉. Supports tailwind, bootstrap, bulma etc.**
@@ -20,7 +22,7 @@ Works with Gatsby v2/v3/v4
 
 <hr />
 
-📘 [Read the latest docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/README.md) • [Changelog - includes migration to v6 guide](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/CHANGELOG.md) • [Older v5 doc](https://github.com/anantoghosh/gatsby-plugin-purgecss/tree/5.0.0)
+📘 [Read the latest docs here.](https://github.com/anantoghosh/gatsby-plugin-purgecss/) • [Changelog - includes migration to v6 guide](https://github.com/anantoghosh/gatsby-plugin-purgecss/blob/master/packages/gatsby-plugin-purgecss/CHANGELOG.md) • [Older v5 doc](https://github.com/anantoghosh/gatsby-plugin-purgecss/tree/5.0.0)
 
 ### Demo
 
@@ -412,7 +414,7 @@ develop: true;
 ```
 
 This does not print the total css removed.  
-To see what is being removed, use it with the [printRejected option](#printRejected).  
+To see what is being removed, use it with the [printRejected option](#printrejected).  
 default: `false`
 
 ### debug
@@ -491,3 +493,13 @@ This project was made possible due to the incredible work done on the following 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+Hey 👋 If my packages has helped you in any way, consider making a small donation to encourage me to keep contributing. Maintaining good software takes time and effort and for open source developers there is very less incentives to do so.
+Your contribution is greatly appreciated and will motivate me to continue to support developing my packages which you may have used.  
+
+<a href="https://www.buymeacoffee.com/ananto">Buy me a coffee link</a>.
+<div align="center">
+  <a href="https://www.buymeacoffee.com/ananto"><img src="https://media4.giphy.com/media/H2AOo40S1qbuNslXes/giphy.gif?cid=790b761126d17cb3eef4e1fe985cbe2249bbd02ea498d465&rid=giphy.gif&ct=g" /></a>
+<div>
