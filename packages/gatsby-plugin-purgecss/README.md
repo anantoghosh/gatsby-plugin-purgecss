@@ -3,7 +3,6 @@ Works with Gatsby v2/v3/v4
 
 [![Node.js CI](https://github.com/anantoghosh/gatsby-plugin-purgecss/actions/workflows/node.js.yml/badge.svg)](https://github.com/anantoghosh/gatsby-plugin-purgecss/actions/workflows/node.js.yml)
 [![CircleCI](https://circleci.com/gh/anantoghosh/gatsby-plugin-purgecss/tree/master.svg?style=svg)](https://circleci.com/gh/anantoghosh/gatsby-plugin-purgecss/tree/master)
-[![Build Status](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss.svg?branch=master)](https://travis-ci.org/anantoghosh/gatsby-plugin-purgecss)
 [![Coverage Status](https://coveralls.io/repos/github/anantoghosh/gatsby-plugin-purgecss/badge.svg?branch=master)](https://coveralls.io/github/anantoghosh/gatsby-plugin-purgecss?branch=master)
 [![Renovate badge](https://camo.githubusercontent.com/d89df1f233d795498824e8739f439d2172d7ff12/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656e6f766174652d656e61626c65642d627269676874677265656e2e737667)](https://renovatebot.com/)
 [![Known Vulnerabilities](https://snyk.io/test/github/anantoghosh/gatsby-plugin-purgecss/badge.svg?targetFile=packages/gatsby-plugin-purgecss/package.json)](https://snyk.io/test/github/anantoghosh/gatsby-plugin-purgecss?targetFile=packages/gatsby-plugin-purgecss/package.json)
