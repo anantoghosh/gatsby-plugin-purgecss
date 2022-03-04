@@ -6919,12 +6919,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-sonarjs@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "eslint-plugin-sonarjs@npm:0.11.0"
+"eslint-plugin-sonarjs@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "eslint-plugin-sonarjs@npm:0.12.0"
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0 || ^7.0.0|| ^8.0.0
-  checksum: ef9633e518f6d8365b7370bf48f70fb837124c68318e14146c13ffa8f4c5a747b5f776956124549f81252131ebb8c139d071b9c66e2af77889d0eada725d6d25
+  checksum: 96be3002ce2344a07081c33649d9bb927189153c2e68ecb13069b0adfa4ff2e2cecec6f25ee3d5e29600d8d8aac6e14e54f1990b0847234975f311d48521c828
   languageName: node
   linkType: hard
 
@@ -8080,7 +8080,7 @@ __metadata:
     dotenv-cli: ^4.1.1
     eslint: ^8.10.0
     eslint-config-good-code: ^1.1.0
-    eslint-plugin-sonarjs: ^0.11.0
+    eslint-plugin-sonarjs: ^0.12.0
     eslint-plugin-unicorn: ^40.1.0
     execa: ^6.1.0
     fs-extra: ^9.1.0
