@@ -14,7 +14,7 @@
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "coveralls": "^3.1.1",
-    "dotenv-cli": "^4.1.1",
+    "dotenv-cli": "^5.0.0",
     "eslint": "^8.10.0",
     "eslint-config-good-code": "^1.1.0",
     "eslint-plugin-sonarjs": "^0.12.0",
