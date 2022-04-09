@@ -60,10 +60,16 @@
     "type": "git",
     "url": "git+https://github.com/anantoghosh/gatsby-plugin-purgecss.git"
   },
-  "funding": {
-    "type" : "individual",
-    "url" : "https://www.buymeacoffee.com/ananto"
-  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://ko-fi.com/anantoghosh"
+    },
+    {
+      "type": "individual",
+      "url": "https://pages.razorpay.com/ananto"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/anantoghosh/gatsby-plugin-purgecss/issues"
   },

@@ -9,7 +9,8 @@ Works with Gatsby v2/v3/v4
 [![Security Score](https://snyk-widget.herokuapp.com/badge/npm/gatsby-plugin-purgecss/badge.svg)](https://snyk.io/advisor/npm-package/gatsby-plugin-purgecss)
 [![tested with jest](https://anantoghosh.github.io/stop-watch/jest_op.svg)](https://github.com/facebook/jest)
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/ananto)
+<a href="https://ko-fi.com/anantoghosh" rel="nofollow"><img alt="Support me (worldwide)" src="https://anantoghosh.github.io/assets/kofi.svg" height="36" /></a>
+<a href="https://pages.razorpay.com/ananto" rel="nofollow"><img alt="Support me (india)" src="https://anantoghosh.github.io/assets/razorpay.svg" height="36" /></a>
 
 ## What is this plugin about?
 
@@ -500,7 +501,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Hey 👋 If my packages has helped you in any way, consider making a small donation to encourage me to keep contributing. Maintaining good software takes time and effort and for open source developers there is very less incentives to do so.
 Your contribution is greatly appreciated and will motivate me to continue to support developing my packages which you may have used.  
 
-<a href="https://www.buymeacoffee.com/ananto">Buy me a coffee link</a>.
-<div align="center">
-  <a href="https://www.buymeacoffee.com/ananto"><img src="https://media4.giphy.com/media/H2AOo40S1qbuNslXes/giphy.gif?cid=790b761126d17cb3eef4e1fe985cbe2249bbd02ea498d465&rid=giphy.gif&ct=g" /></a>
-<div>
+<a href="https://ko-fi.com/anantoghosh" rel="nofollow"><img alt="Support me (worldwide)" src="https://anantoghosh.github.io/assets/kofi.svg" height="36" /></a>
+<a href="https://pages.razorpay.com/ananto" rel="nofollow"><img alt="Support me (india)" src="https://anantoghosh.github.io/assets/razorpay.svg" height="36" /></a>
