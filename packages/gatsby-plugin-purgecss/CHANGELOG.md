@@ -1,3 +1,10 @@
+
+
+## [6.1.2](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.1.1...6.1.2) (2022-04-09)
+
+- Maintenance release.
+- Updated packages.
+
 ## [6.1.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.1.0...6.1.1) (2022-03-01)
 
 - Maintenance release.
