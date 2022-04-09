@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "fs-extra": "^9.1.0",
-    "loader-utils": "^2.0.2",
+    "loader-utils": "^3.0.0",
     "merge-anything": "^4.0.5",
     "purgecss": "^4.1.3"
   },
