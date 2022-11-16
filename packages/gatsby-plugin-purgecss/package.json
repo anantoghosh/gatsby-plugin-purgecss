@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "fs-extra": "^10.0.1",
-    "loader-utils": "^3.2.0",
+    "loader-utils": "^3.2.1",
     "merge-anything": "^5.0.2",
     "purgecss": "^4.1.3"
   },
