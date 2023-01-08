@@ -1,9 +1,15 @@
+# [6.2.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.1.2...6.2.0) (2023-01-08)
 
 
+### Features
+
+* Support gatsby 5 ([7a0df4f](https://github.com/anantoghosh/gatsby-plugin-purgecss/commit/7a0df4f0f6bbfa7193f565332f2f9ac7931d4452))
+* Update packages
 ## [6.1.2](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.1.1...6.1.2) (2022-04-09)
 
 - Maintenance release.
 - Updated packages.
+
 
 ## [6.1.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.1.0...6.1.1) (2022-03-01)
 

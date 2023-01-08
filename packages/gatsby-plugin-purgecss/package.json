@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-purgecss",
   "description": "Gatsby plugin for purgecss. Removes unused css/sass/less/stylus from files and modules. Supports Tailwindcss, Bootstrap, Bulma etc.",
-  "version": "6.1.2",
+  "version": "6.2.0",
   "main": "index.js",
   "license": "MIT",
   "author": "Ananto Ghosh",
