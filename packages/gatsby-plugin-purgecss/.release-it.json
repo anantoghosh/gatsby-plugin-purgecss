@@ -14,7 +14,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "npm": {
-    "publish": false
+    "publish": false,
+    "versionArgs": ["--workspaces-update=false"]
   },
   "plugins": {
     "@release-it/conventional-changelog": {
