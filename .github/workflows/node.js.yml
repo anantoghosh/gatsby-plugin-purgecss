@@ -28,7 +28,7 @@ jobs:
     - name: Cache yarn
       uses: actions/cache@v3
       with:
-        path: ./yarn/cache
+        path: .yarn/cache
         key: ${{ runner.os }}-node${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
     - run: yarn install --immutable
     - run: yarn ci
