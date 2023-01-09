@@ -1,3 +1,7 @@
+
+
+## [6.2.1](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.2.0...6.2.1) (2023-01-09)
+
 # [6.2.0](https://github.com/anantoghosh/gatsby-plugin-purgecss/compare/6.1.2...6.2.0) (2023-01-08)
 
 
