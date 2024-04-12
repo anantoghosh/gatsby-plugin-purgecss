@@ -14,7 +14,7 @@
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "coveralls": "^3.1.1",
-    "eslint": "^8.31.0",
+    "eslint": "^9.0.0",
     "eslint-config-good-code": "^1.1.0",
     "eslint-plugin-sonarjs": "^0.25.0",
     "eslint-plugin-unicorn": "^51.0.0",
