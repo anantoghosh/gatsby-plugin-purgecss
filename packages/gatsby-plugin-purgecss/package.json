@@ -17,7 +17,7 @@
     "eslint": "^9.0.0",
     "eslint-config-good-code": "^1.1.0",
     "eslint-plugin-sonarjs": "^1.0.0",
-    "eslint-plugin-unicorn": "^52.0.0",
+    "eslint-plugin-unicorn": "^53.0.0",
     "execa": "^8.0.0",
     "gatsby": "^5.3.3",
     "jest": "^27.5.1",
