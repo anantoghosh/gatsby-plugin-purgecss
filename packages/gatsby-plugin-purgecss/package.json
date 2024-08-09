@@ -12,7 +12,7 @@
     "@types/loader-utils": "^2.0.3",
     "@types/node": "^18.11.18",
     "@types/webpack": "^5.28.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
     "coveralls": "^3.1.1",
     "eslint": "^9.0.0",
     "eslint-config-good-code": "^1.1.0",
