@@ -3496,10 +3496,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0, @types/node@npm:^18.11.18":
+"@types/node@npm:*, @types/node@npm:>=10.0.0":
   version: 18.11.18
   resolution: "@types/node@npm:18.11.18"
   checksum: 03f17f9480f8d775c8a72da5ea7e9383db5f6d85aa5fefde90dd953a1449bd5e4ffde376f139da4f3744b4c83942166d2a7603969a6f8ea826edfb16e6e3b49d
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.0.0":
+  version: 20.14.14
+  resolution: "@types/node@npm:20.14.14"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: cb2199123efca94908ee7191cc7b7abc11b26bf1fbb93c2948d5537a6594eedc35d4748d9fa998078fdc2eb5cc3a11d6d87b2fea20a05bda9d304e37d3c3282a
   languageName: node
   linkType: hard
 
@@ -9385,7 +9394,7 @@ __metadata:
     "@types/fs-extra": ^11.0.0
     "@types/jest": ^27.5.2
     "@types/loader-utils": ^2.0.3
-    "@types/node": ^18.11.18
+    "@types/node": ^20.0.0
     "@types/webpack": ^5.28.0
     "@typescript-eslint/eslint-plugin": ^8.0.0
     coveralls: ^3.1.1
@@ -18103,6 +18112,13 @@ __metadata:
   version: 0.1.2
   resolution: "unc-path-regex@npm:0.1.2"
   checksum: a05fa2006bf4606051c10fc7968f08ce7b28fa646befafa282813aeb1ac1a56f65cb1b577ca7851af2726198d59475bb49b11776036257b843eaacee2860a4ec
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
   languageName: node
   linkType: hard
 
