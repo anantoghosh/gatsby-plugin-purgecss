@@ -16,7 +16,7 @@
     "coveralls": "^3.1.1",
     "eslint": "^9.0.0",
     "eslint-config-good-code": "^1.1.0",
-    "eslint-plugin-sonarjs": "^1.0.0",
+    "eslint-plugin-sonarjs": "^2.0.0",
     "eslint-plugin-unicorn": "^55.0.0",
     "execa": "^9.0.0",
     "gatsby": "^5.3.3",
