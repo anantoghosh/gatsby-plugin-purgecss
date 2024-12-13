@@ -10,7 +10,7 @@
     "@types/fs-extra": "^11.0.0",
     "@types/jest": "^27.5.2",
     "@types/loader-utils": "^2.0.3",
-    "@types/node": "^18.11.18",
+    "@types/node": "^22.0.0",
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "coveralls": "^3.1.1",
