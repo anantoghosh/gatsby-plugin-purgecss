@@ -9717,9 +9717,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^60.0.0":
-  version: 60.0.0
-  resolution: "eslint-plugin-unicorn@npm:60.0.0"
+"eslint-plugin-unicorn@npm:^61.0.0":
+  version: 61.0.2
+  resolution: "eslint-plugin-unicorn@npm:61.0.2"
   dependencies:
     "@babel/helper-validator-identifier": ^7.27.1
     "@eslint-community/eslint-utils": ^4.7.0
@@ -9741,7 +9741,7 @@ __metadata:
     strip-indent: ^4.0.0
   peerDependencies:
     eslint: ">=9.29.0"
-  checksum: c97822fa4e5a6209ccea6c1fc10b0078a34ba66823d3f32abdd919c5ca5a37a940f16b04b8dc05e7874a6f11fcb7002c2a378001ff4ebfd5ab1ffcaf038ac5be
+  checksum: 8be3beab20edaef67c40a84afd79dbec910d61a5d7ce28c6aeab15100c01bcbc5e780845036c95ece7e077641ffaee2330a8170b6fd70daa1161c473a2eb26f5
   languageName: node
   linkType: hard
 
@@ -11001,7 +11001,7 @@ __metadata:
     eslint: ^9.0.0
     eslint-config-good-code: ^1.1.0
     eslint-plugin-sonarjs: ^3.0.0
-    eslint-plugin-unicorn: ^60.0.0
+    eslint-plugin-unicorn: ^61.0.0
     execa: ^9.0.0
     fs-extra: ^11.1.0
     gatsby: ^5.3.3
