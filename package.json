@@ -13,5 +13,5 @@
     "ci": "yarn workspaces foreach -pt run build && yarn workspace gatsby-plugin-purgecss run jest:coverage"
   },
   "repository": "https://github.com/anantoghosh/gatsby-plugin-purgecss",
-  "packageManager": "yarn@3.3.1"
+  "packageManager": "yarn@3.8.7"
 }
