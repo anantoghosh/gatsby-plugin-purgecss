@@ -11017,7 +11017,7 @@ __metadata:
     gatsby: ^5.3.3
     jest: ^27.5.1
     loader-utils: ^3.2.1
-    merge-anything: ^5.1.4
+    merge-anything: ^6.0.0
     purgecss: ^4.1.3
     release-it: ^19.0.0
     ts-jest: ^27.1.5
@@ -12904,10 +12904,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-what@npm:^4.1.8":
-  version: 4.1.8
-  resolution: "is-what@npm:4.1.8"
-  checksum: b9bec3acff102d14ad467f4c74c9886af310fa160e07a63292c8c181e6768c7c4c1054644e13d67185b963644e4a513bce8c6b8ce3d3ca6f9488a69fccad5f97
+"is-what@npm:^5.5.7":
+  version: 5.5.7
+  resolution: "is-what@npm:5.5.7"
+  checksum: 942a308fc46973a93f08a1f955bb09a810f6712122026f3bc49fda22ed09b9415f6033f7259e726af96fb23c9dc812b87cafb33016a10e3badf332248ff607ec
   languageName: node
   linkType: hard
 
@@ -14582,12 +14582,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"merge-anything@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "merge-anything@npm:5.1.4"
+"merge-anything@npm:^6.0.0":
+  version: 6.0.9
+  resolution: "merge-anything@npm:6.0.9"
   dependencies:
-    is-what: ^4.1.8
-  checksum: b844251652b92d4672383ffdb3b5f77247c9d5012604bdc0d4dc610b4c0957b6446753a42b25c759e7beb7303427cda88fa86896aa58744c404fa7fc396ec7c3
+    is-what: ^5.5.7
+  checksum: 57ca9db53b86e581b3b790d10f13d42908ed66f1929545be73f0f08b3a394df7a8bb8c9d696e3ff5e98ddfe9426fcae703175717e514283babfc3ea96885b42f
   languageName: node
   linkType: hard
 
